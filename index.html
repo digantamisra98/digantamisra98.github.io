@@ -1150,16 +1150,23 @@
                   <em>SNN workshop at ICLR, 2023</em>
 				  <br>
                   <div class="paper" id="code2023">
-                      <a class="tog" href="javascript:toggleblock('code_abs')">abstract</a>
+					<a href="data/snn.pdf" target="_blank">paper</a> /
+                      <a class="tog" href="javascript:toggleblock('code_abs')">abstract</a> /
+					  <a class="tog" href="javascript:toggleblock('code_bib')">bibtex</a>
                       <p align="justify">
                         <i id="code_abs">
                             The size and prevalence of large language models (LLMs) make them an apt target for model compression. Most LLMs consist of a Transformer encoder and decoder, which each have 6 to 12 layers of multiheaded self-attention blocks, along with fully connected layers. This results in a large number of parameters, making them quite expensive to train and query. Our work focuses on finding techniques to prune CodeBERT, a specific LLM trained to work multimodally between text and code. We explore the effects of structured and unstructured magnitude pruning on the encoder layers of CodeBERT, evaluating on the task of generating natural language comments from a piece of Ruby code.
                         </i>
                       </p>
-					<a href="data/Preliminary Pruning on Language Models for Code.pptx.pdf" target="_blank">poster</a> /
-					<a href="data/snn.pdf" target="_blank">paper</a>
+					  <bibtext xml:space="preserve" id="code_bib">
+					  @article{gupruning,
+						title={Pruning CodeBERT for Improved Code-to-Text Efficiency},
+						author={Gu, Alex and Sonecha, Ria and Vedantam, Saaketh and Runwal, Bharat and Misra, Diganta}
+					  }
+					  </bibtext>
+					<a href="data/Preliminary Pruning on Language Models for Code.pptx.pdf" target="_blank">poster</a>
                     </div>              
-                    <script language="JavaScript">hideblock('code_abs');</script>
+                    <script language="JavaScript">hideblock('code_abs');hideblock('code_bib');</script>
             </td>
 			</tr>
 
