@@ -488,14 +488,168 @@
                     <script language="JavaScript">hideblock('wacv_bib');hideblock('wacv_abs');</script>
             </td>
 			</tr>
-			<br>
+
+
+
+			<tr class="therow1 therow6" style="">
+				<td width="15%" valign="center" align="center"><img src="images/consonant.jpg" alt="nthu" width="500" height="120"></td>
+				</td>
+				<td width="85%" style="padding:20px;vertical-align:middle">
+					  <a class="tog" href="#shapley2023">
+						<papertitle>Using Shapley interactions to understand how models use structure &emsp14; <span style="color:red">New!</span></papertitle>
+					  </a>
+					  <br>
+					  <a href="https://divyanshsinghvi.github.io/" target="_blank">Divyansh Singhvi</a><sup>*</sup>, 
+					  <strong>Diganta Misra</strong><sup>*</sup>,
+					  <a href="https://www.linkedin.com/in/andrej-erkelens" target="_blank">Andrej Erkelens</a><sup>*</sup>, 
+					  <a href="https://www.linkedin.com/in/raghav-jain-3a8076214/" target="_blank">Raghav Jain</a><sup>*</sup>,
+					  <a href="https://www.isabelpapad.com/" target="_blank">Isabel Papadimitriou</a>,
+					  <a href="https://nsaphra.net/" target="_blank">Naomi Saphra</a>
+					  <br>
+					  <p></p>
+					  <em>ACL, 2025</em>
+					  <br>
+					  <em>NeurIPS ATTRIB workshop, 2023</em>
+					  <br>
+					  <div class="paper" id="shapley2023">
+						<a href="https://arxiv.org/abs/2403.13106" target="_blank">paper</a> /
+						  <a class="tog" href="javascript:toggleblock('shapley_abs')">abstract</a> /
+						  <a class="tog" href="javascript:toggleblock('shapley_bib')">bibtex</a>
+						  <br>
+						  <br>
+						  <a href="https://x.com/nsaphra/status/1770808324587491704?s=20" target="_blank"><img alt="Twitter thread" src="https://img.shields.io/badge/Thread-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" width="70"></a>
+						  <p align="justify">
+							<i id="shapley_abs">
+								Language is an intricately structured system, and a key goal of NLP interpretability is to provide methodological insights for understanding how language models internally represent this structure. In this paper, we use Shapley Taylor interaction indices (STII) in order to examine how language and speech models internally relate and structure their inputs. Pairwise Shapley interactions give us an attribution measure of how much two inputs work together to influence model outputs beyond if we linearly added their independent influences, providing a view into how models encode structural interactions between inputs. We relate the interaction patterns in models to three underlying linguistic structures: syntactic structure, non-compositional semantics, and phonetic interaction. We find that autoregressive text models encode interactions that correlate with the syntactic proximity of inputs, and that both autoregressive and masked models encode nonlinear interactions in idiomatic phrases with non-compositional semantics. Our speech results show that inputs are more entangled for pairs where a neighboring consonant is likely to influence a vowel or approximant, showing that models encode the phonetic interaction needed for extracting discrete phonemic representations.</i>
+							<bibtext xml:space="preserve" id="shapley_bib">
+								@misc{singhvi2024knowing,
+									title={Knowing Your Nonlinearities: Shapley Interactions Reveal the Underlying Structure of Data}, 
+									author={Divyansh Singhvi and Andrej Erkelens and Raghav Jain and Diganta Misra and Naomi Saphra},
+									year={2024},
+									eprint={2403.13106},
+									archivePrefix={arXiv},
+									primaryClass={cs.LG}
+							  }
+							</bibtext>
+						  </p>
+						</div>              
+						<script language="JavaScript">hideblock('shapley_abs');hideblock('shapley_bib');</script>
+				</td>
+				</tr>
+
+				<tr class="therow1 therow6" style="">
+				<td width="15%" valign="center" align="center"><img src="images/IMG_0055-removebg-preview.png" alt="nthu" width="200" height="200"></td>
+				</td>
+				<td width="85%" style="padding:20px;vertical-align:middle">
+					  <a class="tog" href="#cl4code2024">
+						<papertitle><span style="color:rgb(136, 1, 247)">GitChameleon</span>: Evaluating AI Code Generation Against Python Library Version Incompatibilities &emsp14; <span style="color:red">New!</span></papertitle>
+					  </a>
+					  <br>
+					  	<strong>Diganta Misra</strong><sup>*</sup>,
+						<a href="https://nizarislah.github.io/" target="_blank">Nizar Islah</a><sup>*</sup>,
+						<a href="https://mrcabbage972.github.io/" target="_blank">Victor May</a>,
+						<a href="https://scholar.google.com/citations?user=b7KZuocAAAAJ&hl=en" target="_blank">Brice Rauby</a>,
+						<a href="https://mila.quebec/en/directory/zihan-wang" target="_blank">Zihan Wang</a>,
+					  	<a href="https://justine-gehring.github.io/" target="_blank">Justine Gehring</a>,
+						<a href="http://orvi.altervista.org/" target="_blank">Antonio Orvieto</a>,
+						<a href="https://scholar.google.com/citations?user=4Z8ePskAAAAJ&hl=en" target="_blank">Muawiz Chaudhary</a>,
+						<a href="https://sites.google.com/site/irinarish/" target="_blank">Irina Rish</a>,
+						<a href="https://neuro.plasticit.ai/" target="_blank">Eilif B. Muller</a>,
+						<a href="https://saebrahimi.github.io/" target="_blank">Samira Ebrahimi Kahou</a>,
+						<a href="https://optimass.github.io/" target="_blank">Massimo Caccia</a>
+					  <br>
+					  <p></p>
+					  <em>DMLR @ ICLR, 2024</em>
+					  <br>
+					  <div class="paper" id="cl4code">
+						<a href="https://arxiv.org/abs/2411.05830" target="_blank">paper</a> /
+						  <a class="tog" href="javascript:toggleblock('cl4code_abs')">abstract</a> /
+						  <a class="tog" href="javascript:toggleblock('cl4code_bib')">bibtex</a>
+						  <p align="justify">
+							<i id="cl4code_abs">
+								The rapid evolution of software libraries poses a considerable hurdle for code generation, necessitating continuous adaptation to frequent version updates while preserving backward compatibility. While existing code evolution benchmarks provide valuable insights, they typically lack execution-based evaluation for generating code compliant with specific library versions. To address this, we introduce GitChameleon, a novel, meticulously curated dataset comprising 328 Python code completion problems, each conditioned on specific library versions and accompanied by executable unit tests. GitChameleon rigorously evaluates the capacity of contemporary large language models (LLMs), LLM-powered agents, code assistants, and RAG systems to generate version-specific code that demonstrates functional accuracy through execution. Our extensive evaluations indicate that state-of-the-art systems encounter significant challenges with this task; enterprise models achieving baseline success rates in the 48-51% range, underscoring the intricacy of the problem. By offering an execution-based benchmark emphasizing the dynamic nature of code libraries, GitChameleon enables a clearer understanding of this challenge and helps guide the development of more adaptable and dependable AI code generation methods. We will publicly release the dataset and evaluation code upon acceptance.
+							</i>
+						  </p>
+						<bibtext xml:space="preserve" id="cl4code_bib">
+							@misc{islah2024gitchameleonunmaskingversionswitchingcapabilities,
+								title={GitChameleon: Unmasking the Version-Switching Capabilities of Code Generation Models}, 
+								author={Nizar Islah and Justine Gehring and Diganta Misra and Eilif Muller and Irina Rish and Terry Yue Zhuo and Massimo Caccia},
+								year={2024},
+								eprint={2411.05830},
+								archivePrefix={arXiv},
+								primaryClass={cs.SE},
+								url={https://arxiv.org/abs/2411.05830}, 
+						  }
+						</bibtext>
+						<a href="https://youtu.be/8s1hX6Xw_3Q?si=KlrLv1nIqex2qOHh" target="_blank"><img src="https://img.shields.io/badge/Microsoft Research Talk-red?style=for-the-badge&logo=youtube&logoColor=white"></a>
+						<a href="https://www.youtube.com/watch?v=Ccg4RNTYkVs" target="_blank"><img src="https://img.shields.io/badge/RIKEN AIP 93rd TrustML Young Scientist Seminar-red?style=for-the-badge&logo=youtube&logoColor=white"></a>
+						</div>  
+								<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/NizarIslah/GitChameleon?style=social">
+								&emsp;
+								<a href="https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6694357941698904074,11417814403370446599" target="_blank"><img src="https://img.shields.io/badge/Citations-1-lightgrey.svg?style=social&logo=Google Scholar"></a>
+						<script language="JavaScript">hideblock('cl4code_abs');;hideblock('cl4code_bib');</script>
+				</td>
+				</tr>
+
+				<tr class="therow1 therow6" style="">
+					<td width="15%" valign="center" align="center"><img src="images/Cep.png" alt="nthu" width="380" height="250"></td>
+					</td>
+					<td width="85%" style="padding:20px;vertical-align:middle">
+						  <a class="tog" href="#cep">
+							<papertitle>Slight Corruption in Pre-training Data Makes Better Diffusion Models</papertitle>
+						  </a>
+						  <br>
+						  <br>
+							<a href="https://scholar.google.com/citations?user=tktqkhwAAAAJ&hl=en" target="_blank">Hao Chen</a>,
+							<a href="https://yujinhanml.github.io/" target="_blank">Yujin Han</a>,
+							<strong>Diganta Misra</strong>,
+							<a href="https://lxa9867.github.io/" target="_blank">Xiang Li</a>,
+							<a href="https://scholar.google.com/citations?user=Dn1rSvkAAAAJ&hl=en" target="_blank">Kai Hu</a>,
+							<a href="https://difanzou.github.io/" target="_blank">Difan Zou</a>,
+							<a href="https://www.ms.k.u-tokyo.ac.jp/sugi/index.html" target="_blank">Masashi Sugiyama</a>,
+							<a href="https://jd92.wang/" target="_blank">Jindong Wang</a>,
+							<a href="http://mlsp.cs.cmu.edu/people/bhiksha/" target="_blank">Bhiksha Raj</a>
+						  <br>
+						  <p></p>
+						  <em>NeurIPS <span style="color:rgb(255, 0, 166)">Spotlight</span>, 2024</em>
+						  <br>
+						  <div class="paper" id="cep">
+							<a href="https://arxiv.org/abs/2403.10853" target="_blank">paper</a> /
+							  <a class="tog" href="javascript:toggleblock('cep_abs')">abstract / 
+							  <a class="tog" href="javascript:toggleblock('cep_bib')">bibtex</a>
+							  <br>
+							  <br>
+						  		<a href="https://x.com/__z__9/status/1797770731499225583" target="_blank"><img alt="Twitter" src="https://img.shields.io/badge/Thread-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" width="70"></a>
+								  <a href="https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9784087597028682083" target="_blank"><img src="https://img.shields.io/badge/Citations-7-lightgrey.svg?style=social&logo=Google Scholar"></a>
+							  <p align="justify">
+								<i id="cep_abs">
+									Diffusion models (DMs) have shown remarkable capabilities in generating realistic high-quality images, audios, and videos. They benefit significantly from extensive pre-training on large-scale datasets, including web-crawled data with paired data and conditions, such as image-text and image-class pairs. Despite rigorous filtering, these pre-training datasets often inevitably contain corrupted pairs where conditions do not accurately describe the data. This paper presents the first comprehensive study on the impact of such corruption in pre-training data of DMs. We synthetically corrupt ImageNet-1K and CC3M to pre-train and evaluate over 50 conditional DMs. Our empirical findings reveal that various types of slight corruption in pre-training can significantly enhance the quality, diversity, and fidelity of the generated images across different DMs, both during pre-training and downstream adaptation stages. Theoretically, we consider a Gaussian mixture model and prove that slight corruption in the condition leads to higher entropy and a reduced 2-Wasserstein distance to the ground truth of the data distribution generated by the corruptly trained DMs. Inspired by our analysis, we propose a simple method to improve the training of DMs on practical datasets by adding condition embedding perturbations (CEP). CEP significantly improves the performance of various DMs in both pre-training and downstream tasks. We hope that our study provides new insights into understanding the data and pre-training processes of DMs.
+								</i>
+							  </p>
+							 
+							<bibtext xml:space="preserve" id="cep_bib">
+								@misc{chen2024slight,
+									title={Slight Corruption in Pre-training Data Makes Better Diffusion Models}, 
+									author={Hao Chen and Yujin Han and Diganta Misra and Xiang Li and Kai Hu and Difan Zou and Masashi Sugiyama and Jindong Wang and Bhiksha Raj},
+									year={2024},
+									eprint={2405.20494},
+									archivePrefix={arXiv},
+									primaryClass={cs.CV}
+							  }	
+								</bibtext> 
+							<br>
+							</div>        
+							<script language="JavaScript">hideblock('cep_abs');hideblock('cep_bib');</script>
+					</td>
+					</tr>
+			
 
 			<tr class="therow1 therow6" style="">
 				<td width="15%" valign="center" align="center"><img src="images/gencl.png" alt="nthu" width="380" height="110"></td>
 				</td>
 				<td width="85%" style="padding:20px;vertical-align:middle">
 					  <a class="tog" href="#gnocl">
-						<papertitle>Just Say the Name: Online Continual Learning with Category Names Only via Data Generation &emsp14; <span style="color:red">New!</span></papertitle>
+						<papertitle>Just Say the Name: Online Continual Learning with Category Names Only via Data Generation</papertitle>
 					  </a>
 					  <br>
 					  <br>
@@ -547,64 +701,12 @@
 				</tr>
 
 
-				<tr class="therow1 therow6" style="">
-					<td width="15%" valign="center" align="center"><img src="images/Cep.png" alt="nthu" width="380" height="250"></td>
-					</td>
-					<td width="85%" style="padding:20px;vertical-align:middle">
-						  <a class="tog" href="#cep">
-							<papertitle>Slight Corruption in Pre-training Data Makes Better Diffusion Models &emsp14; <span style="color:red">New!</span></papertitle>
-						  </a>
-						  <br>
-						  <br>
-							<a href="https://scholar.google.com/citations?user=tktqkhwAAAAJ&hl=en" target="_blank">Hao Chen</a>,
-							<a href="https://yujinhanml.github.io/" target="_blank">Yujin Han</a>,
-							<strong>Diganta Misra</strong>,
-							<a href="https://lxa9867.github.io/" target="_blank">Xiang Li</a>,
-							<a href="https://scholar.google.com/citations?user=Dn1rSvkAAAAJ&hl=en" target="_blank">Kai Hu</a>,
-							<a href="https://difanzou.github.io/" target="_blank">Difan Zou</a>,
-							<a href="https://www.ms.k.u-tokyo.ac.jp/sugi/index.html" target="_blank">Masashi Sugiyama</a>,
-							<a href="https://jd92.wang/" target="_blank">Jindong Wang</a>,
-							<a href="http://mlsp.cs.cmu.edu/people/bhiksha/" target="_blank">Bhiksha Raj</a>
-						  <br>
-						  <p></p>
-						  <em>NeurIPS <span style="color:rgb(255, 0, 166)">Spotlight</span>, 2024</em>
-						  <br>
-						  <div class="paper" id="cep">
-							<a href="https://arxiv.org/abs/2403.10853" target="_blank">paper</a> /
-							  <a class="tog" href="javascript:toggleblock('cep_abs')">abstract / 
-							  <a class="tog" href="javascript:toggleblock('cep_bib')">bibtex</a>
-							  <br>
-							  <br>
-						  		<a href="https://x.com/__z__9/status/1797770731499225583" target="_blank"><img alt="Twitter" src="https://img.shields.io/badge/Thread-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" width="70"></a>
-								  <a href="https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9784087597028682083" target="_blank"><img src="https://img.shields.io/badge/Citations-7-lightgrey.svg?style=social&logo=Google Scholar"></a>
-							  <p align="justify">
-								<i id="cep_abs">
-									Diffusion models (DMs) have shown remarkable capabilities in generating realistic high-quality images, audios, and videos. They benefit significantly from extensive pre-training on large-scale datasets, including web-crawled data with paired data and conditions, such as image-text and image-class pairs. Despite rigorous filtering, these pre-training datasets often inevitably contain corrupted pairs where conditions do not accurately describe the data. This paper presents the first comprehensive study on the impact of such corruption in pre-training data of DMs. We synthetically corrupt ImageNet-1K and CC3M to pre-train and evaluate over 50 conditional DMs. Our empirical findings reveal that various types of slight corruption in pre-training can significantly enhance the quality, diversity, and fidelity of the generated images across different DMs, both during pre-training and downstream adaptation stages. Theoretically, we consider a Gaussian mixture model and prove that slight corruption in the condition leads to higher entropy and a reduced 2-Wasserstein distance to the ground truth of the data distribution generated by the corruptly trained DMs. Inspired by our analysis, we propose a simple method to improve the training of DMs on practical datasets by adding condition embedding perturbations (CEP). CEP significantly improves the performance of various DMs in both pre-training and downstream tasks. We hope that our study provides new insights into understanding the data and pre-training processes of DMs.
-								</i>
-							  </p>
-							 
-							<bibtext xml:space="preserve" id="cep_bib">
-								@misc{chen2024slight,
-									title={Slight Corruption in Pre-training Data Makes Better Diffusion Models}, 
-									author={Hao Chen and Yujin Han and Diganta Misra and Xiang Li and Kai Hu and Difan Zou and Masashi Sugiyama and Jindong Wang and Bhiksha Raj},
-									year={2024},
-									eprint={2405.20494},
-									archivePrefix={arXiv},
-									primaryClass={cs.CV}
-							  }	
-								</bibtext> 
-							<br>
-							</div>        
-							<script language="JavaScript">hideblock('cep_abs');hideblock('cep_bib');</script>
-					</td>
-					</tr>
-
 					<tr class="therow1 therow6" style="">
-						<td width="15%" valign="center" align="center"><img src="images/hypalign.png" alt="nthu" width="350" height="250"></td>
+						<td width="15%" valign="center" align="center"><img src="images/hyma.jpg" alt="nthu" width="500" height="200"></td>
 						</td>
 						<td width="85%" style="padding:20px;vertical-align:middle">
 							  <a class="tog" href="#hyperalign">
-								<papertitle>Hyper-Align: Efficient Modality Alignment via Hypernetworks &emsp14; <span style="color:red">New!</span></papertitle>
+								<papertitle>(Almost) Free Modality Alignment of Foundation Models &emsp14; <span style="color:red">New!</span></papertitle>
 							  </a>
 							  <br>
 							  <a href="https://jaisidhsingh.github.io/" target="_blank">Jaisidh Singh</a>, 
@@ -620,7 +722,7 @@
 								  <a class="tog" href="javascript:toggleblock('hyperalign_bib')">bibtex</a> 
 								  <p align="justify">
 									<i id="hyperalign_abs">
-										Modern approaches to constructing multimodal models involve learning specialized modules known as connectors that align the representations of different unimodal models (for example, VLM – a combination of the Vision modality model and the Language modality model). However, due to the vast scale of multimodal pre-training datasets and large individual models, aligning representations across various pre-trained model combinations becomes computationally expensive. This challenge is further compounded by the frequent release of new models. To address this, we propose a novel method for aligning N combinations of pre-trained models using a hypernetwork called ``Hyper-Align", that approximates the weights of all possible connectors within a fixed compute budget, regardless of N. Our approach is computationally efficient, further retains the performance of multimodal tasks, matching or surpassing that of independently trained pairwise connectors. For instance, Hyper-Align finds the best possible unimodal pair configuration and subsequently generates their multimodal connector weights while being ≈8x cheaper in terms of FLOP cost compared to state-of-the-art baselines.
+										Foundation multi-modal models are often designed by stitching of multiple existing pretrained uni-modal models: for example, an image classifier with an autoregressive text model. This stitching process is performed by training a connector module that aims to align the representation-representation or representation-input spaces of these uni-modal models. However, given the complexity of training such connectors on large scale web-based datasets coupled with the ever-increasing number of available pretrained uni-modal models, the task of uni-modal models selection and subsequent connector module training becomes computationally demanding. To address this under-studied critical problem, we propose Hyma, a novel all-in-one solution for optimal uni-modal model selection and connector training by leveraging hypernetworks. Specifically, our framework utilizes the parameter prediction capability of a hypernetwork to obtain jointly trained connector modules for N x M combinations of uni-modal models. In our experiments, Hyma reduces the optimal uni-modal model pair search cost by 11x on average, while matching the ranking and trained connector performance obtained via grid search across a suite of diverse multi-modal benchmarks.
 									</i>
 								  </p>
 								  <bibtext xml:space="preserve" id="hyperalign_bib">
@@ -636,12 +738,218 @@
 						</td>
 						</tr>
 
+				<tr class="therow1 therow3" style="">
+					<td width="15%" valign="center" align="center"><img src="https://avatars.githubusercontent.com/u/145158135?s=280&v=4" alt="nthu" width="180" height="180"></td>
+					</td>
+					<td width="85%" style="padding:20px;vertical-align:middle">
+						  <a class="tog" href="#mit2024">
+							<papertitle>Consent in Crisis: The Rapid Decline of the AI Data Commons</papertitle>
+						  </a>
+						  <br>
+						  <strong>Diganta Misra</strong>,
+						  Multiple authors
+						  <br>
+						  <p></p>
+						  <em>NeurIPS D&B track, 2024</em>
+						  <div class="paper" id="mit2024">
+							<a class="tog" href="https://www.dataprovenance.org/" target="_blank">Data Provenence Institute</a> /
+							<a href="https://arxiv.org/abs/2407.14933" target="_blank">paper</a> /
+							  <a class="tog" href="javascript:toggleblock('mit_abs')">abstract</a> / 
+							  <a class="tog" href="javascript:toggleblock('mit_bib')">bibtex</a>
+							  <p align="justify">
+								<i id="mit_abs">
+									General-purpose artificial intelligence (AI) systems are built on massive swathes of public web data, assembled into corpora such as C4, RefinedWeb, and Dolma. To our knowledge, we conduct the first, large-scale, longitudinal audit of the consent protocols for the web domains underlying AI training corpora. Our audit of 14,000 web domains provides an expansive view of crawlable web data and how codified data use preferences are changing over time. We observe a proliferation of AI-specific clauses to limit use, acute differences in restrictions on AI developers, as well as general inconsistencies between websites' expressed intentions in their Terms of Service and their robots.txt. We diagnose these as symptoms of ineffective web protocols, not designed to cope with the widespread re-purposing of the internet for AI. Our longitudinal analyses show that in a single year (2023-2024) there has been a rapid crescendo of data restrictions from web sources, rendering ~5%+ of all tokens in C4, or 28%+ of the most actively maintained, critical sources in C4, fully restricted from use. For Terms of Service crawling restrictions, a full 45% of C4 is now restricted. If respected or enforced, these restrictions are rapidly biasing the diversity, freshness, and scaling laws for general-purpose AI systems. We hope to illustrate the emerging crises in data consent, for both developers and creators. The foreclosure of much of the open web will impact not only commercial AI, but also non-commercial AI and academic research.
+								</i>
+							  </p>
+							  <bibtext xml:space="preserve" id="mit_bib">
+								@misc{longpre2024consentcrisisrapiddecline,
+									title={Consent in Crisis: The Rapid Decline of the AI Data Commons}, 
+									author={Shayne Longpre and Robert Mahari and Ariel Lee and Campbell Lund and Hamidah Oderinwale and William Brannon and Nayan Saxena and Naana Obeng-Marnu and Tobin South and Cole Hunter and Kevin Klyman and Christopher Klamm and Hailey Schoelkopf and Nikhil Singh and Manuel Cherep and Ahmad Anis and An Dinh and Caroline Chitongo and Da Yin and Damien Sileo and Deividas Mataciunas and Diganta Misra and Emad Alghamdi and Enrico Shippole and Jianguo Zhang and Joanna Materzynska and Kun Qian and Kush Tiwary and Lester Miranda and Manan Dey and Minnie Liang and Mohammed Hamdy and Niklas Muennighoff and Seonghyeon Ye and Seungone Kim and Shrestha Mohanty and Vipul Gupta and Vivek Sharma and Vu Minh Chien and Xuhui Zhou and Yizhi Li and Caiming Xiong and Luis Villa and Stella Biderman and Hanlin Li and Daphne Ippolito and Sara Hooker and Jad Kabbara and Sandy Pentland},
+									year={2024},
+									eprint={2407.14933},
+									archivePrefix={arXiv},
+									primaryClass={cs.CL},
+									url={https://arxiv.org/abs/2407.14933}, 
+							  	}	
+								</bibtext>
+		
+							<a href="https://scholar.google.com/scholar?oi=bibs&hl=en&cites=593019343386393612" target="_blank"><img src="https://img.shields.io/badge/Citations-43-lightgrey.svg?style=social&logo=Google Scholar"></a>
+							<br>
+							<br>
+							<span style="color:rgb(200, 0, 255)">Media Coverage</span>:
+							<br>
+							<br>
+							<a href="https://www.nytimes.com/2024/07/19/technology/ai-data-restrictions.html" target="_blank"><img src="images/nyt.jpg" width="30px"></a>
+							&emsp13;
+							<a href="https://observer.com/2024/07/ai-training-data-crisis/" target="_blank"><img src="https://pbs.twimg.com/profile_images/1017384553646841859/TgR1X0KS_400x400.jpg" width="40px"></a>
+							&emsp13;
+							<a href="https://x.com/YahooFinance/status/1823838256128995684" target="_blank"><img src="https://s.yimg.com/uu/api/res/1.2/l_wEBH56oWboJLadyoDWTg--~B/aD02NDg7dz02NDg7YXBwaWQ9eXRhY2h5b24-/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2019-09/1f16fbf0-de0a-11e9-9af9-77bfe97840a9" width="40px"></a>
+							&emsp13;
+							<a href="https://x.com/mozilla/status/1816193134788825342" target="_blank"><img src="https://cdn.worldvectorlogo.com/logos/mozilla-foundation.svg" width="45px"></a>
+							&emsp13;
+							<a href="https://www.404media.co/websites-are-blocking-the-wrong-ai-scrapers-because-ai-companies-keep-making-new-ones/" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS60fft9itll9BA0wQICLqOrlNo4fLuNcYFfA&s" width="95px"></a>
+							<br>
+							<br>
+							<a href="https://futurism.com/the-byte/ai-companies-losing-training-data" target="_blank"><img src="https://futurism.com/schema/WebsiteFuturism.jpg" width="45px"></a>
+							&emsp13;
+							<a href="https://flowingdata.com/2024/08/01/decline-in-data-for-ai-bots-to-scrape/" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsLveFv6AzrLJPzscA7fi7M9AIAQU8ij53Kg&s" width="45px"></a>
+							&emsp13;
+							<a href="https://www.datanami.com/2024/07/26/are-we-running-out-of-training-data-for-genai/" target="_blank"><img src="https://voxuspr.com/wp-content/uploads/2024/01/6578e93a1688079101428c12_ai-media-logo-9-datanami.png" width="85px"></a>
+							&emsp13;
+							<a href="https://www.fortuneidn.com/tech/bayu/studi-mit-sebut-data-untuk-latih-teknologi-ai-akan-habis?page=all" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Fortune_Indonesia_Logo.webp" width="85px"></a>
+							</div>             
+							<script language="JavaScript">hideblock('mit_bib');hideblock('mit_abs');</script>
+					</td>
+					</tr>
+
+
+					<tr class="therow1 therow3" style="">
+						<td width="15%" valign="center" align="center"><img src="https://avatars.githubusercontent.com/u/145158135?s=280&v=4" alt="nthu" width="180" height="180"></td>
+						</td>
+						<td width="85%" style="padding:20px;vertical-align:middle">
+							  <a class="tog" href="#mit2025">
+								<papertitle>Bridging the Data Provenance Gap Across Text, Speech and Video</papertitle>
+							  </a>
+							  <br>
+							  <strong>Diganta Misra</strong>,
+							  Multiple authors
+							  <br>
+							  <p></p>
+							  <em>ICLR 2025</em>
+							  <div class="paper" id="mit2025">
+								<a class="tog" href="https://www.dataprovenance.org/" target="_blank">Data Provenence Institute</a> /
+								<a href="https://arxiv.org/abs/2412.17847" target="_blank">paper</a> /
+								  <a class="tog" href="javascript:toggleblock('mit25_abs')">abstract</a> / 
+								  <a class="tog" href="javascript:toggleblock('mit25_bib')">bibtex</a>
+								  <p align="justify">
+									<i id="mit25_abs">
+										Progress in AI is driven largely by the scale and quality of training data. Despite this, there is a deficit of empirical analysis examining the attributes of well-established datasets beyond text. In this work we conduct the largest and first-of-its-kind longitudinal audit across modalities--popular text, speech, and video datasets--from their detailed sourcing trends and use restrictions to their geographical and linguistic representation. Our manual analysis covers nearly 4000 public datasets between 1990-2024, spanning 608 languages, 798 sources, 659 organizations, and 67 countries. We find that multimodal machine learning applications have overwhelmingly turned to web-crawled, synthetic, and social media platforms, such as YouTube, for their training sets, eclipsing all other sources since 2019. Secondly, tracing the chain of dataset derivations we find that while less than 33% of datasets are restrictively licensed, over 80% of the source content in widely-used text, speech, and video datasets, carry non-commercial restrictions. Finally, counter to the rising number of languages and geographies represented in public AI training datasets, our audit demonstrates measures of relative geographical and multilingual representation have failed to significantly improve their coverage since 2013. We believe the breadth of our audit enables us to empirically examine trends in data sourcing, restrictions, and Western-centricity at an ecosystem-level, and that visibility into these questions are essential to progress in responsible AI. As a contribution to ongoing improvements in dataset transparency and responsible use, we release our entire multimodal audit, allowing practitioners to trace data provenance across text, speech, and video.
+									</i>
+								  </p>
+								  <bibtext xml:space="preserve" id="mit25_bib">
+									@misc{longpre2024bridgingdataprovenancegap,
+										title={Bridging the Data Provenance Gap Across Text, Speech and Video}, 
+										author={Shayne Longpre and Nikhil Singh and Manuel Cherep and Kushagra Tiwary and Joanna Materzynska and William Brannon and Robert Mahari and Manan Dey and Mohammed Hamdy and Nayan Saxena and Ahmad Mustafa Anis and Emad A. Alghamdi and Vu Minh Chien and Naana Obeng-Marnu and Da Yin and Kun Qian and Yizhi Li and Minnie Liang and An Dinh and Shrestha Mohanty and Deividas Mataciunas and Tobin South and Jianguo Zhang and Ariel N. Lee and Campbell S. Lund and Christopher Klamm and Damien Sileo and Diganta Misra and Enrico Shippole and Kevin Klyman and Lester JV Miranda and Niklas Muennighoff and Seonghyeon Ye and Seungone Kim and Vipul Gupta and Vivek Sharma and Xuhui Zhou and Caiming Xiong and Luis Villa and Stella Biderman and Alex Pentland and Sara Hooker and Jad Kabbara},
+										year={2024},
+										eprint={2412.17847},
+										archivePrefix={arXiv},
+										primaryClass={cs.AI},
+										url={https://arxiv.org/abs/2412.17847}, 
+								  }
+									</bibtext>
+
+								<a href="https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17924853915423055051" target="_blank"><img src="https://img.shields.io/badge/Citations-2-lightgrey.svg?style=social&logo=Google Scholar"></a>
+								<br>
+								<br>
+	
+								<span style="color:rgb(200, 0, 255)">Media Coverage</span>:
+								<br>
+								<br>
+								<a href="https://www.technologyreview.com/2024/12/18/1108796/this-is-where-the-data-to-build-ai-comes-from/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/8/86/MIT_Technology_Review_modern_logo.svg" width="70px"></a>
+								</div>             
+								<script language="JavaScript">hideblock('mit25_bib');hideblock('mit25_abs');</script>
+						</td>
+						</tr>
+
+						<tr class="therow1 therow3" style="">
+							<td width="15%" valign="center" align="center"><img src="images/mmteb_overview_wide_centered.png" alt="nthu" width="240" height="120"></td>
+							</td>
+							<td width="85%" style="padding:20px;vertical-align:middle">
+								  <a class="tog" href="#mmteb">
+									<papertitle>MMTEB: Massive Multilingual Text Embedding Benchmark</papertitle>
+								  </a>
+								  <br>
+								  <strong>Diganta Misra</strong>,
+								  Multiple authors
+								  <br>
+								  <p></p>
+								  <em>ICLR 2025</em>
+								  <div class="paper" id="mmteb">
+									<a href="https://openreview.net/forum?id=zl3pfz4VCV" target="_blank">paper</a> /
+									  <a class="tog" href="javascript:toggleblock('mmteb_abs')">abstract</a> /
+									  <a class="tog" href="javascript:toggleblock('mmteb_bib')">bibtex</a>
+									  <p align="justify">
+										<i id="mmteb_abs">
+											Text embeddings are typically evaluated on a narrow set of tasks, limited in terms of languages, domains, and task types. To circumvent this limitation and to provide a more comprehensive evaluation, we introduce the Massive Multilingual Text Embedding Benchmark (MMTEB) -- a large-scale community-driven initiative expanding MTEB to over 500 \textit{quality controlled} evaluation tasks across 1,000+ languages. MMTEB includes a wide range of challenging novel tasks such as instruction following, long-document retrieval, and code retrieval, and represents the largest multilingual collection of evaluation tasks for embedding models to date. We use this collection to construct multiple highly multilingual benchmarks. We evaluate a representative set of models on these benchmarks. Our findings indicate that, while LLM-based models can achieve state-of-the-art performance on a subset of languages, the best-performing publicly available model across languages is the notably smaller, multilingual-e5-large-instruct. Massive benchmarks often impose high computational demands, limiting accessibility, particularly for low-resource communities. To address this, we downsample tasks based on inter-task correlation (i.e., selecting only a diverse set of tasks) while preserving relative rankings. We further optimize tasks such as retrieval by sampling hard negatives, creating smaller but effective splits. These optimizations allow us to introduce benchmarks at a significantly lower computational cost. For instance, we introduce a new zero-shot English benchmark that maintains a similar ordering at a fraction of the cost.
+										</i>
+									  </p>
+									  <bibtext xml:space="preserve" id="mmteb_bib">
+										@misc{enevoldsen2025mmtebmassivemultilingualtext,
+											title={MMTEB: Massive Multilingual Text Embedding Benchmark}, 
+											author={Kenneth Enevoldsen and Isaac Chung and Imene Kerboua and Márton Kardos and Ashwin Mathur and David Stap and Jay Gala and Wissam Siblini and Dominik Krzemiński and Genta Indra Winata and Saba Sturua and Saiteja Utpala and Mathieu Ciancone and Marion Schaeffer and Gabriel Sequeira and Diganta Misra and Shreeya Dhakal and Jonathan Rystrøm and Roman Solomatin and Ömer Çağatan and Akash Kundu and Martin Bernstorff and Shitao Xiao and Akshita Sukhlecha and Bhavish Pahwa and Rafał Poświata and Kranthi Kiran GV and Shawon Ashraf and Daniel Auras and Björn Plüster and Jan Philipp Harries and Loïc Magne and Isabelle Mohr and Mariya Hendriksen and Dawei Zhu and Hippolyte Gisserot-Boukhlef and Tom Aarsen and Jan Kostkan and Konrad Wojtasik and Taemin Lee and Marek Šuppa and Crystina Zhang and Roberta Rocca and Mohammed Hamdy and Andrianos Michail and John Yang and Manuel Faysse and Aleksei Vatolin and Nandan Thakur and Manan Dey and Dipam Vasani and Pranjal Chitale and Simone Tedeschi and Nguyen Tai and Artem Snegirev and Michael Günther and Mengzhou Xia and Weijia Shi and Xing Han Lù and Jordan Clive and Gayatri Krishnakumar and Anna Maksimova and Silvan Wehrli and Maria Tikhonova and Henil Panchal and Aleksandr Abramov and Malte Ostendorff and Zheng Liu and Simon Clematide and Lester James Miranda and Alena Fenogenova and Guangyu Song and Ruqiya Bin Safi and Wen-Ding Li and Alessia Borghini and Federico Cassano and Hongjin Su and Jimmy Lin and Howard Yen and Lasse Hansen and Sara Hooker and Chenghao Xiao and Vaibhav Adlakha and Orion Weller and Siva Reddy and Niklas Muennighoff},
+											year={2025},
+											eprint={2502.13595},
+											archivePrefix={arXiv},
+											primaryClass={cs.CL},
+											url={https://arxiv.org/abs/2502.13595}, 
+									  }
+										</bibtext>
+				
+									<a href="https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4163901252801811115" target="_blank"><img src="https://img.shields.io/badge/Citations-5-lightgrey.svg?style=social&logo=Google Scholar"></a>
+									  <br>
+									</div>             
+									<script language="JavaScript">hideblock('mmteb_abs');hideblock('mmteb_bib');</script>
+							</td>
+							</tr>
+	
+				<tr class="therow1 therow3" style="">
+				<td width="15%" valign="center" align="center"><img src="images/bb.png" alt="nthu" width="230" height="230"></td>
+				</td>
+				<td width="85%" style="padding:20px;vertical-align:middle">
+					  <a class="tog" href="#big2022">
+						<papertitle>Beyond the Imitation Game: Quantifying and extrapolating the capabilities of language models</papertitle>
+					  </a>
+					  <br>
+					  <strong>Diganta Misra</strong>,
+					  <a href="https://in.linkedin.com/in/mukundvarmat" target="_blank">Mukund Varma T.</a>,
+					  Multiple authors
+					  <br>
+					  <p></p>
+					  <em>TMLR, 2023</em>
+					  <br>
+					  <em>TMLR Finalist for Outstanding Certification</em>
+					  <br>
+					  <em>ICLR 2025</em>
+					  <div class="paper" id="big2022">
+						<a class="tog" href="https://github.com/google/BIG-bench" target="_blank">project</a> /
+						<a href="https://arxiv.org/abs/2206.04615" target="_blank">paper</a> /
+						  <a class="tog" href="javascript:toggleblock('big_abs')">abstract</a> / 
+						  <a class="tog" href="javascript:toggleblock('big_bib')">bibtex</a>
+						  <p align="justify">
+							<i id="big_abs">
+								Language models demonstrate both quantitative improvement and new qualitative capabilities with increasing scale. Despite their potentially transformative impact, these new capabilities are as yet poorly characterized. In order to inform future research, prepare for disruptive new model capabilities, and ameliorate socially harmful effects, it is vital that we understand the present and near-future capabilities and limitations of language models. To address this challenge, we introduce the Beyond the Imitation Game benchmark (BIG-bench). BIG-bench currently consists of 204 tasks, contributed by 442 authors across 132 institutions. Task topics are diverse, drawing problems from linguistics, childhood development, math, common-sense reasoning, biology, physics, social bias, software development, and beyond. BIG-bench focuses on tasks that are believed to be beyond the capabilities of current language models. We evaluate the behavior of OpenAI's GPT models, Google-internal dense transformer architectures, and Switch-style sparse transformers on BIG-bench, across model sizes spanning millions to hundreds of billions of parameters. In addition, a team of human expert raters performed all tasks in order to provide a strong baseline. Findings include: model performance and calibration both improve with scale, but are poor in absolute terms (and when compared with rater performance); performance is remarkably similar across model classes, though with benefits from sparsity; tasks that improve gradually and predictably commonly involve a large knowledge or memorization component, whereas tasks that exhibit "breakthrough" behavior at a critical scale often involve multiple steps or components, or brittle metrics; social bias typically increases with scale in settings with ambiguous context, but this can be improved with prompting.
+							</i>
+						  </p>
+						  <bibtext xml:space="preserve" id="big_bib">
+							@article{srivastava2022beyond,<br />
+								title   = {Beyond the Imitation Game: Quantifying and extrapolating the capabilities of language models},<br />
+								author  = {Aarohi Srivastava and Abhinav Rastogi and Abhishek Rao and Abu Awal Md Shoeb and Abubakar Abid and Adam Fisch and Adam R. Brown and Adam Santoro and Aditya Gupta and Adrià Garriga-Alonso and Agnieszka Kluska and Aitor Lewkowycz and Akshat Agarwal and Alethea Power and Alex Ray and Alex Warstadt and Alexander W. Kocurek and Ali Safaya and Ali Tazarv and Alice Xiang and Alicia Parrish and Allen Nie and Aman Hussain and Amanda Askell and Amanda Dsouza and Ameet Rahane and Anantharaman S. Iyer and Anders Andreassen and Andrea Santilli and Andreas Stuhlmüller and Andrew Dai and Andrew La and Andrew Lampinen and Andy Zou and Angela Jiang and Angelica Chen and Anh Vuong and Animesh Gupta and Anna Gottardi and Antonio Norelli and Anu Venkatesh and Arash Gholamidavoodi and Arfa Tabassum and Arul Menezes and Arun Kirubarajan and Asher Mullokandov and Ashish Sabharwal and Austin Herrick and Avia Efrat and Aykut Erdem and Ayla Karakaş and B. Ryan Roberts and Bao Sheng Loe and Barret Zoph and Bartłomiej Bojanowski and Batuhan Özyurt and Behnam Hedayatnia and Behnam Neyshabur and Benjamin Inden and Benno Stein and Berk Ekmekci and Bill Yuchen Lin and Blake Howald and Cameron Diao and Cameron Dour and Catherine Stinson and Cedrick Argueta and César Ferri Ramírez and Chandan Singh and Charles Rathkopf and Chenlin Meng and Chitta Baral and Chiyu Wu and Chris Callison-Burch and Chris Waites and Christian Voigt and Christopher D. Manning and Christopher Potts and Cindy Ramirez and Clara E. Rivera and Clemencia Siro and Colin Raffel and Courtney Ashcraft and Cristina Garbacea and Damien Sileo and Dan Garrette and Dan Hendrycks and Dan Kilman and Dan Roth and Daniel Freeman and Daniel Khashabi and Daniel Levy and Daniel Moseguí González and Danny Hernandez and Danqi Chen and Daphne Ippolito and Dar Gilboa and David Dohan and David Drakard and David Jurgens and Debajyoti Datta and Deep Ganguli and Denis Emelin and Denis Kleyko and Deniz Yuret and Derek Chen and Derek Tam and Dieuwke Hupkes and Diganta Misra and Dilyar Buzan and Dimitri Coelho Mollo and Diyi Yang and Dong-Ho Lee and Ekaterina Shutova and Ekin Dogus Cubuk and Elad Segal and Eleanor Hagerman and Elizabeth Barnes and Elizabeth Donoway and Ellie Pavlick and Emanuele Rodola and Emma Lam and Eric Chu and Eric Tang and Erkut Erdem and Ernie Chang and Ethan A. Chi and Ethan Dyer and Ethan Jerzak and Ethan Kim and Eunice Engefu Manyasi and Evgenii Zheltonozhskii and Fanyue Xia and Fatemeh Siar and Fernando Martínez-Plumed and Francesca Happé and Francois Chollet and Frieda Rong and Gaurav Mishra and Genta Indra Winata and Gerard de Melo and Germán Kruszewski and Giambattista Parascandolo and Giorgio Mariani and Gloria Wang and Gonzalo Jaimovitch-López and Gregor Betz and Guy Gur-Ari and Hana Galijasevic and Hannah Kim and Hannah Rashkin and Hannaneh Hajishirzi and Harsh Mehta and Hayden Bogar and Henry Shevlin and Hinrich Schütze and Hiromu Yakura and Hongming Zhang and Hugh Mee Wong and Ian Ng and Isaac Noble and Jaap Jumelet and Jack Geissinger and Jackson Kernion and Jacob Hilton and Jaehoon Lee and Jaime Fernández Fisac and James B. Simon and James Koppel and James Zheng and James Zou and Jan Kocoń and Jana Thompson and Jared Kaplan and Jarema Radom and Jascha Sohl-Dickstein and Jason Phang and Jason Wei and Jason Yosinski and Jekaterina Novikova and Jelle Bosscher and Jennifer Marsh and Jeremy Kim and Jeroen Taal and Jesse Engel and Jesujoba Alabi and Jiacheng Xu and Jiaming Song and Jillian Tang and Joan Waweru and John Burden and John Miller and John U. Balis and Jonathan Berant and Jörg Frohberg and Jos Rozen and Jose Hernandez-Orallo and Joseph Boudeman and Joseph Jones and Joshua B. Tenenbaum and Joshua S. Rule and Joyce Chua and Kamil Kanclerz and Karen Livescu and Karl Krauth and Karthik Gopalakrishnan and Katerina Ignatyeva and Katja Markert and Kaustubh D. Dhole and Kevin Gimpel and Kevin Omondi and Kory Mathewson and Kristen Chiafullo and Ksenia Shkaruta and Kumar Shridhar and Kyle McDonell and Kyle Richardson and Laria Reynolds and Leo Gao and Li Zhang and Liam Dugan and Lianhui Qin and Lidia Contreras-Ochando and Louis-Philippe Morency and Luca Moschella and Lucas Lam and Lucy Noble and Ludwig Schmidt and Luheng He and Luis Oliveros Colón and Luke Metz and Lütfi Kerem Şenel and Maarten Bosma and Maarten Sap and Maartje ter Hoeve and Madotto Andrea and Maheen Farooqi and Manaal Faruqui and Mantas Mazeika and Marco Baturan and Marco Marelli and Marco Maru and Maria Jose Ramírez Quintana and Marie Tolkiehn and Mario Giulianelli and Martha Lewis and Martin Potthast and Matthew L. Leavitt and Matthias Hagen and Mátyás Schubert and Medina Orduna Baitemirova and Melody Arnaud and Melvin McElrath and Michael A. Yee and Michael Cohen and Michael Gu and Michael Ivanitskiy and Michael Starritt and Michael Strube and Michał Swędrowski and Michele Bevilacqua and Michihiro Yasunaga and Mihir Kale and Mike Cain and Mimee Xu and Mirac Suzgun and Mo Tiwari and Mohit Bansal and Moin Aminnaseri and Mor Geva and Mozhdeh Gheini and Mukund Varma T and Nanyun Peng and Nathan Chi and Nayeon Lee and Neta Gur-Ari Krakover and Nicholas Cameron and Nicholas Roberts and Nick Doiron and Nikita Nangia and Niklas Deckers and Niklas Muennighoff and Nitish Shirish Keskar and Niveditha S. Iyer and Noah Constant and Noah Fiedel and Nuan Wen and Oliver Zhang and Omar Agha and Omar Elbaghdadi and Omer Levy and Owain Evans and Pablo Antonio Moreno Casares and Parth Doshi and Pascale Fung and Paul Pu Liang and Paul Vicol and Pegah Alipoormolabashi and Peiyuan Liao and Percy Liang and Peter Chang and Peter Eckersley and Phu Mon Htut and Pinyu Hwang and Piotr Miłkowski and Piyush Patil and Pouya Pezeshkpour and Priti Oli and Qiaozhu Mei and Qing Lyu and Qinlang Chen and Rabin Banjade and Rachel Etta Rudolph and Raefer Gabriel and Rahel Habacker and Ramón Risco Delgado and Raphaël Millière and Rhythm Garg and Richard Barnes and Rif A. Saurous and Riku Arakawa and Robbe Raymaekers and Robert Frank and Rohan Sikand and Roman Novak and Roman Sitelew and Ronan LeBras and Rosanne Liu and Rowan Jacobs and Rui Zhang and Ruslan Salakhutdinov and Ryan Chi and Ryan Lee and Ryan Stovall and Ryan Teehan and Rylan Yang and Sahib Singh and Saif M. Mohammad and Sajant Anand and Sam Dillavou and Sam Shleifer and Sam Wiseman and Samuel Gruetter and Samuel R. Bowman and Samuel S. Schoenholz and Sanghyun Han and Sanjeev Kwatra and Sarah A. Rous and Sarik Ghazarian and Sayan Ghosh and Sean Casey and Sebastian Bischoff and Sebastian Gehrmann and Sebastian Schuster and Sepideh Sadeghi and Shadi Hamdan and Sharon Zhou and Shashank Srivastava and Sherry Shi and Shikhar Singh and Shima Asaadi and Shixiang Shane Gu and Shubh Pachchigar and Shubham Toshniwal and Shyam Upadhyay and Shyamolima and Debnath and Siamak Shakeri and Simon Thormeyer and Simone Melzi and Siva Reddy and Sneha Priscilla Makini and Soo-Hwan Lee and Spencer Torene and Sriharsha Hatwar and Stanislas Dehaene and Stefan Divic and Stefano Ermon and Stella Biderman and Stephanie Lin and Stephen Prasad and Steven T. Piantadosi and Stuart M. Shieber and Summer Misherghi and Svetlana Kiritchenko and Swaroop Mishra and Tal Linzen and Tal Schuster and Tao Li and Tao Yu and Tariq Ali and Tatsu Hashimoto and Te-Lin Wu and Théo Desbordes and Theodore Rothschild and Thomas Phan and Tianle Wang and Tiberius Nkinyili and Timo Schick and Timofei Kornev and Timothy Telleen-Lawton and Titus Tunduny and Tobias Gerstenberg and Trenton Chang and Trishala Neeraj and Tushar Khot and Tyler Shultz and Uri Shaham and Vedant Misra and Vera Demberg and Victoria Nyamai and Vikas Raunak and Vinay Ramasesh and Vinay Uday Prabhu and Vishakh Padmakumar and Vivek Srikumar and William Fedus and William Saunders and William Zhang and Wout Vossen and Xiang Ren and Xiaoyu Tong and Xinyi Wu and Xudong Shen and Yadollah Yaghoobzadeh and Yair Lakretz and Yangqiu Song and Yasaman Bahri and Yejin Choi and Yichi Yang and Yiding Hao and Yifu Chen and Yonatan Belinkov and Yu Hou and Yufang Hou and Yuntao Bai and Zachary Seid and Zhao Xinran and Zhuoye Zhao and Zijian Wang and Zijie J. Wang and Zirui Wang and Ziyi Wu},<br />
+								year    = {2022},<br />
+								journal = {arXiv preprint arXiv: Arxiv-2206.04615}<br />
+							  }
+								
+							</bibtext>
+	
+	
+						<a href="https://github.com/google/BIG-bench/tree/main/bigbench/benchmark_tasks/tense" target="_blank">Tense task</a>
+						<br>
+						<br>
+						<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/google/BIG-bench?style=social">
+						&emsp;
+						<img alt="GitHub forks" src="https://img.shields.io/github/forks/google/BIG-bench?style=social">
+						&emsp;
+						<a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LwiJwNYAAAAJ&citation_for_view=LwiJwNYAAAAJ:aqlVkmm33-oC" target="_blank"><img src="https://img.shields.io/badge/Citations-1814-lightgrey.svg?style=social&logo=Google Scholar"></a>
+						</div>             
+						<script language="JavaScript">hideblock('big_bib');hideblock('big_abs');</script>
+				</td>
+				</tr>
+
 				<tr class="therow1 therow6" style="">
 					<td width="15%" valign="center" align="center"><img src="images/aurora.png" alt="nthu" width="250" height="250"></td>
 					</td>
 					<td width="85%" style="padding:20px;vertical-align:middle">
 						  <a class="tog" href="#aurora">
-							<papertitle>Aurora-M: The First Open Source Multilingual Language Model Red-teamed according to the U.S. Executive Order &emsp14; <span style="color:red">New!</span></papertitle>
+							<papertitle>Aurora-M: The First Open Source Multilingual Language Model Red-teamed according to the U.S. Executive Order</papertitle>
 						  </a>
 						  <br>
 						  <br>
@@ -757,7 +1065,7 @@
             </td>
             <td width="85%" style="padding:20px;vertical-align:middle">
                   <a class="tog" href="#d2sparse2023">
-                    <papertitle>$\mathcal{D}^2$-Sparse: Navigating the low data learning regime with sparse networks &emsp14; <span style="color:red">New!</span></papertitle>
+                    <papertitle>$\mathcal{D}^2$-Sparse: Navigating the low data learning regime with sparse networks</papertitle>
                   </a>
                   <br>
 				  	<strong>Diganta Misra</strong><sup>*</sup>,
@@ -788,67 +1096,15 @@
                     <script language="JavaScript">hideblock('d2sparse2023_abs');hideblock('d2sparse2023_bib');</script>
             </td>
 			</tr>
-
-			<tr class="therow1 therow6" style="">
-				<td width="15%" valign="center" align="center"><img src="images/IMG_0055-removebg-preview.png" alt="nthu" width="200" height="200"></td>
-				</td>
-				<td width="85%" style="padding:20px;vertical-align:middle">
-					  <a class="tog" href="#cl4code2024">
-						<papertitle><span style="color:rgb(136, 1, 247)">GitChameleon</span>: Unmasking the Version-Switching Capabilities of Code Generation Models &emsp14; <span style="color:red">New!</span></papertitle>
-					  </a>
-					  <br>
-					  	<strong>Diganta Misra</strong><sup>*</sup>,
-						<a href="https://nizarislah.github.io/" target="_blank">Nizar Islah</a><sup>*</sup>,
-						<a href="https://mrcabbage972.github.io/" target="_blank">Victor May</a>,
-						<a href="https://scholar.google.com/citations?user=b7KZuocAAAAJ&hl=en" target="_blank">Brice Rauby</a>,
-						<a href="https://mila.quebec/en/directory/zihan-wang" target="_blank">Zihan Wang</a>,
-					  	<a href="https://justine-gehring.github.io/" target="_blank">Justine Gehring</a>,
-						<a href="http://orvi.altervista.org/" target="_blank">Antonio Orvieto</a>,
-						<a href="https://scholar.google.com/citations?user=4Z8ePskAAAAJ&hl=en" target="_blank">Muawiz Chaudhary</a>,
-						<a href="https://sites.google.com/site/irinarish/" target="_blank">Irina Rish</a>,
-						<a href="https://neuro.plasticit.ai/" target="_blank">Eilif B. Muller</a>,
-						<a href="https://saebrahimi.github.io/" target="_blank">Samira Ebrahimi Kahou</a>,
-						<a href="https://optimass.github.io/" target="_blank">Massimo Caccia</a>
-					  <br>
-					  <p></p>
-					  <em>DMLR @ ICLR, 2024</em>
-					  <br>
-					  <div class="paper" id="cl4code">
-						<a href="https://arxiv.org/abs/2411.05830" target="_blank">paper</a> /
-						  <a class="tog" href="javascript:toggleblock('cl4code_abs')">abstract</a> /
-						  <a class="tog" href="javascript:toggleblock('cl4code_bib')">bibtex</a>
-						  <p align="justify">
-							<i id="cl4code_abs">
-								The rapid evolution of software libraries presents a significant challenge for code generation models, which must adapt to frequent version updates while maintaining compatibility with previous versions. Existing code completion benchmarks often overlook this dynamic aspect, and the one that does consider it relies on static code prediction tasks without execution-based evaluation, offering a limited perspective on a model's practical usability. To address this gap, we introduce GitChameleon, a novel, manually curated dataset comprising 116 Python code completion problems, each conditioned on specific library versions and accompanied by executable unit tests. GitChameleon is designed to rigorously assess the ability of modern large language models (LLMs) to generate version-specific code that is not only syntactically correct but also functionally accurate upon execution. Our comprehensive evaluations reveal that state-of-the-art LLMs struggle with this task; for instance, GPT-4o achieves a pass@10 of only 39.9% (43.7% when provided with error feedback), highlighting the complexity of the problem and the limitations of current models. By providing an execution-based benchmark that emphasizes the dynamic nature of code libraries, GitChameleon serves as a critical tool to advance the development of more adaptable and reliable code generation models. 
-							</i>
-						  </p>
-						<bibtext xml:space="preserve" id="cl4code_bib">
-							@misc{islah2024gitchameleonunmaskingversionswitchingcapabilities,
-								title={GitChameleon: Unmasking the Version-Switching Capabilities of Code Generation Models}, 
-								author={Nizar Islah and Justine Gehring and Diganta Misra and Eilif Muller and Irina Rish and Terry Yue Zhuo and Massimo Caccia},
-								year={2024},
-								eprint={2411.05830},
-								archivePrefix={arXiv},
-								primaryClass={cs.SE},
-								url={https://arxiv.org/abs/2411.05830}, 
-						  }
-						</bibtext>
-						<a href="https://youtu.be/8s1hX6Xw_3Q?si=KlrLv1nIqex2qOHh" target="_blank"><img src="https://img.shields.io/badge/Microsoft Research Talk-red?style=for-the-badge&logo=youtube&logoColor=white"></a>
-						<a href="https://www.youtube.com/watch?v=Ccg4RNTYkVs" target="_blank"><img src="https://img.shields.io/badge/RIKEN AIP 93rd TrustML Young Scientist Seminar-red?style=for-the-badge&logo=youtube&logoColor=white"></a>
-						</div>  
-								<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/NizarIslah/GitChameleon?style=social">
-								&emsp;
-								<a href="https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6694357941698904074,11417814403370446599" target="_blank"><img src="https://img.shields.io/badge/Citations-1-lightgrey.svg?style=social&logo=Google Scholar"></a>
-						<script language="JavaScript">hideblock('cl4code_abs');;hideblock('cl4code_bib');</script>
-				</td>
-				</tr>
+			<br>
+			<br>
 
 				<tr class="therow1 therow4" style="">
-					<td width="15%" valign="center" align="center"><img src="images/CVPR_VP.png" alt="nthu" width="350" height="480"></td>
+					<td width="15%" valign="center" align="center"><img src="images/CVPR_VP.png" alt="nthu" width="320" height="450"></td>
 					</td>
 					<td width="85%" style="padding:20px;vertical-align:middle">
 						  <a class="tog" href="#vp2023">
-							<papertitle>Uncovering the Hidden Cost of Model Compression &emsp14; <span style="color:red">New!</span></papertitle>
+							<papertitle>Uncovering the Hidden Cost of Model Compression</papertitle>
 						  </a>
 						  <br>
 						  <strong>Diganta Misra</strong><sup>*</sup>,
@@ -942,218 +1198,14 @@
 				</tr>
 
 
-				<tr class="therow1 therow3" style="">
-					<td width="15%" valign="center" align="center"><img src="https://avatars.githubusercontent.com/u/145158135?s=280&v=4" alt="nthu" width="180" height="180"></td>
-					</td>
-					<td width="85%" style="padding:20px;vertical-align:middle">
-						  <a class="tog" href="#mit2024">
-							<papertitle>Consent in Crisis: The Rapid Decline of the AI Data Commons  &emsp14; <span style="color:red">New!</span></papertitle>
-						  </a>
-						  <br>
-						  <strong>Diganta Misra</strong>,
-						  Multiple authors
-						  <br>
-						  <p></p>
-						  <em>NeurIPS D&B track, 2024</em>
-						  <div class="paper" id="mit2024">
-							<a class="tog" href="https://www.dataprovenance.org/" target="_blank">Data Provenence Institute</a> /
-							<a href="https://arxiv.org/abs/2407.14933" target="_blank">paper</a> /
-							  <a class="tog" href="javascript:toggleblock('mit_abs')">abstract</a> / 
-							  <a class="tog" href="javascript:toggleblock('mit_bib')">bibtex</a>
-							  <p align="justify">
-								<i id="mit_abs">
-									General-purpose artificial intelligence (AI) systems are built on massive swathes of public web data, assembled into corpora such as C4, RefinedWeb, and Dolma. To our knowledge, we conduct the first, large-scale, longitudinal audit of the consent protocols for the web domains underlying AI training corpora. Our audit of 14,000 web domains provides an expansive view of crawlable web data and how codified data use preferences are changing over time. We observe a proliferation of AI-specific clauses to limit use, acute differences in restrictions on AI developers, as well as general inconsistencies between websites' expressed intentions in their Terms of Service and their robots.txt. We diagnose these as symptoms of ineffective web protocols, not designed to cope with the widespread re-purposing of the internet for AI. Our longitudinal analyses show that in a single year (2023-2024) there has been a rapid crescendo of data restrictions from web sources, rendering ~5%+ of all tokens in C4, or 28%+ of the most actively maintained, critical sources in C4, fully restricted from use. For Terms of Service crawling restrictions, a full 45% of C4 is now restricted. If respected or enforced, these restrictions are rapidly biasing the diversity, freshness, and scaling laws for general-purpose AI systems. We hope to illustrate the emerging crises in data consent, for both developers and creators. The foreclosure of much of the open web will impact not only commercial AI, but also non-commercial AI and academic research.
-								</i>
-							  </p>
-							  <bibtext xml:space="preserve" id="mit_bib">
-								@misc{longpre2024consentcrisisrapiddecline,
-									title={Consent in Crisis: The Rapid Decline of the AI Data Commons}, 
-									author={Shayne Longpre and Robert Mahari and Ariel Lee and Campbell Lund and Hamidah Oderinwale and William Brannon and Nayan Saxena and Naana Obeng-Marnu and Tobin South and Cole Hunter and Kevin Klyman and Christopher Klamm and Hailey Schoelkopf and Nikhil Singh and Manuel Cherep and Ahmad Anis and An Dinh and Caroline Chitongo and Da Yin and Damien Sileo and Deividas Mataciunas and Diganta Misra and Emad Alghamdi and Enrico Shippole and Jianguo Zhang and Joanna Materzynska and Kun Qian and Kush Tiwary and Lester Miranda and Manan Dey and Minnie Liang and Mohammed Hamdy and Niklas Muennighoff and Seonghyeon Ye and Seungone Kim and Shrestha Mohanty and Vipul Gupta and Vivek Sharma and Vu Minh Chien and Xuhui Zhou and Yizhi Li and Caiming Xiong and Luis Villa and Stella Biderman and Hanlin Li and Daphne Ippolito and Sara Hooker and Jad Kabbara and Sandy Pentland},
-									year={2024},
-									eprint={2407.14933},
-									archivePrefix={arXiv},
-									primaryClass={cs.CL},
-									url={https://arxiv.org/abs/2407.14933}, 
-							  	}	
-								</bibtext>
-		
-							<a href="https://scholar.google.com/scholar?oi=bibs&hl=en&cites=593019343386393612" target="_blank"><img src="https://img.shields.io/badge/Citations-43-lightgrey.svg?style=social&logo=Google Scholar"></a>
-							<br>
-							<br>
-							<span style="color:rgb(200, 0, 255)">Media Coverage</span>:
-							<br>
-							<br>
-							<a href="https://www.nytimes.com/2024/07/19/technology/ai-data-restrictions.html" target="_blank"><img src="images/nyt.jpg" width="30px"></a>
-							&emsp13;
-							<a href="https://observer.com/2024/07/ai-training-data-crisis/" target="_blank"><img src="https://pbs.twimg.com/profile_images/1017384553646841859/TgR1X0KS_400x400.jpg" width="40px"></a>
-							&emsp13;
-							<a href="https://x.com/YahooFinance/status/1823838256128995684" target="_blank"><img src="https://s.yimg.com/uu/api/res/1.2/l_wEBH56oWboJLadyoDWTg--~B/aD02NDg7dz02NDg7YXBwaWQ9eXRhY2h5b24-/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2019-09/1f16fbf0-de0a-11e9-9af9-77bfe97840a9" width="40px"></a>
-							&emsp13;
-							<a href="https://x.com/mozilla/status/1816193134788825342" target="_blank"><img src="https://cdn.worldvectorlogo.com/logos/mozilla-foundation.svg" width="45px"></a>
-							&emsp13;
-							<a href="https://www.404media.co/websites-are-blocking-the-wrong-ai-scrapers-because-ai-companies-keep-making-new-ones/" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS60fft9itll9BA0wQICLqOrlNo4fLuNcYFfA&s" width="95px"></a>
-							<br>
-							<br>
-							<a href="https://futurism.com/the-byte/ai-companies-losing-training-data" target="_blank"><img src="https://futurism.com/schema/WebsiteFuturism.jpg" width="45px"></a>
-							&emsp13;
-							<a href="https://flowingdata.com/2024/08/01/decline-in-data-for-ai-bots-to-scrape/" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsLveFv6AzrLJPzscA7fi7M9AIAQU8ij53Kg&s" width="45px"></a>
-							&emsp13;
-							<a href="https://www.datanami.com/2024/07/26/are-we-running-out-of-training-data-for-genai/" target="_blank"><img src="https://voxuspr.com/wp-content/uploads/2024/01/6578e93a1688079101428c12_ai-media-logo-9-datanami.png" width="85px"></a>
-							&emsp13;
-							<a href="https://www.fortuneidn.com/tech/bayu/studi-mit-sebut-data-untuk-latih-teknologi-ai-akan-habis?page=all" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Fortune_Indonesia_Logo.webp" width="85px"></a>
-							</div>             
-							<script language="JavaScript">hideblock('mit_bib');hideblock('mit_abs');</script>
-					</td>
-					</tr>
-
-
-					<tr class="therow1 therow3" style="">
-						<td width="15%" valign="center" align="center"><img src="https://avatars.githubusercontent.com/u/145158135?s=280&v=4" alt="nthu" width="180" height="180"></td>
-						</td>
-						<td width="85%" style="padding:20px;vertical-align:middle">
-							  <a class="tog" href="#mit2025">
-								<papertitle>Bridging the Data Provenance Gap Across Text, Speech and Video  &emsp14; <span style="color:red">New!</span></papertitle>
-							  </a>
-							  <br>
-							  <strong>Diganta Misra</strong>,
-							  Multiple authors
-							  <br>
-							  <p></p>
-							  <em>ICLR 2025</em>
-							  <div class="paper" id="mit2025">
-								<a class="tog" href="https://www.dataprovenance.org/" target="_blank">Data Provenence Institute</a> /
-								<a href="https://arxiv.org/abs/2412.17847" target="_blank">paper</a> /
-								  <a class="tog" href="javascript:toggleblock('mit25_abs')">abstract</a> / 
-								  <a class="tog" href="javascript:toggleblock('mit25_bib')">bibtex</a>
-								  <p align="justify">
-									<i id="mit25_abs">
-										Progress in AI is driven largely by the scale and quality of training data. Despite this, there is a deficit of empirical analysis examining the attributes of well-established datasets beyond text. In this work we conduct the largest and first-of-its-kind longitudinal audit across modalities--popular text, speech, and video datasets--from their detailed sourcing trends and use restrictions to their geographical and linguistic representation. Our manual analysis covers nearly 4000 public datasets between 1990-2024, spanning 608 languages, 798 sources, 659 organizations, and 67 countries. We find that multimodal machine learning applications have overwhelmingly turned to web-crawled, synthetic, and social media platforms, such as YouTube, for their training sets, eclipsing all other sources since 2019. Secondly, tracing the chain of dataset derivations we find that while less than 33% of datasets are restrictively licensed, over 80% of the source content in widely-used text, speech, and video datasets, carry non-commercial restrictions. Finally, counter to the rising number of languages and geographies represented in public AI training datasets, our audit demonstrates measures of relative geographical and multilingual representation have failed to significantly improve their coverage since 2013. We believe the breadth of our audit enables us to empirically examine trends in data sourcing, restrictions, and Western-centricity at an ecosystem-level, and that visibility into these questions are essential to progress in responsible AI. As a contribution to ongoing improvements in dataset transparency and responsible use, we release our entire multimodal audit, allowing practitioners to trace data provenance across text, speech, and video.
-									</i>
-								  </p>
-								  <bibtext xml:space="preserve" id="mit25_bib">
-									@misc{longpre2024bridgingdataprovenancegap,
-										title={Bridging the Data Provenance Gap Across Text, Speech and Video}, 
-										author={Shayne Longpre and Nikhil Singh and Manuel Cherep and Kushagra Tiwary and Joanna Materzynska and William Brannon and Robert Mahari and Manan Dey and Mohammed Hamdy and Nayan Saxena and Ahmad Mustafa Anis and Emad A. Alghamdi and Vu Minh Chien and Naana Obeng-Marnu and Da Yin and Kun Qian and Yizhi Li and Minnie Liang and An Dinh and Shrestha Mohanty and Deividas Mataciunas and Tobin South and Jianguo Zhang and Ariel N. Lee and Campbell S. Lund and Christopher Klamm and Damien Sileo and Diganta Misra and Enrico Shippole and Kevin Klyman and Lester JV Miranda and Niklas Muennighoff and Seonghyeon Ye and Seungone Kim and Vipul Gupta and Vivek Sharma and Xuhui Zhou and Caiming Xiong and Luis Villa and Stella Biderman and Alex Pentland and Sara Hooker and Jad Kabbara},
-										year={2024},
-										eprint={2412.17847},
-										archivePrefix={arXiv},
-										primaryClass={cs.AI},
-										url={https://arxiv.org/abs/2412.17847}, 
-								  }
-									</bibtext>
-
-								<a href="https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17924853915423055051" target="_blank"><img src="https://img.shields.io/badge/Citations-2-lightgrey.svg?style=social&logo=Google Scholar"></a>
-								<br>
-								<br>
-	
-								<span style="color:rgb(200, 0, 255)">Media Coverage</span>:
-								<br>
-								<br>
-								<a href="https://www.technologyreview.com/2024/12/18/1108796/this-is-where-the-data-to-build-ai-comes-from/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/8/86/MIT_Technology_Review_modern_logo.svg" width="70px"></a>
-								</div>             
-								<script language="JavaScript">hideblock('mit25_bib');hideblock('mit25_abs');</script>
-						</td>
-						</tr>
-
-						<tr class="therow1 therow3" style="">
-							<td width="15%" valign="center" align="center"><img src="images/mmteb_overview_wide_centered.png" alt="nthu" width="240" height="120"></td>
-							</td>
-							<td width="85%" style="padding:20px;vertical-align:middle">
-								  <a class="tog" href="#mmteb">
-									<papertitle>MMTEB: Massive Multilingual Text Embedding Benchmark &emsp14; <span style="color:red">New!</span></papertitle>
-								  </a>
-								  <br>
-								  <strong>Diganta Misra</strong>,
-								  Multiple authors
-								  <br>
-								  <p></p>
-								  <em>ICLR 2025</em>
-								  <div class="paper" id="mmteb">
-									<a href="https://openreview.net/forum?id=zl3pfz4VCV" target="_blank">paper</a> /
-									  <a class="tog" href="javascript:toggleblock('mmteb_abs')">abstract</a> /
-									  <a class="tog" href="javascript:toggleblock('mmteb_bib')">bibtex</a>
-									  <p align="justify">
-										<i id="mmteb_abs">
-											Text embeddings are typically evaluated on a narrow set of tasks, limited in terms of languages, domains, and task types. To circumvent this limitation and to provide a more comprehensive evaluation, we introduce the Massive Multilingual Text Embedding Benchmark (MMTEB) -- a large-scale community-driven initiative expanding MTEB to over 500 \textit{quality controlled} evaluation tasks across 1,000+ languages. MMTEB includes a wide range of challenging novel tasks such as instruction following, long-document retrieval, and code retrieval, and represents the largest multilingual collection of evaluation tasks for embedding models to date. We use this collection to construct multiple highly multilingual benchmarks. We evaluate a representative set of models on these benchmarks. Our findings indicate that, while LLM-based models can achieve state-of-the-art performance on a subset of languages, the best-performing publicly available model across languages is the notably smaller, multilingual-e5-large-instruct. Massive benchmarks often impose high computational demands, limiting accessibility, particularly for low-resource communities. To address this, we downsample tasks based on inter-task correlation (i.e., selecting only a diverse set of tasks) while preserving relative rankings. We further optimize tasks such as retrieval by sampling hard negatives, creating smaller but effective splits. These optimizations allow us to introduce benchmarks at a significantly lower computational cost. For instance, we introduce a new zero-shot English benchmark that maintains a similar ordering at a fraction of the cost.
-										</i>
-									  </p>
-									  <bibtext xml:space="preserve" id="mmteb_bib">
-										@misc{enevoldsen2025mmtebmassivemultilingualtext,
-											title={MMTEB: Massive Multilingual Text Embedding Benchmark}, 
-											author={Kenneth Enevoldsen and Isaac Chung and Imene Kerboua and Márton Kardos and Ashwin Mathur and David Stap and Jay Gala and Wissam Siblini and Dominik Krzemiński and Genta Indra Winata and Saba Sturua and Saiteja Utpala and Mathieu Ciancone and Marion Schaeffer and Gabriel Sequeira and Diganta Misra and Shreeya Dhakal and Jonathan Rystrøm and Roman Solomatin and Ömer Çağatan and Akash Kundu and Martin Bernstorff and Shitao Xiao and Akshita Sukhlecha and Bhavish Pahwa and Rafał Poświata and Kranthi Kiran GV and Shawon Ashraf and Daniel Auras and Björn Plüster and Jan Philipp Harries and Loïc Magne and Isabelle Mohr and Mariya Hendriksen and Dawei Zhu and Hippolyte Gisserot-Boukhlef and Tom Aarsen and Jan Kostkan and Konrad Wojtasik and Taemin Lee and Marek Šuppa and Crystina Zhang and Roberta Rocca and Mohammed Hamdy and Andrianos Michail and John Yang and Manuel Faysse and Aleksei Vatolin and Nandan Thakur and Manan Dey and Dipam Vasani and Pranjal Chitale and Simone Tedeschi and Nguyen Tai and Artem Snegirev and Michael Günther and Mengzhou Xia and Weijia Shi and Xing Han Lù and Jordan Clive and Gayatri Krishnakumar and Anna Maksimova and Silvan Wehrli and Maria Tikhonova and Henil Panchal and Aleksandr Abramov and Malte Ostendorff and Zheng Liu and Simon Clematide and Lester James Miranda and Alena Fenogenova and Guangyu Song and Ruqiya Bin Safi and Wen-Ding Li and Alessia Borghini and Federico Cassano and Hongjin Su and Jimmy Lin and Howard Yen and Lasse Hansen and Sara Hooker and Chenghao Xiao and Vaibhav Adlakha and Orion Weller and Siva Reddy and Niklas Muennighoff},
-											year={2025},
-											eprint={2502.13595},
-											archivePrefix={arXiv},
-											primaryClass={cs.CL},
-											url={https://arxiv.org/abs/2502.13595}, 
-									  }
-										</bibtext>
 				
-									<a href="https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4163901252801811115" target="_blank"><img src="https://img.shields.io/badge/Citations-5-lightgrey.svg?style=social&logo=Google Scholar"></a>
-									  <br>
-									</div>             
-									<script language="JavaScript">hideblock('mmteb_abs');hideblock('mmteb_bib');</script>
-							</td>
-							</tr>
-	
-				<tr class="therow1 therow3" style="">
-				<td width="15%" valign="center" align="center"><img src="images/bb.png" alt="nthu" width="230" height="230"></td>
-				</td>
-				<td width="85%" style="padding:20px;vertical-align:middle">
-					  <a class="tog" href="#big2022">
-						<papertitle>Beyond the Imitation Game: Quantifying and extrapolating the capabilities of language models</papertitle>
-					  </a>
-					  <br>
-					  <strong>Diganta Misra</strong>,
-					  <a href="https://in.linkedin.com/in/mukundvarmat" target="_blank">Mukund Varma T.</a>,
-					  Multiple authors
-					  <br>
-					  <p></p>
-					  <em>TMLR, 2023</em>
-					  <br>
-					  <em>TMLR Finalist for Outstanding Certification</em>
-					  <br>
-					  <em>ICLR 2025</em>
-					  <div class="paper" id="big2022">
-						<a class="tog" href="https://github.com/google/BIG-bench" target="_blank">project</a> /
-						<a href="https://arxiv.org/abs/2206.04615" target="_blank">paper</a> /
-						  <a class="tog" href="javascript:toggleblock('big_abs')">abstract</a> / 
-						  <a class="tog" href="javascript:toggleblock('big_bib')">bibtex</a>
-						  <p align="justify">
-							<i id="big_abs">
-								Language models demonstrate both quantitative improvement and new qualitative capabilities with increasing scale. Despite their potentially transformative impact, these new capabilities are as yet poorly characterized. In order to inform future research, prepare for disruptive new model capabilities, and ameliorate socially harmful effects, it is vital that we understand the present and near-future capabilities and limitations of language models. To address this challenge, we introduce the Beyond the Imitation Game benchmark (BIG-bench). BIG-bench currently consists of 204 tasks, contributed by 442 authors across 132 institutions. Task topics are diverse, drawing problems from linguistics, childhood development, math, common-sense reasoning, biology, physics, social bias, software development, and beyond. BIG-bench focuses on tasks that are believed to be beyond the capabilities of current language models. We evaluate the behavior of OpenAI's GPT models, Google-internal dense transformer architectures, and Switch-style sparse transformers on BIG-bench, across model sizes spanning millions to hundreds of billions of parameters. In addition, a team of human expert raters performed all tasks in order to provide a strong baseline. Findings include: model performance and calibration both improve with scale, but are poor in absolute terms (and when compared with rater performance); performance is remarkably similar across model classes, though with benefits from sparsity; tasks that improve gradually and predictably commonly involve a large knowledge or memorization component, whereas tasks that exhibit "breakthrough" behavior at a critical scale often involve multiple steps or components, or brittle metrics; social bias typically increases with scale in settings with ambiguous context, but this can be improved with prompting.
-							</i>
-						  </p>
-						  <bibtext xml:space="preserve" id="big_bib">
-							@article{srivastava2022beyond,<br />
-								title   = {Beyond the Imitation Game: Quantifying and extrapolating the capabilities of language models},<br />
-								author  = {Aarohi Srivastava and Abhinav Rastogi and Abhishek Rao and Abu Awal Md Shoeb and Abubakar Abid and Adam Fisch and Adam R. Brown and Adam Santoro and Aditya Gupta and Adrià Garriga-Alonso and Agnieszka Kluska and Aitor Lewkowycz and Akshat Agarwal and Alethea Power and Alex Ray and Alex Warstadt and Alexander W. Kocurek and Ali Safaya and Ali Tazarv and Alice Xiang and Alicia Parrish and Allen Nie and Aman Hussain and Amanda Askell and Amanda Dsouza and Ameet Rahane and Anantharaman S. Iyer and Anders Andreassen and Andrea Santilli and Andreas Stuhlmüller and Andrew Dai and Andrew La and Andrew Lampinen and Andy Zou and Angela Jiang and Angelica Chen and Anh Vuong and Animesh Gupta and Anna Gottardi and Antonio Norelli and Anu Venkatesh and Arash Gholamidavoodi and Arfa Tabassum and Arul Menezes and Arun Kirubarajan and Asher Mullokandov and Ashish Sabharwal and Austin Herrick and Avia Efrat and Aykut Erdem and Ayla Karakaş and B. Ryan Roberts and Bao Sheng Loe and Barret Zoph and Bartłomiej Bojanowski and Batuhan Özyurt and Behnam Hedayatnia and Behnam Neyshabur and Benjamin Inden and Benno Stein and Berk Ekmekci and Bill Yuchen Lin and Blake Howald and Cameron Diao and Cameron Dour and Catherine Stinson and Cedrick Argueta and César Ferri Ramírez and Chandan Singh and Charles Rathkopf and Chenlin Meng and Chitta Baral and Chiyu Wu and Chris Callison-Burch and Chris Waites and Christian Voigt and Christopher D. Manning and Christopher Potts and Cindy Ramirez and Clara E. Rivera and Clemencia Siro and Colin Raffel and Courtney Ashcraft and Cristina Garbacea and Damien Sileo and Dan Garrette and Dan Hendrycks and Dan Kilman and Dan Roth and Daniel Freeman and Daniel Khashabi and Daniel Levy and Daniel Moseguí González and Danny Hernandez and Danqi Chen and Daphne Ippolito and Dar Gilboa and David Dohan and David Drakard and David Jurgens and Debajyoti Datta and Deep Ganguli and Denis Emelin and Denis Kleyko and Deniz Yuret and Derek Chen and Derek Tam and Dieuwke Hupkes and Diganta Misra and Dilyar Buzan and Dimitri Coelho Mollo and Diyi Yang and Dong-Ho Lee and Ekaterina Shutova and Ekin Dogus Cubuk and Elad Segal and Eleanor Hagerman and Elizabeth Barnes and Elizabeth Donoway and Ellie Pavlick and Emanuele Rodola and Emma Lam and Eric Chu and Eric Tang and Erkut Erdem and Ernie Chang and Ethan A. Chi and Ethan Dyer and Ethan Jerzak and Ethan Kim and Eunice Engefu Manyasi and Evgenii Zheltonozhskii and Fanyue Xia and Fatemeh Siar and Fernando Martínez-Plumed and Francesca Happé and Francois Chollet and Frieda Rong and Gaurav Mishra and Genta Indra Winata and Gerard de Melo and Germán Kruszewski and Giambattista Parascandolo and Giorgio Mariani and Gloria Wang and Gonzalo Jaimovitch-López and Gregor Betz and Guy Gur-Ari and Hana Galijasevic and Hannah Kim and Hannah Rashkin and Hannaneh Hajishirzi and Harsh Mehta and Hayden Bogar and Henry Shevlin and Hinrich Schütze and Hiromu Yakura and Hongming Zhang and Hugh Mee Wong and Ian Ng and Isaac Noble and Jaap Jumelet and Jack Geissinger and Jackson Kernion and Jacob Hilton and Jaehoon Lee and Jaime Fernández Fisac and James B. Simon and James Koppel and James Zheng and James Zou and Jan Kocoń and Jana Thompson and Jared Kaplan and Jarema Radom and Jascha Sohl-Dickstein and Jason Phang and Jason Wei and Jason Yosinski and Jekaterina Novikova and Jelle Bosscher and Jennifer Marsh and Jeremy Kim and Jeroen Taal and Jesse Engel and Jesujoba Alabi and Jiacheng Xu and Jiaming Song and Jillian Tang and Joan Waweru and John Burden and John Miller and John U. Balis and Jonathan Berant and Jörg Frohberg and Jos Rozen and Jose Hernandez-Orallo and Joseph Boudeman and Joseph Jones and Joshua B. Tenenbaum and Joshua S. Rule and Joyce Chua and Kamil Kanclerz and Karen Livescu and Karl Krauth and Karthik Gopalakrishnan and Katerina Ignatyeva and Katja Markert and Kaustubh D. Dhole and Kevin Gimpel and Kevin Omondi and Kory Mathewson and Kristen Chiafullo and Ksenia Shkaruta and Kumar Shridhar and Kyle McDonell and Kyle Richardson and Laria Reynolds and Leo Gao and Li Zhang and Liam Dugan and Lianhui Qin and Lidia Contreras-Ochando and Louis-Philippe Morency and Luca Moschella and Lucas Lam and Lucy Noble and Ludwig Schmidt and Luheng He and Luis Oliveros Colón and Luke Metz and Lütfi Kerem Şenel and Maarten Bosma and Maarten Sap and Maartje ter Hoeve and Madotto Andrea and Maheen Farooqi and Manaal Faruqui and Mantas Mazeika and Marco Baturan and Marco Marelli and Marco Maru and Maria Jose Ramírez Quintana and Marie Tolkiehn and Mario Giulianelli and Martha Lewis and Martin Potthast and Matthew L. Leavitt and Matthias Hagen and Mátyás Schubert and Medina Orduna Baitemirova and Melody Arnaud and Melvin McElrath and Michael A. Yee and Michael Cohen and Michael Gu and Michael Ivanitskiy and Michael Starritt and Michael Strube and Michał Swędrowski and Michele Bevilacqua and Michihiro Yasunaga and Mihir Kale and Mike Cain and Mimee Xu and Mirac Suzgun and Mo Tiwari and Mohit Bansal and Moin Aminnaseri and Mor Geva and Mozhdeh Gheini and Mukund Varma T and Nanyun Peng and Nathan Chi and Nayeon Lee and Neta Gur-Ari Krakover and Nicholas Cameron and Nicholas Roberts and Nick Doiron and Nikita Nangia and Niklas Deckers and Niklas Muennighoff and Nitish Shirish Keskar and Niveditha S. Iyer and Noah Constant and Noah Fiedel and Nuan Wen and Oliver Zhang and Omar Agha and Omar Elbaghdadi and Omer Levy and Owain Evans and Pablo Antonio Moreno Casares and Parth Doshi and Pascale Fung and Paul Pu Liang and Paul Vicol and Pegah Alipoormolabashi and Peiyuan Liao and Percy Liang and Peter Chang and Peter Eckersley and Phu Mon Htut and Pinyu Hwang and Piotr Miłkowski and Piyush Patil and Pouya Pezeshkpour and Priti Oli and Qiaozhu Mei and Qing Lyu and Qinlang Chen and Rabin Banjade and Rachel Etta Rudolph and Raefer Gabriel and Rahel Habacker and Ramón Risco Delgado and Raphaël Millière and Rhythm Garg and Richard Barnes and Rif A. Saurous and Riku Arakawa and Robbe Raymaekers and Robert Frank and Rohan Sikand and Roman Novak and Roman Sitelew and Ronan LeBras and Rosanne Liu and Rowan Jacobs and Rui Zhang and Ruslan Salakhutdinov and Ryan Chi and Ryan Lee and Ryan Stovall and Ryan Teehan and Rylan Yang and Sahib Singh and Saif M. Mohammad and Sajant Anand and Sam Dillavou and Sam Shleifer and Sam Wiseman and Samuel Gruetter and Samuel R. Bowman and Samuel S. Schoenholz and Sanghyun Han and Sanjeev Kwatra and Sarah A. Rous and Sarik Ghazarian and Sayan Ghosh and Sean Casey and Sebastian Bischoff and Sebastian Gehrmann and Sebastian Schuster and Sepideh Sadeghi and Shadi Hamdan and Sharon Zhou and Shashank Srivastava and Sherry Shi and Shikhar Singh and Shima Asaadi and Shixiang Shane Gu and Shubh Pachchigar and Shubham Toshniwal and Shyam Upadhyay and Shyamolima and Debnath and Siamak Shakeri and Simon Thormeyer and Simone Melzi and Siva Reddy and Sneha Priscilla Makini and Soo-Hwan Lee and Spencer Torene and Sriharsha Hatwar and Stanislas Dehaene and Stefan Divic and Stefano Ermon and Stella Biderman and Stephanie Lin and Stephen Prasad and Steven T. Piantadosi and Stuart M. Shieber and Summer Misherghi and Svetlana Kiritchenko and Swaroop Mishra and Tal Linzen and Tal Schuster and Tao Li and Tao Yu and Tariq Ali and Tatsu Hashimoto and Te-Lin Wu and Théo Desbordes and Theodore Rothschild and Thomas Phan and Tianle Wang and Tiberius Nkinyili and Timo Schick and Timofei Kornev and Timothy Telleen-Lawton and Titus Tunduny and Tobias Gerstenberg and Trenton Chang and Trishala Neeraj and Tushar Khot and Tyler Shultz and Uri Shaham and Vedant Misra and Vera Demberg and Victoria Nyamai and Vikas Raunak and Vinay Ramasesh and Vinay Uday Prabhu and Vishakh Padmakumar and Vivek Srikumar and William Fedus and William Saunders and William Zhang and Wout Vossen and Xiang Ren and Xiaoyu Tong and Xinyi Wu and Xudong Shen and Yadollah Yaghoobzadeh and Yair Lakretz and Yangqiu Song and Yasaman Bahri and Yejin Choi and Yichi Yang and Yiding Hao and Yifu Chen and Yonatan Belinkov and Yu Hou and Yufang Hou and Yuntao Bai and Zachary Seid and Zhao Xinran and Zhuoye Zhao and Zijian Wang and Zijie J. Wang and Zirui Wang and Ziyi Wu},<br />
-								year    = {2022},<br />
-								journal = {arXiv preprint arXiv: Arxiv-2206.04615}<br />
-							  }
-								
-							</bibtext>
-	
-	
-						<a href="https://github.com/google/BIG-bench/tree/main/bigbench/benchmark_tasks/tense" target="_blank">Tense task</a>
-						<br>
-						<br>
-						<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/google/BIG-bench?style=social">
-						&emsp;
-						<img alt="GitHub forks" src="https://img.shields.io/github/forks/google/BIG-bench?style=social">
-						&emsp;
-						<a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LwiJwNYAAAAJ&citation_for_view=LwiJwNYAAAAJ:aqlVkmm33-oC" target="_blank"><img src="https://img.shields.io/badge/Citations-1814-lightgrey.svg?style=social&logo=Google Scholar"></a>
-						</div>             
-						<script language="JavaScript">hideblock('big_bib');hideblock('big_abs');</script>
-				</td>
-				</tr>
 
 				<tr class="therow1 therow4" style="">
 					<td width="15%" valign="center" align="center"><img src="images/cvpr_mamba.png" alt="nthu" width="320" height="280"></td>
 					</td>
 					<td width="85%" style="padding:20px;vertical-align:middle">
 						  <a class="tog" href="#2024mamba">
-							<papertitle>On the low-shot transferability of [V]-Mamba &emsp14; <span style="color:red">New!</span></papertitle>
+							<papertitle>On the low-shot transferability of [V]-Mamba</papertitle>
 						  </a>
 						  <br>
 						  <strong>Diganta Misra</strong><sup>*</sup>,
@@ -1195,7 +1247,7 @@
 						</td>
 						<td width="85%" style="padding:20px;vertical-align:middle">
 							  <a class="tog" href="#moegflow2023">
-								<papertitle>Mitigating Mode Collapse in Sparse Mixture of Experts &emsp14; <span style="color:red">New!</span></papertitle>
+								<papertitle>Mitigating Mode Collapse in Sparse Mixture of Experts</papertitle>
 							  </a>
 							  <br>
 							  <a href="https://nizarislah.github.io/" target="_blank">Nizar Islah</a>, 
@@ -1217,52 +1269,6 @@
 								<script language="JavaScript">hideblock('moegflow_abs');</script>
 						</td>
 						</tr>
-
-			<tr class="therow1 therow6" style="">
-				<td width="15%" valign="center" align="center"><img src="images/mlm_experiment1.png" alt="nthu" width="250" height="240"></td>
-				</td>
-				<td width="85%" style="padding:20px;vertical-align:middle">
-					  <a class="tog" href="#shapley2023">
-						<papertitle>Using Shapley interactions to understand how models use structure &emsp14; <span style="color:red">New!</span></papertitle>
-					  </a>
-					  <br>
-					  <a href="https://divyanshsinghvi.github.io/" target="_blank">Divyansh Singhvi</a><sup>*</sup>, 
-					  <strong>Diganta Misra</strong><sup>*</sup>,
-					  <a href="https://www.linkedin.com/in/andrej-erkelens" target="_blank">Andrej Erkelens</a><sup>*</sup>, 
-					  <a href="https://www.linkedin.com/in/raghav-jain-3a8076214/" target="_blank">Raghav Jain</a><sup>*</sup>,
-					  <a href="https://www.isabelpapad.com/" target="_blank">Isabel Papadimitriou</a>,
-					  <a href="https://nsaphra.net/" target="_blank">Naomi Saphra</a>
-					  <br>
-					  <p></p>
-					  <em>ACL, 2025</em>
-					  <br>
-					  <em>NeurIPS ATTRIB workshop, 2023</em>
-					  <br>
-					  <div class="paper" id="shapley2023">
-						<a href="https://arxiv.org/abs/2403.13106" target="_blank">paper</a> /
-						  <a class="tog" href="javascript:toggleblock('shapley_abs')">abstract</a> /
-						  <a class="tog" href="javascript:toggleblock('shapley_bib')">bibtex</a>
-						  <br>
-						  <br>
-						  <a href="https://x.com/nsaphra/status/1770808324587491704?s=20" target="_blank"><img alt="Twitter thread" src="https://img.shields.io/badge/Thread-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" width="70"></a>
-						  <p align="justify">
-							<i id="shapley_abs">
-								Measuring nonlinear feature interaction is an established approach to understanding complex patterns of attribution in many models. In this paper, we use Shapley Taylor interaction indices (STII) to analyze the impact of underlying data structure on model representations in a variety of modalities, tasks, and architectures. Considering linguistic structure in masked and auto-regressive language models (MLMs and ALMs), we find that STII increases within idiomatic expressions and that MLMs scale STII with syntactic distance, relying more on syntax in their nonlinear structure than ALMs do. Our speech model findings reflect the phonetic principal that the openness of the oral cavity determines how much a phoneme varies based on its context. Finally, we study image classifiers and illustrate that feature interactions intuitively reflect object boundaries. Our wide range of results illustrates the benefits of interdisciplinary work and domain expertise in interpretability research.</i>
-							<bibtext xml:space="preserve" id="shapley_bib">
-								@misc{singhvi2024knowing,
-									title={Knowing Your Nonlinearities: Shapley Interactions Reveal the Underlying Structure of Data}, 
-									author={Divyansh Singhvi and Andrej Erkelens and Raghav Jain and Diganta Misra and Naomi Saphra},
-									year={2024},
-									eprint={2403.13106},
-									archivePrefix={arXiv},
-									primaryClass={cs.LG}
-							  }
-							</bibtext>
-						  </p>
-						</div>              
-						<script language="JavaScript">hideblock('shapley_abs');hideblock('shapley_bib');</script>
-				</td>
-				</tr>
 		
 
 			<tr class="therow1 therow4" style="">
@@ -1270,7 +1276,7 @@
             </td>
             <td width="85%" style="padding:20px;vertical-align:middle">
                   <a class="tog" href="#code2023">
-                    <papertitle>Pruning CodeBERT for Improved Code-to-Text Efficiency &emsp14; <span style="color:red">New!</span></papertitle>
+                    <papertitle>Pruning CodeBERT for Improved Code-to-Text Efficiency</papertitle>
                   </a>
                   <br>
 				  <a href="https://www.linkedin.com/in/alex-gu-8b7664175" target="_blank">Alex Gu</a>,
