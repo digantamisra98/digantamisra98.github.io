@@ -140,6 +140,7 @@
 			<p>
             <div style="width:100%;overflow-y:scroll; height:230px;">
                 <ul id="news">
+					<li>July 2025: Our work on <a href="#hyperalign">(Almost) Free Modality Stitching of Foundation Models</a> and <a href="#cl4code2024">GitChameleon: Evaluating AI Code Generation Against Python Library Version Incompatibilities</a> are now out on arXiv.</li>
 					<li>June 2025: Gave a takk on our ACL accepted work <a href="shapley2023">Using Shapley interactions to understand how models use structure</a> at the <a href="https://mcgill-nlp.github.io/reading-group/summer-2025/diganta-misra/" target="_blank">McGill NLP Reading Group</a>.</li>
 					<li>June 2025: Gave a talk titled "Programmers or Code Charlatans" at the Friday Talks @ Tübingen Series. <a href="https://fridaytalks.github.io/" target="_blank">Talk page</a>.</li>
 					<li>May 2025: Our work on <a href="shapley2023">Using Shapley interactions to understand how models use structure</a> is accepted to <a href="https://2025.aclweb.org/" target="_blank">ACL 2025</a>.</li>
@@ -506,7 +507,7 @@
 					&emsp;
 					<img alt="GitHub forks" src="https://img.shields.io/github/forks/landskapeai/triplet-attention?style=social">
 					&emsp;
-					<a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LwiJwNYAAAAJ&citation_for_view=LwiJwNYAAAAJ:UeHWp8X0CEIC" target="_blank"><img src="https://img.shields.io/badge/Citations-1016-lightgrey.svg?style=social&logo=Google Scholar"></a>
+					<a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LwiJwNYAAAAJ&citation_for_view=LwiJwNYAAAAJ:UeHWp8X0CEIC" target="_blank"><img src="https://img.shields.io/badge/Citations-1028-lightgrey.svg?style=social&logo=Google Scholar"></a>
                     </div>              
                     <script language="JavaScript">hideblock('wacv_bib');hideblock('wacv_abs');</script>
             </td>
@@ -585,7 +586,7 @@
 					  <em>DMLR @ ICLR, 2024</em>
 					  <br>
 					  <div class="paper" id="cl4code">
-						<a href="https://arxiv.org/abs/2411.05830" target="_blank">paper</a> /
+						<a href="https://arxiv.org/abs/2507.12367" target="_blank">paper</a> /
 						  <a class="tog" href="javascript:toggleblock('cl4code_abs')">abstract</a> /
 						  <a class="tog" href="javascript:toggleblock('cl4code_bib')">bibtex</a>
 						  <p align="justify">
@@ -594,20 +595,20 @@
 							</i>
 						  </p>
 						<bibtext xml:space="preserve" id="cl4code_bib">
-							@misc{islah2024gitchameleonunmaskingversionswitchingcapabilities,
-								title={GitChameleon: Unmasking the Version-Switching Capabilities of Code Generation Models}, 
-								author={Nizar Islah and Justine Gehring and Diganta Misra and Eilif Muller and Irina Rish and Terry Yue Zhuo and Massimo Caccia},
-								year={2024},
-								eprint={2411.05830},
-								archivePrefix={arXiv},
-								primaryClass={cs.SE},
-								url={https://arxiv.org/abs/2411.05830}, 
-						  }
+							@misc{misra2025gitchameleonevaluatingaicode,
+									title={GitChameleon: Evaluating AI Code Generation Against Python Library Version Incompatibilities}, 
+									author={Diganta Misra and Nizar Islah and Victor May and Brice Rauby and Zihan Wang and Justine Gehring and Antonio Orvieto and Muawiz Chaudhary and Eilif B. Muller and Irina Rish and Samira Ebrahimi Kahou and Massimo Caccia},
+									year={2025},
+									eprint={2507.12367},
+									archivePrefix={arXiv},
+									primaryClass={cs.SE},
+									url={https://arxiv.org/abs/2507.12367}, 
+								}
 						</bibtext>
 						<a href="https://youtu.be/8s1hX6Xw_3Q?si=KlrLv1nIqex2qOHh" target="_blank"><img src="https://img.shields.io/badge/Microsoft Research Talk-red?style=for-the-badge&logo=youtube&logoColor=white"></a>
 						<a href="https://www.youtube.com/watch?v=Ccg4RNTYkVs" target="_blank"><img src="https://img.shields.io/badge/RIKEN AIP 93rd TrustML Young Scientist Seminar-red?style=for-the-badge&logo=youtube&logoColor=white"></a>
 						</div>  
-								<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/NizarIslah/GitChameleon?style=social">
+								<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/mrcabbage972/GitChameleonBenchmark?style=social">
 								&emsp;
 								<a href="https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6694357941698904074,11417814403370446599" target="_blank"><img src="https://img.shields.io/badge/Citations-2-lightgrey.svg?style=social&logo=Google Scholar"></a>
 						<script language="JavaScript">hideblock('cl4code_abs');;hideblock('cl4code_bib');</script>
@@ -741,20 +742,24 @@
 							  <em>ICLR Workshop on Workshop on Weight Space Learning, 2025</em>
 							  <br>
 							  <div class="paper" id="hyperalign">
+								<a href="https://www.arxiv.org/abs/2507.10015" target="_blank">paper</a> /
 								  <a class="tog" href="javascript:toggleblock('hyperalign_abs')">abstract</a> /
 								  <a class="tog" href="javascript:toggleblock('hyperalign_bib')">bibtex</a> 
 								  <p align="justify">
 									<i id="hyperalign_abs">
-										Foundation multi-modal models are often designed by stitching of multiple existing pretrained uni-modal models: for example, an image classifier with an autoregressive text model. This stitching process is performed by training a connector module that aims to align the representation-representation or representation-input spaces of these uni-modal models. However, given the complexity of training such connectors on large scale web-based datasets coupled with the ever-increasing number of available pretrained uni-modal models, the task of uni-modal models selection and subsequent connector module training becomes computationally demanding. To address this under-studied critical problem, we propose Hyma, a novel all-in-one solution for optimal uni-modal model selection and connector training by leveraging hypernetworks. Specifically, our framework utilizes the parameter prediction capability of a hypernetwork to obtain jointly trained connector modules for N x M combinations of uni-modal models. In our experiments, Hyma reduces the optimal uni-modal model pair search cost by 11x on average, while matching the ranking and trained connector performance obtained via grid search across a suite of diverse multi-modal benchmarks.
+										Foundation multi-modal models are often designed by stitching of multiple existing pretrained uni-modal models: for example, an image classifier with an text model. This stitching process is performed by training a connector module that aims to align the representation spaces of these uni-modal models towards a multi-modal objective. However, given the complexity of training such connectors on large scale web-based datasets coupled with the ever-increasing number of available pretrained uni-modal models, the task of uni-modal models selection and subsequent connector module training becomes computationally demanding. To address this under-studied critical problem, we propose Hypernetwork Model Alignment (Hyma), a novel all-in-one solution for optimal uni-modal model selection and connector training by leveraging hypernetworks. Specifically, our framework utilizes the parameter prediction capability of a hypernetwork to obtain jointly trained connector modules for N×M combinations of uni-modal models. In our experiments, Hyma reduces the cost of searching for the best performing uni-modal model pair by 10×, while matching the ranking and trained connector performance obtained via grid search across a suite of diverse multi-modal benchmarks.
 									</i>
 								  </p>
 								  <bibtext xml:space="preserve" id="hyperalign_bib">
-									@inproceedings{singhhyper,
-										title={Hyper-Align: Efficient Modality Alignment via Hypernetworks},
-										author={Singh, Jaisidh and Misra, Diganta and Knyazev, Boris and Orvieto, Antonio},
-										booktitle={Workshop on Neural Network Weights as a New Data Modality}
-									  }
-										
+									@misc{singh2025almostfreemodalitystitching,
+										title={(Almost) Free Modality Stitching of Foundation Models}, 
+										author={Jaisidh Singh and Diganta Misra and Boris Knyazev and Antonio Orvieto},
+										year={2025},
+										eprint={2507.10015},
+										archivePrefix={arXiv},
+										primaryClass={cs.CV},
+										url={https://arxiv.org/abs/2507.10015}, 
+									}
 									</bibtext>  
 								</div>              
 								<script language="JavaScript">hideblock('hyperalign_abs');hideblock('hyperalign_bib');</script>
@@ -796,7 +801,7 @@
 							  	}	
 								</bibtext>
 		
-							<a href="https://scholar.google.com/scholar?oi=bibs&hl=en&cites=593019343386393612" target="_blank"><img src="https://img.shields.io/badge/Citations-53-lightgrey.svg?style=social&logo=Google Scholar"></a>
+							<a href="https://scholar.google.com/scholar?oi=bibs&hl=en&cites=593019343386393612" target="_blank"><img src="https://img.shields.io/badge/Citations-59-lightgrey.svg?style=social&logo=Google Scholar"></a>
 							<br>
 							<br>
 							<span style="color:rgb(200, 0, 255)">Media Coverage</span>:
@@ -908,7 +913,7 @@
 									  }
 										</bibtext>
 				
-									<a href="https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4163901252801811115" target="_blank"><img src="https://img.shields.io/badge/Citations-17-lightgrey.svg?style=social&logo=Google Scholar"></a>
+									<a href="https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4163901252801811115" target="_blank"><img src="https://img.shields.io/badge/Citations-28-lightgrey.svg?style=social&logo=Google Scholar"></a>
 									  <br>
 									</div>             
 									<script language="JavaScript">hideblock('mmteb_abs');hideblock('mmteb_bib');</script>
@@ -2121,7 +2126,7 @@
             <td style="padding:0px">
               <br>
               <p style="text-align:left;font-size:small;">
-                  Updated on: 6th June, 2025
+                  Updated on: 18th July, 2025
     
               <span style="float:right;">
                 Danke Schön, <a href="https://jonbarron.info/" target="_blank">Jon Barron</a>!
