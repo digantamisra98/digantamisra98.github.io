@@ -131,7 +131,7 @@ a    { color: inherit; }
 
 /* ── Form ───────────────────────────────────────────────────────── */
 .setup-grid {
-  display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;
+  display: grid; grid-template-columns: 3fr 2fr; gap: 1.5rem;
   margin-bottom: 1.5rem;
 }
 @media (max-width: 700px) { .setup-grid { grid-template-columns: 1fr; } }
@@ -844,8 +844,6 @@ input[type="range"] {
           <button class="pill-toggle"         onclick="setProvider('openai')">OpenAI</button>
           <button class="pill-toggle"         onclick="setProvider('anthropic')">Anthropic</button>
           <button class="pill-toggle"         onclick="setProvider('gemini')">Gemini</button>
-          <button class="pill-toggle"         onclick="setProvider('ollama')">Ollama</button>
-          <button class="pill-toggle"         onclick="setProvider('custom')">Custom</button>
         </div>
       </div>
 
@@ -1077,8 +1075,6 @@ const PROVIDER_MODELS = {
   openai:     'gpt-4o-mini',
   anthropic:  'claude-haiku-4-5-20251001',
   gemini:     'gemini-2.0-flash',
-  ollama:     'llama3.2',
-  custom:     'openai/gpt-4o-mini',
 };
 
 /* ─── Form helpers ──────────────────────────────────────────────── */
@@ -1098,10 +1094,10 @@ function setSide(side){
 function setProvider(p){
   currentProvider = p;
   document.querySelectorAll('#provider-pills .pill-toggle').forEach((btn,i)=>{
-    const providers = ['openrouter','openai','anthropic','gemini','ollama','custom'];
+    const providers = ['openrouter','openai','anthropic','gemini'];
     btn.classList.toggle('active', providers[i]===p);
   });
-  document.getElementById('api-key-group').style.display = p==='ollama' ? 'none' : 'block';
+  document.getElementById('api-key-group').style.display = 'block';
   document.getElementById('model-input').value = PROVIDER_MODELS[p] || '';
 }
 
