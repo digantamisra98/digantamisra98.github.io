@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GRASP: Deterministic Argument Ranking in Interaction Graphs</title>
+  <meta name="description" content="GRASP — a deterministic framework that aggregates local pairwise attack/defense judgments into stable global argument rankings via a convergent propagation operator." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body, {delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}]})"></script>
+  <link rel="stylesheet" href="static/style.css" />
+</head>
+<body>
+
+<!-- ── NAV ─────────────────────────────────────────────────────── -->
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-brand">
+      <span>GRASP</span>
+    </a>
+    <div class="nav-links">
+      <a href="#abstract">Abstract</a>
+      <a href="#method">Method</a>
+      <a href="#results">Results</a>
+      <a href="#demo">Demo</a>
+      <a href="play.html" style="color:var(--accent); font-weight:600;">Try it</a>
+    </div>
+    <button class="dark-toggle" id="dark-toggle" onclick="toggleDark()" title="Toggle dark mode" aria-label="Toggle dark mode">
+      <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+      <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- ── HERO ────────────────────────────────────────────────────── -->
+<header class="hero">
+  <div class="hero-inner">
+    <h1 class="paper-title">
+      GRASP: Deterministic Argument Ranking<br />in Interaction Graphs
+    </h1>
+
+    <!-- Authors -->
+    <div class="authors">
+      <div class="author-row">
+        <span class="author">Diganta Misra<sup>1,2,3,4</sup></span>
+        <span class="author">Antonio Orvieto<sup>1,2,3</sup></span>
+        <span class="author">Rediet Abebe<sup>1,2,3</sup></span>
+        <span class="author">Volkan Cevher<sup>5</sup></span>
+      </div>
+      <div class="affiliations">
+        <sup>1</sup>MPI-IS Tübingen&thinsp;·&thinsp;
+        <sup>2</sup>Tüb. AI Center&thinsp;·&thinsp;
+        <sup>3</sup>ELLIS Institute&thinsp;·&thinsp;
+        <sup>4</sup>Uni. Tübingen&thinsp;·&thinsp;
+        <sup>5</sup>LIONS, EPFL
+      </div>
+    </div>
+
+    <!-- Action buttons -->
+    <div class="hero-actions">
+      <a href="#demo" class="btn btn-outline">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        Live Demo
+      </a>
+    </div>
+
+    <!-- TL;DR -->
+    <div class="tldr">
+      <span class="tldr-label">TL;DR</span>
+      <span class="tldr-text">LLM judges disagree sharply when asked to rank arguments holistically. GRASP replaces opaque global verdicts with local pairwise attack/defense judgments aggregated through a convergent graph propagation operator — producing rankings that are more reproducible, auditable, and structurally grounded.</span>
+    </div>
+  </div>
+</header>
+
+<!-- ── TEASER FIGURE (interactive) ──────────────────────────────── -->
+<section class="teaser">
+  <div class="section-inner">
+    <figure class="teaser-fig">
+      <div class="fig-row">
+        <div class="fig-col">
+          <div class="ifig-wrap">
+            <canvas id="agg-pearson-canvas" class="ifig-canvas"></canvas>
+            <div id="agg-pearson-tooltip" class="pearson-tooltip"></div>
+          </div>
+          <figcaption><strong>Figure 1.</strong> Pairwise Pearson correlation of attack-weight matrices $W$ across six judge models (lower triangle), averaged across all 50 pool debates. Models substantially agree on relative attack patterns, providing a reproducible substrate for structural aggregation.</figcaption>
+          <div id="pearson-logo-legend" class="pearson-logo-legend"></div>
+        </div>
+        <div class="fig-col">
+          <div class="ifig-wrap">
+            <canvas id="scatter-canvas" class="ifig-canvas"></canvas>
+            <div id="scatter-tooltip" class="pearson-tooltip"></div>
+          </div>
+          <figcaption><strong>Figure 2.</strong> Per-debate mean Kendall $\tau$ of GRASP rankings vs. mean Pearson similarity of $W$ matrices across pool debates. Higher $W$ agreement predicts higher GRASP ranking consistency, confirming structural reproducibility translates to ranking stability.</figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+</section>
+
+<!-- ── ABSTRACT ─────────────────────────────────────────────────── -->
+<section class="section" id="abstract">
+  <div class="section-inner narrow">
+    <h2 class="section-heading">Abstract</h2>
+    <p class="abstract-text">
+      Large language models are increasingly deployed as automated judges to evaluate the strength of arguments. As this role expands, their legitimacy depends on consistency, transparency, and the ability to separate argumentative structure from rhetorical appeal. However, we show that <em>holistic judging</em> — a common LLM-as-a-Judge practice where a model provides a global verdict on a debate — suffers from substantial inter-model disagreement. We argue that this instability arises from collapsing a debate's complex interaction structure into a single opaque score.
+    </p>
+    <p class="abstract-text">
+      To address this, we propose <strong>GRASP</strong> (<strong>G</strong>radual <strong>R</strong>anking with <strong>A</strong>ttacks and <strong>S</strong>upport <strong>P</strong>ropagation), a deterministic framework that aggregates stable local interaction judgments into a global ranking via a convergent attack–defense propagation operator. We show that local interaction judgments are more reproducible than holistic rankings in LLM-as-a-Judge evaluations, allowing GRASP to produce more consistent global rankings. We further show that GRASP scores do not correlate with human "convincingness" labels, highlighting a vital sociotechnical distinction: GRASP does not measure persuasion, factuality, or rhetorical appeal, but <em>structural sufficiency</em> — a defense-aware notion of argument robustness over the explicit interaction graph. Overall, GRASP offers a transparent and auditable alternative to holistic LLM judging.
+    </p>
+  </div>
+</section>
+
+<!-- ── METHOD ───────────────────────────────────────────────────── -->
+<section class="section section-alt" id="method">
+  <div class="section-inner">
+    <h2 class="section-heading">Method</h2>
+
+    <div class="method-grid">
+      <div class="method-text">
+        <h3 class="method-subhead">Weighted Interaction Graphs</h3>
+        <p>
+          GRASP operates on a weighted interaction graph $\mathcal{G} = (A, W, D)$, where arguments $A = \{a_1, \ldots, a_n\}$ are nodes. The attack matrix $W \in [0,1]^{n \times n}$ encodes how strongly argument $a_i$ attacks $a_j$, and the defense matrix $D \in [0,\infty)^{n \times n}$ captures the extent to which $a_k$ defends $a_j$ against its attackers.
+        </p>
+        <p>
+          LLM judges score every ordered pair $(a_i, a_j)$ — yielding a dense attack matrix $W$. GRASP converts $W$ into a global ranking by propagating strengths through the interaction graph.
+        </p>
+        <h3 class="method-subhead">The GRASP Update Rule</h3>
+        <p>
+          Starting from a uniform strength vector $\mathbf{s}^{(0)} = \mathbf{1}$, GRASP iterates a damped nonlinear operator that balances the weakening effect of attacks against the reinforcing effect of defense:
+        </p>
+        <div class="eq-box">
+          $$s_j^{(t)} = (1-\gamma)\,s_j^{(t-1)} + \gamma \cdot \frac{1 + \beta\sum_k D_{kj}\,s_k^{(t-1)}}{1 + \alpha\sum_i W_{ij}\,s_i^{(t-1)}}$$
+        </div>
+        <p class="eq-caption">
+          Hyperparameters $\alpha, \beta \geq 0$ control attack and defense influence; $\gamma \in (0,1]$ is the damping factor. The default instantiation sets $D = W^2$ (two-hop defense), $\alpha = 1.0$, $\beta = 0.6$, $\gamma = 0.9$.
+        </p>
+        <h3 class="method-subhead">Convergence Guarantee</h3>
+        <p>
+          <strong>Theorem 3.1.</strong> If $\alpha \leq \tfrac{1}{4\|W\|_1}$ and $\beta \leq \tfrac{1}{4\|D\|_1}$, then $G$ is a contraction on $\mathcal{S} = \{s \in \mathbb{R}^d \mid \|s-1\|_\infty \leq 1\}$ and the iteration converges to a unique fixed point $s^* \in \mathcal{S}$.
+        </p>
+      </div>
+      <div class="method-fig">
+        <figure>
+          <div class="toy-wrap">
+            <div class="toy-action-bar">
+              <button class="toy-btn" onclick="toyRandomDAG()">Random DAG</button>
+              <button class="toy-btn toy-btn-danger" id="toy-delete-btn" onclick="toyDeleteSelected()" style="display:none">× Delete</button>
+              <button class="toy-btn toy-btn-ghost" onclick="toyReset()">Reset</button>
+            </div>
+            <canvas id="toy-canvas" class="toy-canvas" style="cursor:default"></canvas>
+            <div class="toy-controls">
+              <div class="toy-slider-row">
+                <label>Edge $w$</label>
+                <input type="range" min="0.05" max="1" step="0.05" value="0.70" id="toy-edge-w" oninput="updateToy()">
+                <span id="toy-edge-w-val" class="toy-val">0.70</span>
+              </div>
+              <div class="toy-slider-row">
+                <label>$\alpha$</label>
+                <input type="range" min="0.01" max="0.50" step="0.01" value="0.15" id="talpha" oninput="updateToy()">
+                <span id="tvalpha" class="toy-val">0.15</span>
+              </div>
+            </div>
+          </div>
+          <figcaption>Interactive GRASP toy. <strong>Drag node→node</strong> to add attack edge · <strong>double-click</strong> node to delete · edge weight slider controls new edge strength · use <em>Random DAG</em> to explore new topologies. Red = attacks · blue dashed = $D=W^2$ defense.</figcaption>
+        </figure>
+        <figure style="margin-top:1.5rem;">
+          <canvas id="conv-canvas" width="340" height="160" class="ifig-canvas" style="border-radius:var(--radius);border:1px solid var(--border)"></canvas>
+          <figcaption>Convergence trajectory for the toy example — rank position of each argument across GRASP iterations.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- Structural Sufficiency -->
+    <div class="concept-box">
+      <h3 class="concept-title">Structural Sufficiency</h3>
+      <p>
+        GRASP operationalizes <em>structural sufficiency</em>: argument $a$ is structurally sufficient in $\mathcal{G}$ if all attacks on $a$ are themselves counter-attacked within the graph. Formally, let $R^- \subseteq A \times A$ denote the attack relation. We write $\text{SS}(a;\mathcal{G})$ when $a$ is structurally sufficient. This notion is distinct from persuasiveness, factuality, or rhetorical appeal.
+      </p>
+      <div class="axiom-table-wrap">
+        <table class="axiom-table">
+          <thead>
+            <tr><th>Axiom</th><th>Formal statement</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>S1 · Attack Sensitivity</strong></td>
+              <td>$\forall\, b : (b,a)\in R^- \;\Rightarrow\; \exists\, c : (c,b)\in R^-$ is required for $\text{SS}(a;\mathcal{G})$. In the weighted setting: $\neg\text{SS}(a;\mathcal{G})$ when $\sum_i W_{ia} s_i$ is large relative to available defense.</td>
+            </tr>
+            <tr>
+              <td><strong>S2 · Defense Reinstatement</strong></td>
+              <td>$(c,b)\in R^-$ and $(b,a)\in R^-$ $\Rightarrow$ $(b,a)$ is neutralized and does not invalidate $\text{SS}(a;\mathcal{G})$. GRASP encodes this via $D_{ca} = \sum_b W_{cb} W_{ba}$ (two-hop defense).</td>
+            </tr>
+            <tr>
+              <td><strong>S3 · Structural Locality</strong></td>
+              <td>$\text{SS}(a;\mathcal{G})$ depends only on $a$'s connected component in $(A, R^-)$. Arguments outside the component have zero influence on $s_a^*$.</td>
+            </tr>
+            <tr>
+              <td><strong>S4 · Baseline Sufficiency</strong></td>
+              <td>$\forall\, b : (b,a)\notin R^- \;\Rightarrow\; \text{SS}(a;\mathcal{G})$. In GRASP, attack-free arguments converge to $s_a^* = 1$ (the baseline), independent of $\alpha, \beta$.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── RESULTS ───────────────────────────────────────────────────── -->
+<section class="section" id="results">
+  <div class="section-inner">
+    <h2 class="section-heading">Results</h2>
+    <p class="section-intro">
+      We evaluate on <strong>STRUCTDEBATE</strong> — 300 debates (7,000 arguments) across 50 real-world motions, balanced by stance and semantic angle. Six judge models provide pairwise attack scores; GRASP aggregates them into global rankings.
+    </p>
+
+    <!-- Key numbers -->
+    <div class="kpi-strip">
+      <div class="kpi">
+        <span class="kpi-num">2×</span>
+        <span class="kpi-label">Inter-model agreement improvement over RAW judging</span>
+      </div>
+      <div class="kpi">
+        <span class="kpi-num">τ≈0.62</span>
+        <span class="kpi-label">Kendall's τ agreement (vs. 0.31 for RAW)</span>
+      </div>
+      <div class="kpi">
+        <span class="kpi-num">300</span>
+        <span class="kpi-label">Debates · 50 motions · 7,000 arguments</span>
+      </div>
+      <div class="kpi">
+        <span class="kpi-num">6</span>
+        <span class="kpi-label">LLM judge models evaluated</span>
+      </div>
+    </div>
+
+    <!-- Agreement table -->
+    <div class="table-wrap">
+      <p class="table-caption"><strong>Table 1.</strong> Inter-model agreement (Kendall's $\tau$) for Pool (P) and Multi-turn (MT) settings. $\Delta\tau$ improvements over RAW are shown in parentheses. <strong>Bold</strong> = best; shaded = default GRASP variant.</p>
+      <table class="results-table">
+        <thead>
+          <tr>
+            <th>Method</th>
+            <th>$\tau$ (P) ↑</th>
+            <th>$\tau$ (MT) ↑</th>
+            <th>$\rho$ (P) ↑</th>
+            <th>$\rho$ (MT) ↑</th>
+            <th>Top-3 (P) ↑</th>
+            <th>Top-3 (MT) ↑</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>RAW</td>
+            <td>0.337</td><td>0.309</td>
+            <td>0.425</td><td>0.380</td>
+            <td>0.385</td><td>0.410</td>
+          </tr>
+          <tr>
+            <td>RAW+SS</td>
+            <td>0.393</td><td>0.064</td>
+            <td>0.405</td><td>0.038</td>
+            <td>0.208</td><td>0.251</td>
+          </tr>
+          <tr class="row-highlight">
+            <td><strong>GRASP</strong></td>
+            <td><strong>0.623</strong> <span class="delta">(+.286)</span></td>
+            <td><strong>0.626</strong> <span class="delta">(+.317)</span></td>
+            <td><strong>0.780</strong></td>
+            <td><strong>0.779</strong></td>
+            <td><strong>0.509</strong></td>
+            <td><strong>0.487</strong></td>
+          </tr>
+          <tr>
+            <td>GRASP-W<sub>∞</sub></td>
+            <td>0.623 <span class="delta">(+.286)</span></td>
+            <td>0.626 <span class="delta">(+.317)</span></td>
+            <td>0.781</td><td>0.779</td>
+            <td>0.509</td><td>0.486</td>
+          </tr>
+          <tr>
+            <td>GRASP-W<sub>1</sub></td>
+            <td>0.604 <span class="delta">(+.267)</span></td>
+            <td>0.607 <span class="delta">(+.298)</span></td>
+            <td>0.780</td><td>0.780</td>
+            <td>0.528</td><td>0.585</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Interactive figures -->
+    <div class="fig-pair">
+      <figure>
+        <div class="ifig-wrap">
+          <canvas id="scatter2-canvas" class="ifig-canvas"></canvas>
+          <div id="scatter2-tooltip" class="pearson-tooltip"></div>
+        </div>
+        <figcaption><strong>Figure 3.</strong> Per-debate mean Kendall $\tau$ vs. mean Pearson $r$ of $W$ matrices across pool debates. Higher $W$ similarity (x-axis) predicts higher GRASP ranking agreement — confirming structural reproducibility translates to ranking stability.</figcaption>
+      </figure>
+      <figure>
+        <div class="ifig-wrap">
+          <canvas id="density-iters-canvas" class="ifig-canvas"></canvas>
+          <div id="density-iters-tooltip" class="pearson-tooltip"></div>
+        </div>
+        <figcaption><strong>Figure 4.</strong> Iterations to convergence vs. W-matrix density across all 50 pool debates, per judge model. Denser matrices require fewer iterations — convergence is faster when the graph is more uniformly connected.</figcaption>
+      </figure>
+    </div>
+
+    <!-- Case study highlight -->
+    <div class="case-study">
+      <h3 class="case-study-title">Case Study: GRASP vs. RAW on a Single Argument</h3>
+      <p>The motion <em>"This House would break up dominant technology monopolies"</em> (debate <span class="mono">mt_048</span>): the argument <em>"Dominant technology monopolies stifle innovation by controlling access to critical platforms and data, discouraging competition through predatory practices, and reducing incentives to improve products. Breaking them up would enable smaller firms to enter the market, accelerate technological advancement, and diversify the development of new tools and services."</em> is ranked near-unanimously <strong>#1 by GRASP</strong> across all judges, yet receives ranks 1–20 (median ≈ 14) under direct RAW judging.</p>
+      <div class="rank-compare">
+        <div class="rank-block rank-grasp">
+          <div class="rank-block-head">GRASP Rankings</div>
+          <div class="rank-block-body">
+            <div class="rank-row"><span class="model-name">claude-haiku-4.5</span><span class="rank-val">#1</span></div>
+            <div class="rank-row"><span class="model-name">deepseek-v3.2</span><span class="rank-val">#1</span></div>
+            <div class="rank-row"><span class="model-name">gemini-3-flash</span><span class="rank-val">#1</span></div>
+            <div class="rank-row"><span class="model-name">llama-4-scout</span><span class="rank-val">#1</span></div>
+            <div class="rank-row"><span class="model-name">gpt-5.2-chat</span><span class="rank-val">#1</span></div>
+            <div class="rank-row"><span class="model-name">mimo-v2-flash</span><span class="rank-val">#2</span></div>
+          </div>
+          <div class="rank-verdict rank-verdict-good">Highly consistent</div>
+        </div>
+        <div class="rank-block rank-raw">
+          <div class="rank-block-head">RAW Rankings</div>
+          <div class="rank-block-body">
+            <div class="rank-row"><span class="model-name">claude-haiku-4.5</span><span class="rank-val">#7</span></div>
+            <div class="rank-row"><span class="model-name">deepseek-v3.2</span><span class="rank-val">#17</span></div>
+            <div class="rank-row"><span class="model-name">gemini-3-flash</span><span class="rank-val">#11</span></div>
+            <div class="rank-row"><span class="model-name">llama-4-scout</span><span class="rank-val">#5</span></div>
+            <div class="rank-row"><span class="model-name">gpt-5.2-chat</span><span class="rank-val">#20</span></div>
+            <div class="rank-row"><span class="model-name">mimo-v2-flash</span><span class="rank-val">#19</span></div>
+          </div>
+          <div class="rank-verdict rank-verdict-bad">Wide disagreement</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── INTERACTIVE DEMO ──────────────────────────────────────────── -->
+<section class="section section-alt" id="demo">
+  <div class="section-inner">
+    <h2 class="section-heading">STRUCTDEBATE Explorer</h2>
+    <p class="section-intro">
+      Live visualization of all 300 debates — 50 pool + 250 multi-turn — pairwise attack matrices from 6 LLM judges, and GRASP rankings with rank dynamics. No backend required.
+    </p>
+
+    <!-- Debate selector -->
+    <div class="explorer-controls">
+      <div class="filter-group">
+        <span class="filter-label">Setting</span>
+        <button class="filter-btn active" data-setting="all"       onclick="filterSetting(this,'all')">All (300)</button>
+        <button class="filter-btn"        data-setting="pool"      onclick="filterSetting(this,'pool')">Pool (50)</button>
+        <button class="filter-btn"        data-setting="multiturn" onclick="filterSetting(this,'multiturn')">Multi-turn (250)</button>
+      </div>
+      <div class="filter-group motion-select-group">
+        <label class="filter-label" for="motion-select">Debate</label>
+        <select id="motion-select" onchange="loadDebate(this.value)"></select>
+      </div>
+    </div>
+
+    <!-- Motion display -->
+    <div class="explorer-motion" id="explorer-motion">
+      <div class="explorer-motion-text" id="explorer-motion-text">Loading…</div>
+    </div>
+    <div id="debate-loading" class="debate-loading">Loading…</div>
+
+    <!-- Tab nav -->
+    <div class="tab-nav" id="tab-nav">
+      <button class="tab-btn active" data-tab="graph"     onclick="switchTab('graph')">Attack Graph</button>
+      <button class="tab-btn"        data-tab="rankings"  onclick="switchTab('rankings')">Rankings</button>
+      <button class="tab-btn"        data-tab="agreement" onclick="switchTab('agreement')">Judge Agreement</button>
+      <button class="tab-btn"        data-tab="dynamics"  onclick="switchTab('dynamics')">Rank Dynamics</button>
+    </div>
+
+    <!-- ── Tab: Attack Graph ── -->
+    <div class="tab-panel" id="tab-graph">
+      <div class="graph-toolbar">
+        <div class="filter-group">
+          <span class="filter-label">Judge</span>
+          <div class="judge-selector" id="graph-judge-btns"></div>
+        </div>
+        <div class="filter-group tau-group">
+          <span class="filter-label">τ =</span>
+          <input type="range" id="tau-slider" min="0" max="1" step="0.05" value="0.5"
+                 oninput="onTauChange(this.value)" class="tau-slider" />
+          <span class="tau-val" id="tau-val">0.50</span>
+        </div>
+      </div>
+      <div class="graph-stats-bar">
+        <div id="graph-stats" class="graph-stats"></div>
+      </div>
+      <div class="graph-canvas-wrap">
+        <canvas id="graph-canvas"></canvas>
+      </div>
+      <div id="graph-legend" class="graph-legend"></div>
+      <div id="graph-insights" class="graph-insights"></div>
+    </div>
+
+    <!-- ── Tab: Rankings ── -->
+    <div class="tab-panel hidden" id="tab-rankings">
+      <p class="tab-desc">Arguments sorted by GRASP rank for the selected judge. RAW = holistic verdict; RAW+SS = holistic + structural score.</p>
+      <div class="rk-judge-bar" id="rk-judge-bar"></div>
+      <div class="rk-table-wrap">
+        <table class="rk-table">
+          <thead>
+            <tr>
+              <th class="rk-th-rank">GRASP</th>
+              <th id="rk-th-raw" class="rk-th-rank">RAW</th>
+              <th id="rk-th-rawss" class="rk-th-rank">RAW+SS</th>
+              <th></th>
+              <th></th>
+              <th>Argument</th>
+              <th class="rk-th-score">Score</th>
+            </tr>
+          </thead>
+          <tbody id="rk-tbody"></tbody>
+        </table>
+      </div>
+      <p class="rk-angle-legend">Angle: <strong>E</strong> Economic · <strong>L</strong> Legal · <strong>M</strong> Moral · <strong>P</strong> Political · <strong>S</strong> Social · <strong>T</strong> Technological</p>
+    </div>
+
+    <!-- ── Tab: Judge Agreement ── -->
+    <div class="tab-panel hidden" id="tab-agreement">
+      <p class="tab-desc">Pairwise agreement between judge models — lower triangle only (symmetric). Left: Pearson r of attack-weight matrices W. Centre: Kendall τ of RAW holistic rankings. Right: Kendall τ of RAW+SS rankings.</p>
+      <div class="agreement-wrap" style="display:flex;gap:1.5rem;flex-wrap:wrap;align-items:flex-start">
+        <div>
+          <div style="font-size:0.75rem;font-weight:600;color:var(--text-2);margin-bottom:0.4rem;text-align:center">W-matrix Pearson r</div>
+          <canvas id="pearson-canvas" width="360" height="360"></canvas>
+          <div class="pearson-tooltip" id="pearson-tooltip"></div>
+        </div>
+        <div>
+          <div style="font-size:0.75rem;font-weight:600;color:var(--text-2);margin-bottom:0.4rem;text-align:center">RAW ranking Kendall τ</div>
+          <canvas id="pearson-raw-canvas" width="360" height="360"></canvas>
+          <div class="pearson-tooltip" id="pearson-raw-tooltip"></div>
+        </div>
+        <div>
+          <div style="font-size:0.75rem;font-weight:600;color:var(--text-2);margin-bottom:0.4rem;text-align:center">RAW+SS ranking Kendall τ</div>
+          <canvas id="pearson-rawss-canvas" width="360" height="360"></canvas>
+          <div class="pearson-tooltip" id="pearson-rawss-tooltip"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Tab: Rank Dynamics ── -->
+    <div class="tab-panel hidden" id="tab-dynamics">
+      <div class="dynamics-toolbar">
+        <div class="filter-group">
+          <span class="filter-label">Judge</span>
+          <div id="dynamics-judge-btns" class="judge-selector"></div>
+        </div>
+        <div class="filter-group">
+          <span class="filter-label">Show</span>
+          <button class="filter-btn active" data-dyn="volatile" onclick="filterDynamics(this,'volatile')">Most volatile</button>
+          <button class="filter-btn" data-dyn="top5"     onclick="filterDynamics(this,'top5')">Top-5 final</button>
+          <button class="filter-btn" data-dyn="pro"      onclick="filterDynamics(this,'pro')">Pro args</button>
+          <button class="filter-btn" data-dyn="con"      onclick="filterDynamics(this,'con')">Con args</button>
+        </div>
+      </div>
+      <canvas id="dynamics-canvas" width="800" height="320"></canvas>
+      <div id="dynamics-legend" class="dynamics-legend"></div>
+    </div>
+
+    <!-- Per-argument detail panel -->
+    <div class="arg-detail-panel hidden" id="arg-detail-panel">
+      <div class="arg-detail-header">
+        <span id="arg-detail-badge"></span>
+        <span id="arg-detail-title" class="arg-detail-title"></span>
+        <button class="arg-detail-close" onclick="closeArgDetail()">✕</button>
+      </div>
+      <div id="arg-detail-text" class="arg-detail-text"></div>
+      <div class="arg-detail-ranks" id="arg-detail-ranks"></div>
+      <div class="arg-detail-connections" id="arg-detail-connections"></div>
+    </div>
+
+    <!-- Shared tooltip -->
+    <div class="cell-tooltip" id="cell-tooltip"></div>
+  </div>
+</section>
+
+<script src="static/grasp_demo.js"></script>
+</body>
+</html>

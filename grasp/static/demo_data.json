@@ -1,0 +1,243 @@
+{
+  "motion": "This House would break up dominant technology monopolies.",
+  "args": [
+    {
+      "id": "A1",
+      "text": "Dominant technology monopolies hinder technological innovation by controlling key platforms and suppressing competing advancements. Breaking them up would foster a competitive environment where multiple companies invest in diverse research and development, leading to faster technological progress. This approach ensures that emerging technologies are not bottlenecked by a few powerful entities, promoting broader access to cutting-edge solutions.",
+      "side": "Pro",
+      "turn": 0
+    },
+    {
+      "id": "A2",
+      "text": "Dominant technology monopolies drive technological innovation by concentrating resources for large-scale research and development that smaller entities cannot match, countering the claim that they suppress advancements. Breaking them up would fragment essential platforms and standards, potentially slowing the integration of new technologies across ecosystems. This fragmentation could limit rather than promote broader access to cutting-edge solutions, as coordinated efforts by monopolies often accelerate widespread adoption.",
+      "side": "Con",
+      "turn": 0
+    },
+    {
+      "id": "A3",
+      "text": "Dominant technology monopolies accumulate excessive political power through lobbying and influence over policy-making, which distorts democratic processes and prioritizes corporate interests over public welfare. Breaking them up would dilute this concentrated influence, enabling governments to implement more effective regulations without facing unified opposition from powerful entities. This restructuring would also encourage a more pluralistic political landscape where diverse stakeholders can contribute to technology policy debates.",
+      "side": "Pro",
+      "turn": 1
+    },
+    {
+      "id": "A4",
+      "text": "Dominant technology monopolies provide a centralized point for political accountability, allowing governments to engage with fewer entities for effective oversight rather than dealing with fragmented influences from multiple smaller companies. Breaking them up would likely increase overall lobbying efforts as numerous firms compete for policy favors, potentially overwhelming democratic processes instead of diluting corporate power. This concentration enables more efficient implementation of regulations that address public welfare without the chaos of dispersed political pressures.",
+      "side": "Con",
+      "turn": 1
+    },
+    {
+      "id": "A5",
+      "text": "Dominant technology monopolies reduce economic competition by controlling market access and setting high prices without challenge from rivals. Breaking them up would enable more companies to enter the market, leading to lower prices and greater consumer choice. This shift would also promote overall economic growth through increased innovation and resource allocation across a wider range of firms.",
+      "side": "Pro",
+      "turn": 2
+    },
+    {
+      "id": "A6",
+      "text": "Dominant technology monopolies generate economies of scale that enable substantial investments in infrastructure and research, leading to overall economic efficiencies that benefit consumers through sustained innovation and stable pricing rather than the high prices claimed. Breaking them up would fragment these resources, resulting in higher operational costs for smaller firms and potentially slower economic growth due to reduced capacity for large-scale projects. This approach overlooks how concentrated firms allocate resources more effectively across the economy compared to a dispersed market with increased entry barriers for new competitors.",
+      "side": "Con",
+      "turn": 2
+    }
+  ],
+  "W": [
+    [
+      0.0,
+      0.9,
+      0.2,
+      0.8,
+      0.2,
+      0.8
+    ],
+    [
+      0.9,
+      0.0,
+      0.4,
+      0.4,
+      0.8,
+      0.7
+    ],
+    [
+      0.3,
+      0.8,
+      0.0,
+      0.9,
+      0.2,
+      0.8
+    ],
+    [
+      0.7,
+      0.4,
+      0.9,
+      0.0,
+      0.8,
+      0.7
+    ],
+    [
+      0.2,
+      0.8,
+      0.2,
+      0.8,
+      0.0,
+      0.8
+    ],
+    [
+      0.8,
+      0.2,
+      0.4,
+      0.3,
+      0.9,
+      0.0
+    ]
+  ],
+  "judges": {
+    "gpt-4o-mini": [
+      [
+        0.0,
+        0.9,
+        0.2,
+        0.8,
+        0.2,
+        0.8
+      ],
+      [
+        0.9,
+        0.0,
+        0.4,
+        0.4,
+        0.8,
+        0.7
+      ],
+      [
+        0.3,
+        0.8,
+        0.0,
+        0.9,
+        0.2,
+        0.8
+      ],
+      [
+        0.7,
+        0.4,
+        0.9,
+        0.0,
+        0.8,
+        0.7
+      ],
+      [
+        0.2,
+        0.8,
+        0.2,
+        0.8,
+        0.0,
+        0.8
+      ],
+      [
+        0.8,
+        0.2,
+        0.4,
+        0.3,
+        0.9,
+        0.0
+      ]
+    ],
+    "claude-haiku-4.5": [
+      [
+        0.0,
+        0.65,
+        0.15,
+        0.35,
+        0.15,
+        0.65
+      ],
+      [
+        0.65,
+        0.0,
+        0.15,
+        0.75,
+        0.35,
+        0.15
+      ],
+      [
+        0.15,
+        0.35,
+        0.0,
+        0.65,
+        0.15,
+        0.35
+      ],
+      [
+        0.35,
+        0.15,
+        0.72,
+        0.0,
+        0.35,
+        0.25
+      ],
+      [
+        0.15,
+        0.65,
+        0.15,
+        0.35,
+        0.0,
+        0.45
+      ],
+      [
+        0.65,
+        0.15,
+        0.25,
+        0.75,
+        0.35,
+        0.0
+      ]
+    ],
+    "gemini-flash": [
+      [
+        0.0,
+        0.8,
+        0.0,
+        0.1,
+        0.3,
+        0.7
+      ],
+      [
+        0.8,
+        0.0,
+        0.1,
+        0.1,
+        0.7,
+        0.7
+      ],
+      [
+        0.0,
+        0.6,
+        0.0,
+        0.8,
+        0.0,
+        0.6
+      ],
+      [
+        0.2,
+        0.2,
+        0.7,
+        0.0,
+        0.2,
+        0.1
+      ],
+      [
+        0.2,
+        0.7,
+        0.0,
+        0.3,
+        0.0,
+        0.7
+      ],
+      [
+        0.7,
+        0.6,
+        0.3,
+        0.1,
+        0.8,
+        0.0
+      ]
+    ]
+  }
+}

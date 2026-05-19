@@ -1,0 +1,2102 @@
+[
+  {
+    "id": "pool_000",
+    "setting": "pool",
+    "motion": "This House would ban the use of AI in primary and secondary education.",
+    "n_args": 40,
+    "size_kb": 184
+  },
+  {
+    "id": "pool_001",
+    "setting": "pool",
+    "motion": "This House would ban stablecoins pegged to national currencies.",
+    "n_args": 40,
+    "size_kb": 185
+  },
+  {
+    "id": "pool_002",
+    "setting": "pool",
+    "motion": "This House would mandate all businesses to accept only digital payments.",
+    "n_args": 40,
+    "size_kb": 198
+  },
+  {
+    "id": "pool_003",
+    "setting": "pool",
+    "motion": "This House would require electric vehicle manufacturers to refuse sales in countries with poor environmental records.",
+    "n_args": 40,
+    "size_kb": 185
+  },
+  {
+    "id": "pool_004",
+    "setting": "pool",
+    "motion": "This House would allow individuals to erase morally distressing memories.",
+    "n_args": 40,
+    "size_kb": 198
+  },
+  {
+    "id": "pool_005",
+    "setting": "pool",
+    "motion": "This House would ban facial recognition technology in public spaces.",
+    "n_args": 40,
+    "size_kb": 186
+  },
+  {
+    "id": "pool_006",
+    "setting": "pool",
+    "motion": "This House would require social media companies to make their recommendation algorithms public.",
+    "n_args": 40,
+    "size_kb": 198
+  },
+  {
+    "id": "pool_007",
+    "setting": "pool",
+    "motion": "This House would abolish the minimum wage law.",
+    "n_args": 40,
+    "size_kb": 192
+  },
+  {
+    "id": "pool_008",
+    "setting": "pool",
+    "motion": "This House would allow the sale and purchase of human organs.",
+    "n_args": 40,
+    "size_kb": 198
+  },
+  {
+    "id": "pool_009",
+    "setting": "pool",
+    "motion": "This House would ban sovereign wealth funds from investing in private equity.",
+    "n_args": 40,
+    "size_kb": 184
+  },
+  {
+    "id": "pool_010",
+    "setting": "pool",
+    "motion": "This House would require companies to make the salaries of all their employees publicly available.",
+    "n_args": 40,
+    "size_kb": 202
+  },
+  {
+    "id": "pool_011",
+    "setting": "pool",
+    "motion": "This House would allow workers in less economically developed countries to waive labor protections in exchange for higher wages.",
+    "n_args": 40,
+    "size_kb": 193
+  },
+  {
+    "id": "pool_012",
+    "setting": "pool",
+    "motion": "This House would allow lump-sum scholarships as an alternative to periodic disbursements.",
+    "n_args": 40,
+    "size_kb": 201
+  },
+  {
+    "id": "pool_013",
+    "setting": "pool",
+    "motion": "This House would introduce a universal basic income funded by wealth taxes.",
+    "n_args": 40,
+    "size_kb": 200
+  },
+  {
+    "id": "pool_014",
+    "setting": "pool",
+    "motion": "This House would require warrants for searches instead of allowing stop-and-frisk.",
+    "n_args": 40,
+    "size_kb": 192
+  },
+  {
+    "id": "pool_015",
+    "setting": "pool",
+    "motion": "This House would criminalize dangerous in-play actions in professional sport.",
+    "n_args": 40,
+    "size_kb": 188
+  },
+  {
+    "id": "pool_016",
+    "setting": "pool",
+    "motion": "This House would ban corporate donations to political campaigns.",
+    "n_args": 40,
+    "size_kb": 186
+  },
+  {
+    "id": "pool_017",
+    "setting": "pool",
+    "motion": "This House would allow democratic governments to overturn supranational court decisions with a simple legislative majority.",
+    "n_args": 40,
+    "size_kb": 193
+  },
+  {
+    "id": "pool_018",
+    "setting": "pool",
+    "motion": "This House would introduce a binding \u201cNone of the Above\u201d option on national election ballots.",
+    "n_args": 40,
+    "size_kb": 198
+  },
+  {
+    "id": "pool_019",
+    "setting": "pool",
+    "motion": "This House would allow citizens to vote directly on impeachment cases through a national referendum.",
+    "n_args": 40,
+    "size_kb": 199
+  },
+  {
+    "id": "pool_020",
+    "setting": "pool",
+    "motion": "This House would allow subnational jurisdictions to overturn federal policies via citizen referendum.",
+    "n_args": 40,
+    "size_kb": 200
+  },
+  {
+    "id": "pool_021",
+    "setting": "pool",
+    "motion": "This House would allow parents to administer behavioral enhancement drugs to children without their consent.",
+    "n_args": 40,
+    "size_kb": 197
+  },
+  {
+    "id": "pool_022",
+    "setting": "pool",
+    "motion": "This House would mandate comprehensive queer education in schools.",
+    "n_args": 40,
+    "size_kb": 200
+  },
+  {
+    "id": "pool_023",
+    "setting": "pool",
+    "motion": "This House would restrict state funding only to art perceived as valuable by the general public.",
+    "n_args": 40,
+    "size_kb": 191
+  },
+  {
+    "id": "pool_024",
+    "setting": "pool",
+    "motion": "This House would ban the private ownership of historical artifacts.",
+    "n_args": 40,
+    "size_kb": 189
+  },
+  {
+    "id": "pool_025",
+    "setting": "pool",
+    "motion": "This House would allow high school students to rate teachers as a primary basis for pay increases.",
+    "n_args": 40,
+    "size_kb": 199
+  },
+  {
+    "id": "pool_026",
+    "setting": "pool",
+    "motion": "This House would introduce compulsory national service for all citizens.",
+    "n_args": 40,
+    "size_kb": 198
+  },
+  {
+    "id": "pool_027",
+    "setting": "pool",
+    "motion": "This House would invest preferentially in climate startups in developing countries rather than developed countries.",
+    "n_args": 40,
+    "size_kb": 196
+  },
+  {
+    "id": "pool_028",
+    "setting": "pool",
+    "motion": "This House would ban the export of waste to developing countries.",
+    "n_args": 40,
+    "size_kb": 184
+  },
+  {
+    "id": "pool_029",
+    "setting": "pool",
+    "motion": "This House would nationalize luxury ingredient production in producing countries.",
+    "n_args": 40,
+    "size_kb": 196
+  },
+  {
+    "id": "pool_030",
+    "setting": "pool",
+    "motion": "This House would impose carbon tariffs on imported goods.",
+    "n_args": 40,
+    "size_kb": 192
+  },
+  {
+    "id": "pool_031",
+    "setting": "pool",
+    "motion": "This House would ban advertising for environmentally harmful products.",
+    "n_args": 40,
+    "size_kb": 190
+  },
+  {
+    "id": "pool_032",
+    "setting": "pool",
+    "motion": "This House would ban countries from offering financial incentives to foreign athletes to switch nationality.",
+    "n_args": 40,
+    "size_kb": 182
+  },
+  {
+    "id": "pool_033",
+    "setting": "pool",
+    "motion": "This House would allow prisoners serving life without parole to opt for the death penalty.",
+    "n_args": 40,
+    "size_kb": 192
+  },
+  {
+    "id": "pool_034",
+    "setting": "pool",
+    "motion": "This House would ban proselytization acts in liberal democracies.",
+    "n_args": 40,
+    "size_kb": 183
+  },
+  {
+    "id": "pool_035",
+    "setting": "pool",
+    "motion": "This House would restrict immigration based on environmental carrying capacity.",
+    "n_args": 40,
+    "size_kb": 193
+  },
+  {
+    "id": "pool_036",
+    "setting": "pool",
+    "motion": "This House would allow refugees to be settled through private sponsorship markets.",
+    "n_args": 40,
+    "size_kb": 198
+  },
+  {
+    "id": "pool_037",
+    "setting": "pool",
+    "motion": "This House would ban the consolidation of major news organizations.",
+    "n_args": 40,
+    "size_kb": 185
+  },
+  {
+    "id": "pool_038",
+    "setting": "pool",
+    "motion": "This House would introduce a youth-weighted voting system in democratic elections.",
+    "n_args": 40,
+    "size_kb": 200
+  },
+  {
+    "id": "pool_039",
+    "setting": "pool",
+    "motion": "This House would require public broadcasters to allocate equal airtime to all political parties.",
+    "n_args": 40,
+    "size_kb": 197
+  },
+  {
+    "id": "pool_040",
+    "setting": "pool",
+    "motion": "This House would abolish standardized testing in university admissions.",
+    "n_args": 40,
+    "size_kb": 191
+  },
+  {
+    "id": "pool_041",
+    "setting": "pool",
+    "motion": "This House would mandate media literacy education for all adults.",
+    "n_args": 40,
+    "size_kb": 196
+  },
+  {
+    "id": "pool_042",
+    "setting": "pool",
+    "motion": "This House would ban private military contractors.",
+    "n_args": 40,
+    "size_kb": 182
+  },
+  {
+    "id": "pool_043",
+    "setting": "pool",
+    "motion": "This House would allow preventive detention for credible terrorism threats.",
+    "n_args": 40,
+    "size_kb": 198
+  },
+  {
+    "id": "pool_044",
+    "setting": "pool",
+    "motion": "This House would restrict police use of lethal force to extreme circumstances only.",
+    "n_args": 40,
+    "size_kb": 192
+  },
+  {
+    "id": "pool_045",
+    "setting": "pool",
+    "motion": "This House would allow gene editing of embryos for non-medical traits.",
+    "n_args": 40,
+    "size_kb": 196
+  },
+  {
+    "id": "pool_046",
+    "setting": "pool",
+    "motion": "This House would require mandatory vaccination for all citizens.",
+    "n_args": 40,
+    "size_kb": 197
+  },
+  {
+    "id": "pool_047",
+    "setting": "pool",
+    "motion": "This House would ban animal testing for cosmetic products.",
+    "n_args": 40,
+    "size_kb": 187
+  },
+  {
+    "id": "pool_048",
+    "setting": "pool",
+    "motion": "This House would break up dominant technology monopolies.",
+    "n_args": 40,
+    "size_kb": 192
+  },
+  {
+    "id": "pool_049",
+    "setting": "pool",
+    "motion": "This House would require platforms to compensate users for personal data usage.",
+    "n_args": 40,
+    "size_kb": 196
+  },
+  {
+    "id": "mt_000_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would ban the use of AI in primary and secondary education.",
+    "n_args": 20,
+    "size_kb": 30
+  },
+  {
+    "id": "mt_000_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would ban the use of AI in primary and secondary education.",
+    "n_args": 20,
+    "size_kb": 31
+  },
+  {
+    "id": "mt_000_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would ban the use of AI in primary and secondary education.",
+    "n_args": 20,
+    "size_kb": 30
+  },
+  {
+    "id": "mt_000_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would ban the use of AI in primary and secondary education.",
+    "n_args": 20,
+    "size_kb": 26
+  },
+  {
+    "id": "mt_000_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would ban the use of AI in primary and secondary education.",
+    "n_args": 20,
+    "size_kb": 28
+  },
+  {
+    "id": "mt_001_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would ban stablecoins pegged to national currencies.",
+    "n_args": 20,
+    "size_kb": 31
+  },
+  {
+    "id": "mt_001_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would ban stablecoins pegged to national currencies.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_001_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would ban stablecoins pegged to national currencies.",
+    "n_args": 20,
+    "size_kb": 30
+  },
+  {
+    "id": "mt_001_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would ban stablecoins pegged to national currencies.",
+    "n_args": 20,
+    "size_kb": 27
+  },
+  {
+    "id": "mt_001_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would ban stablecoins pegged to national currencies.",
+    "n_args": 20,
+    "size_kb": 27
+  },
+  {
+    "id": "mt_002_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would mandate all businesses to accept only digital payments.",
+    "n_args": 20,
+    "size_kb": 34
+  },
+  {
+    "id": "mt_002_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would mandate all businesses to accept only digital payments.",
+    "n_args": 20,
+    "size_kb": 31
+  },
+  {
+    "id": "mt_002_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would mandate all businesses to accept only digital payments.",
+    "n_args": 20,
+    "size_kb": 30
+  },
+  {
+    "id": "mt_002_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would mandate all businesses to accept only digital payments.",
+    "n_args": 20,
+    "size_kb": 26
+  },
+  {
+    "id": "mt_002_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would mandate all businesses to accept only digital payments.",
+    "n_args": 20,
+    "size_kb": 26
+  },
+  {
+    "id": "mt_003_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would require electric vehicle manufacturers to refuse sales in countries with poor environmental records.",
+    "n_args": 20,
+    "size_kb": 31
+  },
+  {
+    "id": "mt_003_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would require electric vehicle manufacturers to refuse sales in countries with poor environmental records.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_003_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would require electric vehicle manufacturers to refuse sales in countries with poor environmental records.",
+    "n_args": 20,
+    "size_kb": 30
+  },
+  {
+    "id": "mt_003_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would require electric vehicle manufacturers to refuse sales in countries with poor environmental records.",
+    "n_args": 20,
+    "size_kb": 27
+  },
+  {
+    "id": "mt_003_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would require electric vehicle manufacturers to refuse sales in countries with poor environmental records.",
+    "n_args": 20,
+    "size_kb": 28
+  },
+  {
+    "id": "mt_004_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would allow individuals to erase morally distressing memories.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_004_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would allow individuals to erase morally distressing memories.",
+    "n_args": 20,
+    "size_kb": 31
+  },
+  {
+    "id": "mt_004_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would allow individuals to erase morally distressing memories.",
+    "n_args": 20,
+    "size_kb": 30
+  },
+  {
+    "id": "mt_004_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would allow individuals to erase morally distressing memories.",
+    "n_args": 20,
+    "size_kb": 26
+  },
+  {
+    "id": "mt_004_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would allow individuals to erase morally distressing memories.",
+    "n_args": 20,
+    "size_kb": 26
+  },
+  {
+    "id": "mt_005_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would ban facial recognition technology in public spaces.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_005_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would ban facial recognition technology in public spaces.",
+    "n_args": 20,
+    "size_kb": 31
+  },
+  {
+    "id": "mt_005_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would ban facial recognition technology in public spaces.",
+    "n_args": 20,
+    "size_kb": 30
+  },
+  {
+    "id": "mt_005_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would ban facial recognition technology in public spaces.",
+    "n_args": 20,
+    "size_kb": 26
+  },
+  {
+    "id": "mt_005_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would ban facial recognition technology in public spaces.",
+    "n_args": 20,
+    "size_kb": 26
+  },
+  {
+    "id": "mt_006_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would require social media companies to make their recommendation algorithms public.",
+    "n_args": 20,
+    "size_kb": 31
+  },
+  {
+    "id": "mt_006_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would require social media companies to make their recommendation algorithms public.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_006_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would require social media companies to make their recommendation algorithms public.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_006_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would require social media companies to make their recommendation algorithms public.",
+    "n_args": 20,
+    "size_kb": 27
+  },
+  {
+    "id": "mt_006_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would require social media companies to make their recommendation algorithms public.",
+    "n_args": 20,
+    "size_kb": 28
+  },
+  {
+    "id": "mt_007_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would abolish the minimum wage law.",
+    "n_args": 20,
+    "size_kb": 31
+  },
+  {
+    "id": "mt_007_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would abolish the minimum wage law.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_007_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would abolish the minimum wage law.",
+    "n_args": 20,
+    "size_kb": 29
+  },
+  {
+    "id": "mt_007_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would abolish the minimum wage law.",
+    "n_args": 20,
+    "size_kb": 26
+  },
+  {
+    "id": "mt_007_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would abolish the minimum wage law.",
+    "n_args": 20,
+    "size_kb": 27
+  },
+  {
+    "id": "mt_008_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would allow the sale and purchase of human organs.",
+    "n_args": 20,
+    "size_kb": 33
+  },
+  {
+    "id": "mt_008_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would allow the sale and purchase of human organs.",
+    "n_args": 20,
+    "size_kb": 31
+  },
+  {
+    "id": "mt_008_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would allow the sale and purchase of human organs.",
+    "n_args": 20,
+    "size_kb": 29
+  },
+  {
+    "id": "mt_008_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would allow the sale and purchase of human organs.",
+    "n_args": 20,
+    "size_kb": 26
+  },
+  {
+    "id": "mt_008_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would allow the sale and purchase of human organs.",
+    "n_args": 20,
+    "size_kb": 27
+  },
+  {
+    "id": "mt_009_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would ban sovereign wealth funds from investing in private equity.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_009_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would ban sovereign wealth funds from investing in private equity.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_009_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would ban sovereign wealth funds from investing in private equity.",
+    "n_args": 20,
+    "size_kb": 30
+  },
+  {
+    "id": "mt_009_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would ban sovereign wealth funds from investing in private equity.",
+    "n_args": 20,
+    "size_kb": 27
+  },
+  {
+    "id": "mt_009_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would ban sovereign wealth funds from investing in private equity.",
+    "n_args": 20,
+    "size_kb": 27
+  },
+  {
+    "id": "mt_010_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would require companies to make the salaries of all their employees publicly available.",
+    "n_args": 20,
+    "size_kb": 31
+  },
+  {
+    "id": "mt_010_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would require companies to make the salaries of all their employees publicly available.",
+    "n_args": 20,
+    "size_kb": 31
+  },
+  {
+    "id": "mt_010_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would require companies to make the salaries of all their employees publicly available.",
+    "n_args": 20,
+    "size_kb": 30
+  },
+  {
+    "id": "mt_010_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would require companies to make the salaries of all their employees publicly available.",
+    "n_args": 20,
+    "size_kb": 26
+  },
+  {
+    "id": "mt_010_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would require companies to make the salaries of all their employees publicly available.",
+    "n_args": 20,
+    "size_kb": 27
+  },
+  {
+    "id": "mt_011_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would allow workers in less economically developed countries to waive labor protections in exchange for higher wages.",
+    "n_args": 20,
+    "size_kb": 31
+  },
+  {
+    "id": "mt_011_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would allow workers in less economically developed countries to waive labor protections in exchange for higher wages.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_011_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would allow workers in less economically developed countries to waive labor protections in exchange for higher wages.",
+    "n_args": 20,
+    "size_kb": 30
+  },
+  {
+    "id": "mt_011_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would allow workers in less economically developed countries to waive labor protections in exchange for higher wages.",
+    "n_args": 20,
+    "size_kb": 28
+  },
+  {
+    "id": "mt_011_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would allow workers in less economically developed countries to waive labor protections in exchange for higher wages.",
+    "n_args": 20,
+    "size_kb": 28
+  },
+  {
+    "id": "mt_012_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would allow lump-sum scholarships as an alternative to periodic disbursements.",
+    "n_args": 20,
+    "size_kb": 31
+  },
+  {
+    "id": "mt_012_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would allow lump-sum scholarships as an alternative to periodic disbursements.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_012_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would allow lump-sum scholarships as an alternative to periodic disbursements.",
+    "n_args": 20,
+    "size_kb": 29
+  },
+  {
+    "id": "mt_012_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would allow lump-sum scholarships as an alternative to periodic disbursements.",
+    "n_args": 20,
+    "size_kb": 27
+  },
+  {
+    "id": "mt_012_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would allow lump-sum scholarships as an alternative to periodic disbursements.",
+    "n_args": 20,
+    "size_kb": 28
+  },
+  {
+    "id": "mt_013_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would introduce a universal basic income funded by wealth taxes.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_013_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would introduce a universal basic income funded by wealth taxes.",
+    "n_args": 20,
+    "size_kb": 34
+  },
+  {
+    "id": "mt_013_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would introduce a universal basic income funded by wealth taxes.",
+    "n_args": 20,
+    "size_kb": 30
+  },
+  {
+    "id": "mt_013_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would introduce a universal basic income funded by wealth taxes.",
+    "n_args": 20,
+    "size_kb": 26
+  },
+  {
+    "id": "mt_013_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would introduce a universal basic income funded by wealth taxes.",
+    "n_args": 20,
+    "size_kb": 28
+  },
+  {
+    "id": "mt_014_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would require warrants for searches instead of allowing stop-and-frisk.",
+    "n_args": 20,
+    "size_kb": 31
+  },
+  {
+    "id": "mt_014_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would require warrants for searches instead of allowing stop-and-frisk.",
+    "n_args": 20,
+    "size_kb": 31
+  },
+  {
+    "id": "mt_014_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would require warrants for searches instead of allowing stop-and-frisk.",
+    "n_args": 20,
+    "size_kb": 29
+  },
+  {
+    "id": "mt_014_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would require warrants for searches instead of allowing stop-and-frisk.",
+    "n_args": 20,
+    "size_kb": 26
+  },
+  {
+    "id": "mt_014_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would require warrants for searches instead of allowing stop-and-frisk.",
+    "n_args": 20,
+    "size_kb": 27
+  },
+  {
+    "id": "mt_015_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would criminalize dangerous in-play actions in professional sport.",
+    "n_args": 20,
+    "size_kb": 31
+  },
+  {
+    "id": "mt_015_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would criminalize dangerous in-play actions in professional sport.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_015_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would criminalize dangerous in-play actions in professional sport.",
+    "n_args": 20,
+    "size_kb": 30
+  },
+  {
+    "id": "mt_015_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would criminalize dangerous in-play actions in professional sport.",
+    "n_args": 20,
+    "size_kb": 27
+  },
+  {
+    "id": "mt_015_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would criminalize dangerous in-play actions in professional sport.",
+    "n_args": 20,
+    "size_kb": 28
+  },
+  {
+    "id": "mt_016_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would ban corporate donations to political campaigns.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_016_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would ban corporate donations to political campaigns.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_016_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would ban corporate donations to political campaigns.",
+    "n_args": 20,
+    "size_kb": 30
+  },
+  {
+    "id": "mt_016_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would ban corporate donations to political campaigns.",
+    "n_args": 20,
+    "size_kb": 26
+  },
+  {
+    "id": "mt_016_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would ban corporate donations to political campaigns.",
+    "n_args": 20,
+    "size_kb": 26
+  },
+  {
+    "id": "mt_017_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would allow democratic governments to overturn supranational court decisions with a simple legislative majority.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_017_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would allow democratic governments to overturn supranational court decisions with a simple legislative majority.",
+    "n_args": 20,
+    "size_kb": 33
+  },
+  {
+    "id": "mt_017_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would allow democratic governments to overturn supranational court decisions with a simple legislative majority.",
+    "n_args": 20,
+    "size_kb": 30
+  },
+  {
+    "id": "mt_017_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would allow democratic governments to overturn supranational court decisions with a simple legislative majority.",
+    "n_args": 20,
+    "size_kb": 27
+  },
+  {
+    "id": "mt_017_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would allow democratic governments to overturn supranational court decisions with a simple legislative majority.",
+    "n_args": 20,
+    "size_kb": 29
+  },
+  {
+    "id": "mt_018_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would introduce a binding \u201cNone of the Above\u201d option on national election ballots.",
+    "n_args": 20,
+    "size_kb": 31
+  },
+  {
+    "id": "mt_018_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would introduce a binding \u201cNone of the Above\u201d option on national election ballots.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_018_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would introduce a binding \u201cNone of the Above\u201d option on national election ballots.",
+    "n_args": 20,
+    "size_kb": 29
+  },
+  {
+    "id": "mt_018_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would introduce a binding \u201cNone of the Above\u201d option on national election ballots.",
+    "n_args": 20,
+    "size_kb": 27
+  },
+  {
+    "id": "mt_018_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would introduce a binding \u201cNone of the Above\u201d option on national election ballots.",
+    "n_args": 20,
+    "size_kb": 27
+  },
+  {
+    "id": "mt_019_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would allow citizens to vote directly on impeachment cases through a national referendum.",
+    "n_args": 20,
+    "size_kb": 33
+  },
+  {
+    "id": "mt_019_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would allow citizens to vote directly on impeachment cases through a national referendum.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_019_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would allow citizens to vote directly on impeachment cases through a national referendum.",
+    "n_args": 20,
+    "size_kb": 29
+  },
+  {
+    "id": "mt_019_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would allow citizens to vote directly on impeachment cases through a national referendum.",
+    "n_args": 20,
+    "size_kb": 27
+  },
+  {
+    "id": "mt_019_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would allow citizens to vote directly on impeachment cases through a national referendum.",
+    "n_args": 20,
+    "size_kb": 27
+  },
+  {
+    "id": "mt_020_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would allow subnational jurisdictions to overturn federal policies via citizen referendum.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_020_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would allow subnational jurisdictions to overturn federal policies via citizen referendum.",
+    "n_args": 20,
+    "size_kb": 33
+  },
+  {
+    "id": "mt_020_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would allow subnational jurisdictions to overturn federal policies via citizen referendum.",
+    "n_args": 20,
+    "size_kb": 30
+  },
+  {
+    "id": "mt_020_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would allow subnational jurisdictions to overturn federal policies via citizen referendum.",
+    "n_args": 20,
+    "size_kb": 27
+  },
+  {
+    "id": "mt_020_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would allow subnational jurisdictions to overturn federal policies via citizen referendum.",
+    "n_args": 20,
+    "size_kb": 28
+  },
+  {
+    "id": "mt_021_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would allow parents to administer behavioral enhancement drugs to children without their consent.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_021_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would allow parents to administer behavioral enhancement drugs to children without their consent.",
+    "n_args": 20,
+    "size_kb": 33
+  },
+  {
+    "id": "mt_021_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would allow parents to administer behavioral enhancement drugs to children without their consent.",
+    "n_args": 20,
+    "size_kb": 31
+  },
+  {
+    "id": "mt_021_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would allow parents to administer behavioral enhancement drugs to children without their consent.",
+    "n_args": 20,
+    "size_kb": 28
+  },
+  {
+    "id": "mt_021_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would allow parents to administer behavioral enhancement drugs to children without their consent.",
+    "n_args": 20,
+    "size_kb": 28
+  },
+  {
+    "id": "mt_022_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would mandate comprehensive queer education in schools.",
+    "n_args": 20,
+    "size_kb": 31
+  },
+  {
+    "id": "mt_022_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would mandate comprehensive queer education in schools.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_022_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would mandate comprehensive queer education in schools.",
+    "n_args": 20,
+    "size_kb": 30
+  },
+  {
+    "id": "mt_022_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would mandate comprehensive queer education in schools.",
+    "n_args": 20,
+    "size_kb": 26
+  },
+  {
+    "id": "mt_022_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would mandate comprehensive queer education in schools.",
+    "n_args": 20,
+    "size_kb": 27
+  },
+  {
+    "id": "mt_023_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would restrict state funding only to art perceived as valuable by the general public.",
+    "n_args": 20,
+    "size_kb": 31
+  },
+  {
+    "id": "mt_023_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would restrict state funding only to art perceived as valuable by the general public.",
+    "n_args": 20,
+    "size_kb": 30
+  },
+  {
+    "id": "mt_023_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would restrict state funding only to art perceived as valuable by the general public.",
+    "n_args": 20,
+    "size_kb": 29
+  },
+  {
+    "id": "mt_023_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would restrict state funding only to art perceived as valuable by the general public.",
+    "n_args": 20,
+    "size_kb": 26
+  },
+  {
+    "id": "mt_023_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would restrict state funding only to art perceived as valuable by the general public.",
+    "n_args": 20,
+    "size_kb": 28
+  },
+  {
+    "id": "mt_024_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would ban the private ownership of historical artifacts.",
+    "n_args": 20,
+    "size_kb": 31
+  },
+  {
+    "id": "mt_024_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would ban the private ownership of historical artifacts.",
+    "n_args": 20,
+    "size_kb": 31
+  },
+  {
+    "id": "mt_024_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would ban the private ownership of historical artifacts.",
+    "n_args": 20,
+    "size_kb": 30
+  },
+  {
+    "id": "mt_024_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would ban the private ownership of historical artifacts.",
+    "n_args": 20,
+    "size_kb": 26
+  },
+  {
+    "id": "mt_024_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would ban the private ownership of historical artifacts.",
+    "n_args": 20,
+    "size_kb": 28
+  },
+  {
+    "id": "mt_025_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would allow high school students to rate teachers as a primary basis for pay increases.",
+    "n_args": 20,
+    "size_kb": 33
+  },
+  {
+    "id": "mt_025_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would allow high school students to rate teachers as a primary basis for pay increases.",
+    "n_args": 20,
+    "size_kb": 31
+  },
+  {
+    "id": "mt_025_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would allow high school students to rate teachers as a primary basis for pay increases.",
+    "n_args": 20,
+    "size_kb": 30
+  },
+  {
+    "id": "mt_025_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would allow high school students to rate teachers as a primary basis for pay increases.",
+    "n_args": 20,
+    "size_kb": 26
+  },
+  {
+    "id": "mt_025_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would allow high school students to rate teachers as a primary basis for pay increases.",
+    "n_args": 20,
+    "size_kb": 28
+  },
+  {
+    "id": "mt_026_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would introduce compulsory national service for all citizens.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_026_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would introduce compulsory national service for all citizens.",
+    "n_args": 20,
+    "size_kb": 31
+  },
+  {
+    "id": "mt_026_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would introduce compulsory national service for all citizens.",
+    "n_args": 20,
+    "size_kb": 30
+  },
+  {
+    "id": "mt_026_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would introduce compulsory national service for all citizens.",
+    "n_args": 20,
+    "size_kb": 26
+  },
+  {
+    "id": "mt_026_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would introduce compulsory national service for all citizens.",
+    "n_args": 20,
+    "size_kb": 27
+  },
+  {
+    "id": "mt_027_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would invest preferentially in climate startups in developing countries rather than developed countries.",
+    "n_args": 20,
+    "size_kb": 31
+  },
+  {
+    "id": "mt_027_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would invest preferentially in climate startups in developing countries rather than developed countries.",
+    "n_args": 20,
+    "size_kb": 34
+  },
+  {
+    "id": "mt_027_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would invest preferentially in climate startups in developing countries rather than developed countries.",
+    "n_args": 20,
+    "size_kb": 31
+  },
+  {
+    "id": "mt_027_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would invest preferentially in climate startups in developing countries rather than developed countries.",
+    "n_args": 20,
+    "size_kb": 27
+  },
+  {
+    "id": "mt_027_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would invest preferentially in climate startups in developing countries rather than developed countries.",
+    "n_args": 20,
+    "size_kb": 29
+  },
+  {
+    "id": "mt_028_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would ban the export of waste to developing countries.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_028_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would ban the export of waste to developing countries.",
+    "n_args": 20,
+    "size_kb": 31
+  },
+  {
+    "id": "mt_028_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would ban the export of waste to developing countries.",
+    "n_args": 20,
+    "size_kb": 30
+  },
+  {
+    "id": "mt_028_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would ban the export of waste to developing countries.",
+    "n_args": 20,
+    "size_kb": 27
+  },
+  {
+    "id": "mt_028_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would ban the export of waste to developing countries.",
+    "n_args": 20,
+    "size_kb": 27
+  },
+  {
+    "id": "mt_029_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would nationalize luxury ingredient production in producing countries.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_029_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would nationalize luxury ingredient production in producing countries.",
+    "n_args": 20,
+    "size_kb": 33
+  },
+  {
+    "id": "mt_029_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would nationalize luxury ingredient production in producing countries.",
+    "n_args": 20,
+    "size_kb": 30
+  },
+  {
+    "id": "mt_029_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would nationalize luxury ingredient production in producing countries.",
+    "n_args": 20,
+    "size_kb": 26
+  },
+  {
+    "id": "mt_029_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would nationalize luxury ingredient production in producing countries.",
+    "n_args": 20,
+    "size_kb": 28
+  },
+  {
+    "id": "mt_030_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would impose carbon tariffs on imported goods.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_030_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would impose carbon tariffs on imported goods.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_030_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would impose carbon tariffs on imported goods.",
+    "n_args": 20,
+    "size_kb": 30
+  },
+  {
+    "id": "mt_030_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would impose carbon tariffs on imported goods.",
+    "n_args": 20,
+    "size_kb": 26
+  },
+  {
+    "id": "mt_030_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would impose carbon tariffs on imported goods.",
+    "n_args": 20,
+    "size_kb": 28
+  },
+  {
+    "id": "mt_031_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would ban advertising for environmentally harmful products.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_031_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would ban advertising for environmentally harmful products.",
+    "n_args": 20,
+    "size_kb": 34
+  },
+  {
+    "id": "mt_031_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would ban advertising for environmentally harmful products.",
+    "n_args": 20,
+    "size_kb": 31
+  },
+  {
+    "id": "mt_031_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would ban advertising for environmentally harmful products.",
+    "n_args": 20,
+    "size_kb": 27
+  },
+  {
+    "id": "mt_031_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would ban advertising for environmentally harmful products.",
+    "n_args": 20,
+    "size_kb": 28
+  },
+  {
+    "id": "mt_032_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would ban countries from offering financial incentives to foreign athletes to switch nationality.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_032_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would ban countries from offering financial incentives to foreign athletes to switch nationality.",
+    "n_args": 20,
+    "size_kb": 31
+  },
+  {
+    "id": "mt_032_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would ban countries from offering financial incentives to foreign athletes to switch nationality.",
+    "n_args": 20,
+    "size_kb": 29
+  },
+  {
+    "id": "mt_032_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would ban countries from offering financial incentives to foreign athletes to switch nationality.",
+    "n_args": 20,
+    "size_kb": 26
+  },
+  {
+    "id": "mt_032_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would ban countries from offering financial incentives to foreign athletes to switch nationality.",
+    "n_args": 20,
+    "size_kb": 28
+  },
+  {
+    "id": "mt_033_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would allow prisoners serving life without parole to opt for the death penalty.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_033_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would allow prisoners serving life without parole to opt for the death penalty.",
+    "n_args": 20,
+    "size_kb": 34
+  },
+  {
+    "id": "mt_033_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would allow prisoners serving life without parole to opt for the death penalty.",
+    "n_args": 20,
+    "size_kb": 30
+  },
+  {
+    "id": "mt_033_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would allow prisoners serving life without parole to opt for the death penalty.",
+    "n_args": 20,
+    "size_kb": 26
+  },
+  {
+    "id": "mt_033_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would allow prisoners serving life without parole to opt for the death penalty.",
+    "n_args": 20,
+    "size_kb": 28
+  },
+  {
+    "id": "mt_034_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would ban proselytization acts in liberal democracies.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_034_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would ban proselytization acts in liberal democracies.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_034_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would ban proselytization acts in liberal democracies.",
+    "n_args": 20,
+    "size_kb": 30
+  },
+  {
+    "id": "mt_034_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would ban proselytization acts in liberal democracies.",
+    "n_args": 20,
+    "size_kb": 27
+  },
+  {
+    "id": "mt_034_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would ban proselytization acts in liberal democracies.",
+    "n_args": 20,
+    "size_kb": 27
+  },
+  {
+    "id": "mt_035_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would restrict immigration based on environmental carrying capacity.",
+    "n_args": 20,
+    "size_kb": 33
+  },
+  {
+    "id": "mt_035_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would restrict immigration based on environmental carrying capacity.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_035_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would restrict immigration based on environmental carrying capacity.",
+    "n_args": 20,
+    "size_kb": 30
+  },
+  {
+    "id": "mt_035_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would restrict immigration based on environmental carrying capacity.",
+    "n_args": 20,
+    "size_kb": 27
+  },
+  {
+    "id": "mt_035_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would restrict immigration based on environmental carrying capacity.",
+    "n_args": 20,
+    "size_kb": 27
+  },
+  {
+    "id": "mt_036_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would allow refugees to be settled through private sponsorship markets.",
+    "n_args": 20,
+    "size_kb": 31
+  },
+  {
+    "id": "mt_036_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would allow refugees to be settled through private sponsorship markets.",
+    "n_args": 20,
+    "size_kb": 33
+  },
+  {
+    "id": "mt_036_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would allow refugees to be settled through private sponsorship markets.",
+    "n_args": 20,
+    "size_kb": 30
+  },
+  {
+    "id": "mt_036_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would allow refugees to be settled through private sponsorship markets.",
+    "n_args": 20,
+    "size_kb": 26
+  },
+  {
+    "id": "mt_036_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would allow refugees to be settled through private sponsorship markets.",
+    "n_args": 20,
+    "size_kb": 27
+  },
+  {
+    "id": "mt_037_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would ban the consolidation of major news organizations.",
+    "n_args": 20,
+    "size_kb": 31
+  },
+  {
+    "id": "mt_037_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would ban the consolidation of major news organizations.",
+    "n_args": 20,
+    "size_kb": 30
+  },
+  {
+    "id": "mt_037_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would ban the consolidation of major news organizations.",
+    "n_args": 20,
+    "size_kb": 30
+  },
+  {
+    "id": "mt_037_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would ban the consolidation of major news organizations.",
+    "n_args": 20,
+    "size_kb": 26
+  },
+  {
+    "id": "mt_037_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would ban the consolidation of major news organizations.",
+    "n_args": 20,
+    "size_kb": 27
+  },
+  {
+    "id": "mt_038_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would introduce a youth-weighted voting system in democratic elections.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_038_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would introduce a youth-weighted voting system in democratic elections.",
+    "n_args": 20,
+    "size_kb": 33
+  },
+  {
+    "id": "mt_038_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would introduce a youth-weighted voting system in democratic elections.",
+    "n_args": 20,
+    "size_kb": 30
+  },
+  {
+    "id": "mt_038_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would introduce a youth-weighted voting system in democratic elections.",
+    "n_args": 20,
+    "size_kb": 27
+  },
+  {
+    "id": "mt_038_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would introduce a youth-weighted voting system in democratic elections.",
+    "n_args": 20,
+    "size_kb": 27
+  },
+  {
+    "id": "mt_039_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would require public broadcasters to allocate equal airtime to all political parties.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_039_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would require public broadcasters to allocate equal airtime to all political parties.",
+    "n_args": 20,
+    "size_kb": 31
+  },
+  {
+    "id": "mt_039_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would require public broadcasters to allocate equal airtime to all political parties.",
+    "n_args": 20,
+    "size_kb": 30
+  },
+  {
+    "id": "mt_039_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would require public broadcasters to allocate equal airtime to all political parties.",
+    "n_args": 20,
+    "size_kb": 26
+  },
+  {
+    "id": "mt_039_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would require public broadcasters to allocate equal airtime to all political parties.",
+    "n_args": 20,
+    "size_kb": 27
+  },
+  {
+    "id": "mt_040_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would abolish standardized testing in university admissions.",
+    "n_args": 20,
+    "size_kb": 31
+  },
+  {
+    "id": "mt_040_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would abolish standardized testing in university admissions.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_040_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would abolish standardized testing in university admissions.",
+    "n_args": 20,
+    "size_kb": 30
+  },
+  {
+    "id": "mt_040_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would abolish standardized testing in university admissions.",
+    "n_args": 20,
+    "size_kb": 26
+  },
+  {
+    "id": "mt_040_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would abolish standardized testing in university admissions.",
+    "n_args": 20,
+    "size_kb": 27
+  },
+  {
+    "id": "mt_041_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would mandate media literacy education for all adults.",
+    "n_args": 20,
+    "size_kb": 31
+  },
+  {
+    "id": "mt_041_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would mandate media literacy education for all adults.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_041_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would mandate media literacy education for all adults.",
+    "n_args": 20,
+    "size_kb": 30
+  },
+  {
+    "id": "mt_041_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would mandate media literacy education for all adults.",
+    "n_args": 20,
+    "size_kb": 26
+  },
+  {
+    "id": "mt_041_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would mandate media literacy education for all adults.",
+    "n_args": 20,
+    "size_kb": 27
+  },
+  {
+    "id": "mt_042_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would ban private military contractors.",
+    "n_args": 20,
+    "size_kb": 31
+  },
+  {
+    "id": "mt_042_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would ban private military contractors.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_042_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would ban private military contractors.",
+    "n_args": 20,
+    "size_kb": 29
+  },
+  {
+    "id": "mt_042_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would ban private military contractors.",
+    "n_args": 20,
+    "size_kb": 27
+  },
+  {
+    "id": "mt_042_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would ban private military contractors.",
+    "n_args": 20,
+    "size_kb": 27
+  },
+  {
+    "id": "mt_043_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would allow preventive detention for credible terrorism threats.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_043_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would allow preventive detention for credible terrorism threats.",
+    "n_args": 20,
+    "size_kb": 31
+  },
+  {
+    "id": "mt_043_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would allow preventive detention for credible terrorism threats.",
+    "n_args": 20,
+    "size_kb": 30
+  },
+  {
+    "id": "mt_043_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would allow preventive detention for credible terrorism threats.",
+    "n_args": 20,
+    "size_kb": 26
+  },
+  {
+    "id": "mt_043_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would allow preventive detention for credible terrorism threats.",
+    "n_args": 20,
+    "size_kb": 27
+  },
+  {
+    "id": "mt_044_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would restrict police use of lethal force to extreme circumstances only.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_044_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would restrict police use of lethal force to extreme circumstances only.",
+    "n_args": 20,
+    "size_kb": 33
+  },
+  {
+    "id": "mt_044_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would restrict police use of lethal force to extreme circumstances only.",
+    "n_args": 20,
+    "size_kb": 29
+  },
+  {
+    "id": "mt_044_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would restrict police use of lethal force to extreme circumstances only.",
+    "n_args": 20,
+    "size_kb": 26
+  },
+  {
+    "id": "mt_044_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would restrict police use of lethal force to extreme circumstances only.",
+    "n_args": 20,
+    "size_kb": 27
+  },
+  {
+    "id": "mt_045_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would allow gene editing of embryos for non-medical traits.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_045_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would allow gene editing of embryos for non-medical traits.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_045_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would allow gene editing of embryos for non-medical traits.",
+    "n_args": 20,
+    "size_kb": 31
+  },
+  {
+    "id": "mt_045_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would allow gene editing of embryos for non-medical traits.",
+    "n_args": 20,
+    "size_kb": 26
+  },
+  {
+    "id": "mt_045_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would allow gene editing of embryos for non-medical traits.",
+    "n_args": 20,
+    "size_kb": 27
+  },
+  {
+    "id": "mt_046_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would require mandatory vaccination for all citizens.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_046_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would require mandatory vaccination for all citizens.",
+    "n_args": 20,
+    "size_kb": 31
+  },
+  {
+    "id": "mt_046_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would require mandatory vaccination for all citizens.",
+    "n_args": 20,
+    "size_kb": 29
+  },
+  {
+    "id": "mt_046_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would require mandatory vaccination for all citizens.",
+    "n_args": 20,
+    "size_kb": 25
+  },
+  {
+    "id": "mt_046_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would require mandatory vaccination for all citizens.",
+    "n_args": 20,
+    "size_kb": 26
+  },
+  {
+    "id": "mt_047_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would ban animal testing for cosmetic products.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_047_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would ban animal testing for cosmetic products.",
+    "n_args": 20,
+    "size_kb": 30
+  },
+  {
+    "id": "mt_047_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would ban animal testing for cosmetic products.",
+    "n_args": 20,
+    "size_kb": 30
+  },
+  {
+    "id": "mt_047_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would ban animal testing for cosmetic products.",
+    "n_args": 20,
+    "size_kb": 25
+  },
+  {
+    "id": "mt_047_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would ban animal testing for cosmetic products.",
+    "n_args": 20,
+    "size_kb": 28
+  },
+  {
+    "id": "mt_048_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would break up dominant technology monopolies.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_048_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would break up dominant technology monopolies.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_048_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would break up dominant technology monopolies.",
+    "n_args": 20,
+    "size_kb": 30
+  },
+  {
+    "id": "mt_048_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would break up dominant technology monopolies.",
+    "n_args": 20,
+    "size_kb": 27
+  },
+  {
+    "id": "mt_048_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would break up dominant technology monopolies.",
+    "n_args": 20,
+    "size_kb": 26
+  },
+  {
+    "id": "mt_049_anthropic__claude-opus-4.5",
+    "setting": "multiturn",
+    "motion": "This House would require platforms to compensate users for personal data usage.",
+    "n_args": 20,
+    "size_kb": 32
+  },
+  {
+    "id": "mt_049_mistralai__mistral-small-creative",
+    "setting": "multiturn",
+    "motion": "This House would require platforms to compensate users for personal data usage.",
+    "n_args": 20,
+    "size_kb": 33
+  },
+  {
+    "id": "mt_049_openai__gpt-5.2-pro",
+    "setting": "multiturn",
+    "motion": "This House would require platforms to compensate users for personal data usage.",
+    "n_args": 20,
+    "size_kb": 29
+  },
+  {
+    "id": "mt_049_qwen__qwen3-max",
+    "setting": "multiturn",
+    "motion": "This House would require platforms to compensate users for personal data usage.",
+    "n_args": 20,
+    "size_kb": 26
+  },
+  {
+    "id": "mt_049_x-ai__grok-4",
+    "setting": "multiturn",
+    "motion": "This House would require platforms to compensate users for personal data usage.",
+    "n_args": 20,
+    "size_kb": 27
+  }
+]
