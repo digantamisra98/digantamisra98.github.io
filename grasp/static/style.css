@@ -89,6 +89,13 @@ a    { color: inherit; }
   transition: color 0.15s;
 }
 .nav-links a:hover { color: var(--text); }
+.nav-home-btn {
+  display: inline-flex; align-items: center; gap: 0.3rem;
+  font-size: 0.82rem; color: var(--text-2) !important;
+  border: 1.5px solid var(--border); border-radius: 6px;
+  padding: 0.25rem 0.6rem; transition: all 0.15s;
+}
+.nav-home-btn:hover { background: var(--bg-alt); color: var(--text) !important; }
 
 /* Dark mode toggle */
 .dark-toggle {
@@ -118,6 +125,13 @@ a    { color: inherit; }
   border: 1.5px solid var(--border);
 }
 .btn-outline:hover { background: var(--bg-alt); }
+.btn-icon {
+  background: transparent; color: var(--text-2);
+  border: 1.5px solid var(--border);
+  padding: 0.55rem 1rem;
+}
+.btn-icon:hover { background: var(--bg-alt); color: var(--text); }
+.btn-icon svg { flex-shrink: 0; }
 
 /* ── Hero ────────────────────────────────────────────────────────  */
 .hero {
