@@ -684,6 +684,28 @@ input[type="range"] {
   margin-top: 0.35rem; min-height: 56px;
   font-size: 0.82rem; color: var(--text-2);
 }
+
+/* ── Responsive ─────────────────────────────────────────────────── */
+@media (max-width: 700px) {
+  .setup-grid { grid-template-columns: 1fr; }
+  .page-wrap { padding: 1rem 1rem 3rem; }
+  .nav-inner { padding: 0 1rem; gap: 1rem; }
+  .nav-links { gap: 1rem; }
+  .page-hero { padding: 1.5rem 0 1.25rem; }
+  .page-hero h1 { font-size: 1.5rem; }
+  .form-card { padding: 1.1rem; }
+  .analysis-grid { grid-template-columns: 1fr; }
+  .dynamics-spider-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+  .nav-links a:not(.nav-back) { display: none; }
+  .page-hero h1 { font-size: 1.25rem; }
+  .btn-run { width: 100%; justify-content: center; }
+  .pill-toggle { font-size: 0.78rem; padding: 0.3rem 0.65rem; }
+  textarea { font-size: 0.85rem; }
+  select { font-size: 0.85rem; }
+  .metric-row { grid-template-columns: 1fr 1fr 40px; }
+}
 </style>
 </head>
 <body>
@@ -919,7 +941,7 @@ input[type="range"] {
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
           Run GRASP
         </button>
-        <span id="run-hint" style="margin-left:1rem; font-size:0.8rem; color:var(--muted);">Fill motion &amp; argument to continue</span>
+        <div id="run-hint" style="margin-top:0.55rem; font-size:0.8rem; color:var(--muted);">Fill motion &amp; argument to continue</div>
       </div>
     </div>
   </div>
@@ -1116,7 +1138,7 @@ function validateForm(){
   const arg    = document.getElementById('user-arg').value.trim();
   const ok     = motion.length > 5 && arg.length >= 20;
   document.getElementById('run-btn').disabled = !ok;
-  document.getElementById('run-hint').style.display = ok ? 'none' : 'inline';
+  document.getElementById('run-hint').style.display = ok ? 'none' : 'block';
 }
 
 /* ─── SSE stream runner ─────────────────────────────────────────── */
