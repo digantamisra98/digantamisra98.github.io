@@ -478,6 +478,15 @@ a    { color: inherit; }
   .axiom-table td { display: block; padding: 0.2rem 0; border: none; }
   .axiom-table td:first-child { font-size: 0.78rem; color: var(--text-2); margin-bottom: 0.3rem; }
   .axiom-table tr:last-child { border-bottom: none; }
+  /* Method / equation box */
+  html, body { overflow-x: hidden; max-width: 100vw; }
+  .eq-box { padding: 0.9rem 1rem; font-size: 0.82em; }
+  .concept-box { padding: 1.25rem 1rem; }
+  /* Toy canvas section */
+  .method-fig { min-width: 0; }
+  .toy-wrap { min-width: 0; }
+  .toy-canvas { min-height: 180px; }
+  .toy-slider-row { grid-template-columns: 50px 1fr 32px; }
 }
 
 /* ── STRUCTDEBATE Explorer ──────────────────────────────────────── */
