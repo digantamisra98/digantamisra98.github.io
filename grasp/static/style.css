@@ -601,6 +601,21 @@ a    { color: inherit; }
 .rk-score-cell { font-family: var(--font-mono); font-size: 0.74rem; color: var(--muted); text-align: right; white-space: nowrap; }
 .rk-angle-legend { font-size: 0.7rem; color: var(--muted); margin-top: 0.65rem; }
 
+/* Graph zoom buttons */
+.graph-zoom-btns {
+  position: absolute; bottom: 0.6rem; right: 0.6rem;
+  display: flex; flex-direction: column; gap: 0.25rem;
+}
+.graph-zoom-btn {
+  width: 32px; height: 32px; border-radius: 6px;
+  border: 1.5px solid var(--border); background: var(--bg-card);
+  color: var(--text-2); font-size: 1.1rem; font-weight: 600;
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+  transition: all 0.12s; line-height: 1; font-family: var(--font-sans);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+}
+.graph-zoom-btn:hover { background: var(--bg-alt); color: var(--text); border-color: var(--text-2); }
+
 /* Agreement */
 .agreement-wrap { position: relative; display: inline-block; }
 #pearson-canvas { border: 1px solid var(--border); border-radius: var(--radius); cursor: crosshair; }

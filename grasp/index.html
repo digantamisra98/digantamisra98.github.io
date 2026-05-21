@@ -412,8 +412,13 @@
       <div class="graph-stats-bar">
         <div id="graph-stats" class="graph-stats"></div>
       </div>
-      <div class="graph-canvas-wrap">
-        <canvas id="graph-canvas"></canvas>
+      <div class="graph-canvas-wrap" style="position:relative;">
+        <canvas id="graph-canvas" style="touch-action:none;"></canvas>
+        <div class="graph-zoom-btns">
+          <button class="graph-zoom-btn" onclick="zoomGraphBy(1.3)" title="Zoom in">+</button>
+          <button class="graph-zoom-btn" onclick="zoomGraphBy(1/1.3)" title="Zoom out">−</button>
+          <button class="graph-zoom-btn" onclick="resetGraphView()" title="Reset view" style="font-size:0.85rem;">⟲</button>
+        </div>
       </div>
       <div id="graph-legend" class="graph-legend"></div>
       <div id="graph-insights" class="graph-insights"></div>

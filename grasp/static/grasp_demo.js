@@ -274,6 +274,7 @@ function filterSetting(btn,val) {
 
 async function loadDebate(id) {
   activeDebate=id; selectedArg=null; rkJudge=null;
+  graphZoom=1; graphPanX=0; graphPanY=0;
   closeArgDetail();
   const loadEl=document.getElementById('debate-loading');
   const motEl=document.getElementById('explorer-motion-text');
@@ -301,6 +302,26 @@ async function loadDebate(id) {
 
 // ─── ATTACK GRAPH ─────────────────────────────────────────────────
 let graphLayout=null, graphLayoutKey='';
+let graphZoom=1, graphPanX=0, graphPanY=0;
+let graphDragging=false, graphDragLast=null;
+let graphPinchDist=null;
+
+function resetGraphView(){graphZoom=1;graphPanX=0;graphPanY=0;drawGraph();}
+function zoomGraphBy(f,cx,cy){
+  const canvas=document.getElementById('graph-canvas');
+  const cw=canvas?parseInt(canvas.style.width)||canvas.offsetWidth:700;
+  const ch=canvas?parseInt(canvas.style.height)||canvas.offsetHeight:476;
+  const ox=cx??cw/2, oy=cy??ch/2;
+  graphPanX=(graphPanX-ox)*f+ox;
+  graphPanY=(graphPanY-oy)*f+oy;
+  graphZoom=Math.max(0.5,Math.min(8,graphZoom*f));
+  drawGraph();
+}
+// Transform screen→graph coords
+function toGraph(sx,sy,cw,ch){
+  return {gx:(sx-graphPanX-cw/2)/graphZoom+cw/2,
+          gy:(sy-graphPanY-ch/2)/graphZoom+ch/2};
+}
 
 function drawGraph() {
   if (!DATA||!activeJudge) return;
@@ -346,6 +367,12 @@ function drawGraph() {
 
   ctx.fillStyle=canvasBg(); ctx.fillRect(0,0,cw,ch);
 
+  // Apply zoom/pan transform
+  ctx.save();
+  ctx.translate(graphPanX+cw/2, graphPanY+ch/2);
+  ctx.scale(graphZoom,graphZoom);
+  ctx.translate(-cw/2,-ch/2);
+
   // Selected arg highlight ring
   if (selectedArg!==null) {
     ctx.beginPath(); ctx.arc(cx_(selectedArg),cy_(selectedArg),nodeR(selectedArg)+5,0,Math.PI*2);
@@ -376,10 +403,14 @@ function drawGraph() {
     ctx.stroke();
   }
 
+  ctx.restore(); // end zoom/pan transform
+
   // Click → arg detail
   canvas.onclick=e=>{
+    if(graphDragging)return;
     const rect=canvas.getBoundingClientRect();
-    const mx=e.clientX-rect.left,my=e.clientY-rect.top;
+    const sx=e.clientX-rect.left,sy=e.clientY-rect.top;
+    const {gx:mx,gy:my}=toGraph(sx,sy,cw,ch);
     let hit=-1;
     for (let i=0;i<n;i++) {
       const r=nodeR(i)+4;
@@ -389,11 +420,66 @@ function drawGraph() {
     else { selectedArg=null; drawGraph(); closeArgDetail(); }
   };
 
+  // Wheel zoom (desktop)
+  canvas.onwheel=e=>{
+    e.preventDefault();
+    const rect=canvas.getBoundingClientRect();
+    zoomGraphBy(e.deltaY<0?1.15:1/1.15, e.clientX-rect.left, e.clientY-rect.top);
+  };
+
+  // Mouse drag (desktop pan)
+  canvas.onmousedown=e=>{graphDragging=false;graphDragLast={x:e.clientX,y:e.clientY};};
+  canvas.onmousemove=e=>{
+    if(graphDragLast){
+      const dx=e.clientX-graphDragLast.x,dy=e.clientY-graphDragLast.y;
+      if(Math.abs(dx)+Math.abs(dy)>3) graphDragging=true;
+      if(graphDragging){graphPanX+=dx;graphPanY+=dy;graphDragLast={x:e.clientX,y:e.clientY};drawGraph();return;}
+    }
+  };
+  canvas.onmouseup=()=>{graphDragLast=null;};
+  canvas.onmouseleave=()=>{graphDragLast=null;};
+
+  // Touch events (pinch-to-zoom + drag-pan)
+  canvas.ontouchstart=e=>{
+    if(e.touches.length===2){
+      graphPinchDist=Math.hypot(e.touches[0].clientX-e.touches[1].clientX,e.touches[0].clientY-e.touches[1].clientY);
+    } else if(e.touches.length===1){
+      graphDragLast={x:e.touches[0].clientX,y:e.touches[0].clientY};
+      graphDragging=false;
+    }
+    e.preventDefault();
+  };
+  canvas.ontouchmove=e=>{
+    if(e.touches.length===2&&graphPinchDist){
+      const d=Math.hypot(e.touches[0].clientX-e.touches[1].clientX,e.touches[0].clientY-e.touches[1].clientY);
+      const rect=canvas.getBoundingClientRect();
+      const cx=(((e.touches[0].clientX+e.touches[1].clientX)/2)-rect.left);
+      const cy=(((e.touches[0].clientY+e.touches[1].clientY)/2)-rect.top);
+      zoomGraphBy(d/graphPinchDist,cx,cy);
+      graphPinchDist=d;
+    } else if(e.touches.length===1&&graphDragLast){
+      const dx=e.touches[0].clientX-graphDragLast.x,dy=e.touches[0].clientY-graphDragLast.y;
+      if(Math.abs(dx)+Math.abs(dy)>3) graphDragging=true;
+      if(graphDragging){graphPanX+=dx;graphPanY+=dy;graphDragLast={x:e.touches[0].clientX,y:e.touches[0].clientY};drawGraph();}
+    }
+    e.preventDefault();
+  };
+  canvas.ontouchend=e=>{
+    if(e.touches.length<2) graphPinchDist=null;
+    if(e.touches.length===0) graphDragLast=null;
+  };
+
   // Hover tooltip
   const tip_el=document.getElementById('cell-tooltip');
   canvas.onmousemove=e=>{
+    if(graphDragLast){
+      const dx=e.clientX-graphDragLast.x,dy=e.clientY-graphDragLast.y;
+      if(Math.abs(dx)+Math.abs(dy)>3) graphDragging=true;
+      if(graphDragging){graphPanX+=dx;graphPanY+=dy;graphDragLast={x:e.clientX,y:e.clientY};drawGraph();return;}
+    }
     const rect=canvas.getBoundingClientRect();
-    const mx=e.clientX-rect.left,my=e.clientY-rect.top;
+    const sx=e.clientX-rect.left,sy=e.clientY-rect.top;
+    const {gx:mx,gy:my}=toGraph(sx,sy,cw,ch);
     let hit=-1;
     for (let i=0;i<n;i++) {
       const r=nodeR(i)+3;
