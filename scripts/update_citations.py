@@ -14,6 +14,7 @@ def fetch_citations(api_key):
     params = urllib.parse.urlencode({
         "engine": "google_scholar_author",
         "author_id": AUTHOR_ID,
+        "view_op": "list_works",
         "api_key": api_key,
     })
     url = f"https://serpapi.com/search.json?{params}"
