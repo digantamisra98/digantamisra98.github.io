@@ -2,29 +2,39 @@ import json
 import os
 import re
 import sys
-import urllib.request
 import urllib.error
+import urllib.parse
+import urllib.request
 
 AUTHOR_ID = "LwiJwNYAAAAJ"
 INDEX_HTML = os.path.join(os.path.dirname(__file__), "..", "index.html")
 
 
 def fetch_citations(api_key):
-    url = (
-        f"https://serpapi.com/search.json"
-        f"?engine=google_scholar_author"
-        f"&author_id={AUTHOR_ID}"
-        f"&sort=cited"
-        f"&num=20"
-        f"&api_key={api_key}"
-    )
+    params = urllib.parse.urlencode({
+        "engine": "google_scholar_author",
+        "author_id": AUTHOR_ID,
+        "api_key": api_key,
+    })
+    url = f"https://serpapi.com/search.json?{params}"
     with urllib.request.urlopen(url, timeout=30) as resp:
         data = json.loads(resp.read())
 
+    # Surface any API-level error
+    if "error" in data:
+        print(f"SerpAPI error: {data['error']}", file=sys.stderr)
+        sys.exit(1)
+
+    articles = data.get("articles", [])
+    print(f"Articles returned by SerpAPI: {len(articles)}")
+    for a in articles:
+        title = a.get("title", "")
+        count = (a.get("cited_by") or {}).get("value", "?")
+        print(f"  [{count}] {title!r}")
+
     mish = None
     triplet = None
-
-    for article in data.get("articles", []):
+    for article in articles:
         title = article.get("title", "").lower()
         count = (article.get("cited_by") or {}).get("value") or 0
         if "mish" in title:
