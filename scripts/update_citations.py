@@ -6,14 +6,18 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-AUTHOR_ID = "LwiJwNYAAAAJ"
 INDEX_HTML = os.path.join(os.path.dirname(__file__), "..", "index.html")
 
+PAPERS = {
+    "mish": "Mish Self Regularized Non-Monotonic Neural Activation Function Diganta Misra",
+    "triplet": "Rotate to Attend Convolutional Triplet Attention Module Diganta Misra",
+}
 
-def fetch_citations(api_key):
+
+def search_citations(api_key, query):
     params = urllib.parse.urlencode({
-        "engine": "google_scholar_author",
-        "author_id": AUTHOR_ID,
+        "engine": "google_scholar",
+        "q": query,
         "api_key": api_key,
     })
     url = f"https://serpapi.com/search.json?{params}"
@@ -24,24 +28,19 @@ def fetch_citations(api_key):
         print(f"SerpAPI error: {data['error']}", file=sys.stderr)
         sys.exit(1)
 
-    articles = data.get("articles", [])
-    print(f"Articles returned: {len(articles)}")
-    for a in articles:
-        title = a.get("title", "")
-        count = (a.get("cited_by") or {}).get("value", "?")
-        print(f"  [{count}] {title!r}")
+    results = data.get("organic_results", [])
+    print(f"  {len(results)} results")
+    for r in results:
+        title = r.get("title", "")
+        count = (r.get("inline_links") or {}).get("cited_by", {}).get("total", 0) or 0
+        print(f"    [{count:5d}] {title!r}")
 
-    mish = None
-    triplet = None
-    for a in articles:
-        title = a.get("title", "").lower()
-        count = (a.get("cited_by") or {}).get("value") or 0
-        if "mish" in title:
-            mish = max(mish or 0, count)
-        elif "triplet attention" in title or "rotate to attend" in title:
-            triplet = count
-
-    return mish, triplet
+    # Return max citation count across all results (handles duplicate entries)
+    counts = [
+        (r.get("inline_links") or {}).get("cited_by", {}).get("total", 0) or 0
+        for r in results
+    ]
+    return max(counts) if counts else None
 
 
 def floor100(n):
@@ -79,17 +78,20 @@ if __name__ == "__main__":
         print("ERROR: SERPAPI_KEY not set", file=sys.stderr)
         sys.exit(1)
 
+    print("Searching Mish...")
     try:
-        mish, triplet = fetch_citations(api_key)
+        mish = search_citations(api_key, PAPERS["mish"])
+        print(f"\nSearching Triplet Attention...")
+        triplet = search_citations(api_key, PAPERS["triplet"])
     except urllib.error.URLError as e:
         print(f"ERROR contacting SerpAPI: {e}", file=sys.stderr)
         sys.exit(1)
 
-    if mish is None or triplet is None:
-        print(f"ERROR: paper not found. mish={mish}, triplet={triplet}", file=sys.stderr)
+    if not mish or not triplet:
+        print(f"ERROR: could not find citations. mish={mish}, triplet={triplet}", file=sys.stderr)
         sys.exit(1)
 
-    print(f"Mish:    {mish} -> {fmt(mish)}")
+    print(f"\nMish:    {mish} -> {fmt(mish)}")
     print(f"Triplet: {triplet} -> {fmt(triplet)}")
 
     changed = update_html(mish, triplet)
