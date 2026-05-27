@@ -1,56 +1,46 @@
+import json
 import os
 import re
 import sys
 import urllib.error
+import urllib.parse
 import urllib.request
 
-SCHOLAR_URL = (
-    "https://scholar.google.com/citations"
-    "?user=LwiJwNYAAAAJ&hl=en&pagesize=100"
-)
+AUTHOR_ID = "LwiJwNYAAAAJ"
 INDEX_HTML = os.path.join(os.path.dirname(__file__), "..", "index.html")
 
-HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/124.0.0.0 Safari/537.36"
-    ),
-    "Accept-Language": "en-US,en;q=0.9",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-}
 
+def fetch_citations(api_key):
+    params = urllib.parse.urlencode({
+        "engine": "google_scholar_author",
+        "author_id": AUTHOR_ID,
+        "view_op": "list_works",
+        "api_key": api_key,
+    })
+    url = f"https://serpapi.com/search.json?{params}"
+    with urllib.request.urlopen(url, timeout=30) as resp:
+        data = json.loads(resp.read())
 
-def fetch_html():
-    req = urllib.request.Request(SCHOLAR_URL, headers=HEADERS)
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        return resp.read().decode("utf-8", errors="replace")
-
-
-def parse_citations(html):
-    if "g-recaptcha" in html or "not a robot" in html.lower():
-        print("ERROR: Google Scholar returned a CAPTCHA — runner IP is blocked.", file=sys.stderr)
+    if "error" in data:
+        print(f"SerpAPI error: {data['error']}", file=sys.stderr)
         sys.exit(1)
 
-    rows = re.findall(r'<tr class="gsc_a_tr">(.*?)</tr>', html, re.DOTALL)
-    print(f"Found {len(rows)} papers on author page")
+    articles = data.get("articles", [])
+    print(f"Articles returned: {len(articles)}")
+    for a in articles:
+        title = a.get("title", "")
+        count = (a.get("cited_by") or {}).get("value", "?")
+        print(f"  [{count}] {title!r}")
 
     mish = None
     triplet = None
-
-    for row in rows:
-        title_m = re.search(r'class="gsc_a_at"[^>]*>(.*?)</a>', row, re.DOTALL)
-        cite_m = re.search(r'class="gsc_a_ac[^"]*"[^>]*>(\d+)<', row)
-        if not title_m:
-            continue
-        title = re.sub(r"<[^>]+>", "", title_m.group(1)).strip()
-        cites = int(cite_m.group(1)) if cite_m else 0
-        print(f"  [{cites:5d}] {title!r}")
-        tl = title.lower()
-        if "mish" in tl:
-            mish = cites
-        elif "triplet attention" in tl or "rotate to attend" in tl:
-            triplet = cites
+    for a in articles:
+        title = a.get("title", "").lower()
+        count = (a.get("cited_by") or {}).get("value") or 0
+        if "mish" in title:
+            mish = count
+        elif "triplet attention" in title or "rotate to attend" in title:
+            triplet = count
 
     return mish, triplet
 
@@ -85,13 +75,16 @@ def update_html(mish, triplet):
 
 
 if __name__ == "__main__":
-    try:
-        html = fetch_html()
-    except urllib.error.URLError as e:
-        print(f"ERROR fetching Google Scholar: {e}", file=sys.stderr)
+    api_key = os.environ.get("SERPAPI_KEY", "")
+    if not api_key:
+        print("ERROR: SERPAPI_KEY not set", file=sys.stderr)
         sys.exit(1)
 
-    mish, triplet = parse_citations(html)
+    try:
+        mish, triplet = fetch_citations(api_key)
+    except urllib.error.URLError as e:
+        print(f"ERROR contacting SerpAPI: {e}", file=sys.stderr)
+        sys.exit(1)
 
     if mish is None or triplet is None:
         print(f"ERROR: paper not found. mish={mish}, triplet={triplet}", file=sys.stderr)
