@@ -14,7 +14,6 @@ def fetch_citations(api_key):
     params = urllib.parse.urlencode({
         "engine": "google_scholar_author",
         "author_id": AUTHOR_ID,
-        "view_op": "list_works",
         "api_key": api_key,
     })
     url = f"https://serpapi.com/search.json?{params}"
@@ -38,7 +37,7 @@ def fetch_citations(api_key):
         title = a.get("title", "").lower()
         count = (a.get("cited_by") or {}).get("value") or 0
         if "mish" in title:
-            mish = count
+            mish = max(mish or 0, count)
         elif "triplet attention" in title or "rotate to attend" in title:
             triplet = count
 
